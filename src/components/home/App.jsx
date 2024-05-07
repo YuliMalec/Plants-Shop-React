@@ -4,16 +4,12 @@ import Banner from '../main-banner/Banner'
 import { useResize } from '../../hooks/use-resize';
 import Shop from '../shop/Shop';
 import '../../index.css'
-
-
-import axios from 'axios'
-import { json } from 'react-router-dom';
-
+import plants from '../../data/plants.json'
 
 const category= ['House Plant','Potter Plants','Seeds','Small Plants','Big Plants','Asucculents','Trerrariums','Accesories'];
 
 const titles = ['All Plants', 'New Arrives', 'Sale']
-
+console.log(plants.plants)
 function App() {
 
 
@@ -29,30 +25,18 @@ const [currentPage,setCurrentPage] = useState(1)
 
     const url = 'https://fakestoreapi.com/products?';
 
-    const chooseProduct=(param='House Plant')=>{
-
-      axios.get(`http://localhost:3000/plants?categories=${param}`)
-     .then(res=>{
-         // handle success
-       setList(res.data)
+    const chooseProduct=(param = 'House Plant')=>{
+        
+       setList(plants.plants.filter((el)=> el.categories === param))
    
      setProductTitle(titles[0])
      setCat(param)
      setCurrentPage(1)
-     } 
-      
-     )
-     
-     .catch(function (error) {
-       // handle error
-       console.log(error);
-        
-       })
-     
+      console.log(list)
      } 
      
      useEffect(()=>{
-      chooseProduct()
+     chooseProduct()
       localStorage.setItem('list',JSON.stringify(list))
     },[])
   let localList =JSON.parse(localStorage.getItem('list'))

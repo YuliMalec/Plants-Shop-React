@@ -27,9 +27,9 @@ function Shop(props){
     const totalPage= props.list.length;
   /* let listProd = props.list.slice(firstIndex,lastIndex)*/
    
-let listProd = chooseTitle(props.list).slice(firstIndex,lastIndex)
+let listProd = chooseTitle(props.list)
   
-
+let finalList = sortList(listProd).slice(firstIndex,lastIndex)
     
     const paginate = pageNumber=>props.setCurrentPage(pageNumber)
     function selectOption(){
@@ -39,25 +39,26 @@ let listProd = chooseTitle(props.list).slice(firstIndex,lastIndex)
        }
 
        function sortList(arr){
-        let result;
-        if(selected==='Defolt sorting'){
-        result = arr
-        }
+       
+            let result = arr;
+      
         if(selected === 'Rising price'){
           props.setList(props.list.sort((a,b)=>Number(a.price.slice(1))-Number(b.price.slice(1))))
         }
         if(selected === 'Descending prices'){
-          props.setList(props.list.sort((a,b)=>Number(b.price.slice(1))-Number(a.price.slice(1))))
-        
+        props.setList(props.list.sort((a,b)=>Number(b.price.slice(1))-Number(a.price.slice(1))))
        }
- }
+          console.log(result)
+          return result || props.list
+       }
+     
+
       function selectList(event){
        setSelected(event.target.innerHTML)
         setIsSelected(!isSelected) 
         console.log(selected)
-        
-       }
-        
+    
+       }  
      
    
       function chooseTitle(arr){ 
@@ -117,7 +118,7 @@ let listProd = chooseTitle(props.list).slice(firstIndex,lastIndex)
             </div>
             </div>
              <div className='products'>
-              { listProd.map((elem,index)=>{
+              { finalList.map((elem,index)=>{
                 return <Product elem={elem} index={index} key={index}/>
               })   
                  }
