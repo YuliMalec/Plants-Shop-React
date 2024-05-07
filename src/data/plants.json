@@ -1,0 +1,860 @@
+ {
+    "plants":[
+ 
+ 
+ {
+
+    "id":"1",
+    "name":"Barberton Daesy",
+   "price":"$119",
+    "oldPrice":"",
+    "categories":"House Plant",
+    "sale":"",
+    "arrives":false,
+    "img":"/house/image 1.png"
+
+},{
+ "id":"2",
+    "name":"Angel Wind Begonia",
+   "price":"$169",
+    "oldPrice":"",
+    "categories":"House Plant",
+    "sale":"",
+    "arrives":false,
+    "img":"/house/product-21-320x320 1.png"
+},{
+    "id":"3",
+    "name":"African Viollet",
+    "price":"$199",
+    "oldPrice":"$229",
+    "categories":"House Plant",
+    "sale":"13% OFF",
+    "arrives":false,
+    "img":"/house/image 2.png"
+},{
+    "id":"4",
+    "name":"Beach Spider Lilly",
+    "price":"$129",
+    "oldPrice":"",
+    "categories":"House Plant",
+    "sale":"",
+    "arrives":true,
+    "img":"/house/01 3.png"
+},{
+    "id":"5",
+    "name":"Blushing Bromeliad",
+    "price":"$139",
+    "oldPrice":"",
+    "categories":"House Plant",
+    "sale":"",
+    "arrives":true,
+    "img":"/house/image 7.png"
+},{
+    "id":"6",
+    "name":"Aluminum Plant",
+    "price":"$179",
+    "oldPrice":"",
+    "categories":"House Plant",
+    "sale":"",
+    "arrives":true,
+    "img":"/house/image 8.png"
+},{
+    "id":"7",
+    "name":"Birds Nest Fern",
+    "price":"$99",
+    "oldPrice":"",
+    "categories":"House Plant",
+    "sale":"",
+    "arrives":false,
+    "img":"/house/image 9.png"
+},{
+    "id":"8",
+    "name":"Broadleaf Lady Palm",
+    "price":"$59",
+    "oldPrice":"",
+    "categories":"House Plant",
+    "sale":"",
+    "arrives":false,
+    "img":"/house/product-20-320x320 1.png"
+},{
+    "id":"9",
+    "name":"Ghineze Evergreen",
+    "price":"$39",
+    "oldPrice":"",
+    "categories":"House Plant",
+    "sale":"",
+    "arrives":false,
+    "img":"/house/image 10.png"
+},{
+    "id":"10",
+    "name":"Ghineze Evergreen",
+    "price":"$49",
+    "oldPrice":"",
+    "categories":"Potter Plants",
+    "sale":"",
+    "arrives":false,
+    "img":"/potter plants/chinese evergreen.webp"
+},{
+    "id":"11",
+    "name":"Crape Ivy",
+    "price":"$109",
+    "oldPrice":"159",
+    "categories":"Potter Plants",
+    "sale":"12% OFF",
+    "arrives":false,
+    "img":"/potter plants/crape ivy.webp"
+},{
+    "id":"12",
+    "name":"Dieffenbachia",
+    "price":"$189",
+    "oldPrice":"",
+    "categories":"Potter Plants",
+    "sale":"",
+    "arrives":false,
+    "img":"/potter plants/dieffenbachia.webp"
+},{
+    "id":"13",
+    "name":"Hoya wax plant",
+    "price":"$219",
+    "oldPrice":"",
+    "categories":"Potter Plants",
+    "sale":"",
+    "arrives":false,
+    "img":"/potter plants/hoya-wax-plant.webp"
+},{
+    "id":"14",
+    "name":"Jade Plant",
+    "price":"$109",
+    "oldPrice":"",
+    "categories":"Potter Plant",
+    "sale":"",
+    "arrives":true,
+    "img":"/potter plants/jade-plant.webp"
+},{
+    "id":"15",
+    "name":"Kalanchoe Blossfeldiana",
+    "price":"$129",
+    "oldPrice":"",
+    "categories":"Potter Plants",
+    "sale":"",
+    "arrives":true,
+    "img":"/potter plants/kalanchoe-blossfeldiana.webp"
+},{
+    "id":"16",
+    "name":"Nerfolk Island Pine",
+    "price":"$49",
+    "oldPrice":"59",
+    "categories":"Potter Plants",
+    "sale":"12% OFF",
+    "arrives":false,
+    "img":"/potter plants/nerfolk island pine.webp"
+},{
+    "id":"17",
+    "name":"Ponytail Palm Plant",
+    "price":"$159",
+    "oldPrice":"",
+    "categories":"Potter Plants",
+    "sale":"",
+    "arrives":false,
+    "img":"/potter plants/ponytail-palm-plant.webp"
+},{
+    "id":"18",
+    "name":"Rubber tree plant",
+    "price":"$129",
+    "oldPrice":"",
+    "categories":"Potter Plants",
+    "sale":"",
+    "arrives":true,
+    "img":"/potter plants/rubber-tree-plant.webp"
+},{
+    "id":"19",
+    "name":"Schefflera actinophylla amate",
+    "price":"$189",
+    "oldPrice":"",
+    "categories":"Potter Plants",
+    "sale":"",
+    "arrives":true,
+    "img":"/potter plants/schefflera-actinophylla-amate.webp"
+},{
+    "id":"20",
+    "name":"Spider plant",
+    "price":"$99",
+    "oldPrice":"",
+    "categories":"Potter Plants",
+    "sale":"",
+    "arrives":true,
+    "img":"/potter plants/spider-plant.webp"
+},{
+    "id":"21",
+    "name":"Syngonium Podophyllum Plant",
+    "price":"$179",
+    "oldPrice":"",
+    "categories":"Potter Plants",
+    "sale":"",
+    "arrives":true,
+    "img":"/potter plants/syngonium-podophyllum-plant.webp"
+},{
+    "id":"22",
+    "name":"ZZ Plant",
+    "price":"$119",
+    "oldPrice":"",
+    "categories":"Potter Plants",
+    "sale":"",
+    "arrives":false,
+    "img":"/potter plants/zz-plant.webp"
+},{
+    "id":"23",
+    "name":"Seed Plant",
+    "price":"$49",
+    "oldPrice":"",
+    "categories":"Seeds",
+    "sale":"",
+    "arrives":false,
+    "img":"/seeds/11.webp"
+},{
+    "id":"24",
+    "name":"Crocus chrysanthus",
+    "price":"$39",
+    "oldPrice":"",
+    "categories":"Seeds",
+    "sale":"",
+    "arrives":false,
+    "img":"/seeds/25 crocus chrysanthus.webp"
+},{
+    "id":"25",
+    "name":"Crocus",
+    "price":"$29",
+    "oldPrice":"",
+    "categories":"Seeds",
+    "sale":"",
+    "arrives":false,
+    "img":"/seeds/44.webp"
+},{
+    "id":"26",
+    "name":"Altari",
+    "price":"$39",
+    "oldPrice":"",
+    "categories":"Seeds",
+    "sale":"",
+    "arrives":true,
+    "img":"/seeds/altari .webp"
+},{
+    "id":"27",
+    "name":"Amaryllis assorted",
+    "price":"$15",
+    "oldPrice":"",
+    "categories":"Seeds",
+    "sale":"",
+    "arrives":true,
+    "img":"/seeds/amaryllis assorted.webp"
+},{
+    "id":"28",
+    "name":"Anemone buibs",
+    "price":"$19",
+    "oldPrice":"",
+    "categories":"Seeds",
+    "sale":"",
+    "arrives":true,
+    "img":"/seeds/anemone bulbs.webp"
+},{
+    "id":"29",
+    "name":"Daffodil buibs",
+    "price":"$49",
+    "oldPrice":"",
+    "categories":"Seeds",
+    "sale":"",
+    "arrives":true,
+    "img":"/seeds/daffodil bulbs.webp"
+},{
+    "id":"30",
+    "name":"Itoh Peonyroots",
+    "price":"$39",
+    "oldPrice":"",
+    "categories":"Seeds",
+    "sale":"",
+    "arrives":true,
+    "img":"/seeds/itoh peonyroots.webp"
+},{
+    "id":"31",
+    "name":"Pretty Easter Candy",
+    "price":"$59",
+    "oldPrice":"",
+    "categories":"Seeds",
+    "sale":"",
+    "arrives":true,
+    "img":"/seeds/pretty easter candy bearded iris.webp"
+},{
+    "id":"32",
+    "name":"Shirley",
+    "price":"$59",
+    "oldPrice":"",
+    "categories":"Seeds",
+    "sale":"",
+    "arrives":true,
+    "img":"/seeds/shirley.webp"
+},{
+    "id":"33",
+    "name":"Tulip Barbados",
+    "price":"$69",
+    "oldPrice":"",
+    "categories":"Seeds",
+    "sale":"",
+    "arrives":true,
+    "img":"/seeds/tulip barbados.webp"
+},{
+    "id":"34",
+    "name":"Tulip Bulb",
+    "price":"$69",
+    "oldPrice":"",
+    "categories":"Seeds",
+    "sale":"",
+    "arrives":true,
+    "img":"/seeds/tulip bulb_.webp"
+},{
+    "id":"35",
+    "name":"Bambino Dwarf",
+    "price":"$159",
+    "oldPrice":"",
+    "categories":"Small Plants",
+    "sale":"",
+    "arrives":true,
+    "img":"/small/bambino-dwarf.webp"
+},{
+    "id":"36",
+    "name":"Birkin",
+    "price":"$179",
+    "oldPrice":"",
+    "categories":"Small Plants",
+    "sale":"",
+    "arrives":true,
+    "img":"/small/birkin.webp"
+},{
+    "id":"37",
+    "name":"Calathea",
+    "price":"$189",
+    "oldPrice":"",
+    "categories":"Small Plants",
+    "sale":"",
+    "arrives":false,
+    "img":"/small/calathea.webp"
+},{
+    "id":"38",
+    "name":"Ctenanthe",
+    "price":"$189",
+    "oldPrice":"",
+    "categories":"Small Plants",
+    "sale":"",
+    "arrives":true,
+    "img":"/small/ctenanthe.jpg"
+},{
+    "id":"39",
+    "name":"Tradescantia",
+    "price":"$199",
+    "oldPrice":"",
+    "categories":"Small Plants",
+    "sale":"",
+    "arrives":false,
+    "img":"/small/feeling-flirty-tradescantia.jpg"
+},{
+    "id":"40",
+    "name":"Hawaiian Pothos",
+    "price":"$179",
+    "oldPrice":"",
+    "categories":"Small Plants",
+    "sale":"",
+    "arrives":false,
+    "img":"/small/hawaiian-pothos.jpg"
+},{
+    "id":"41",
+    "name":"Haworthia",
+    "price":"$119",
+    "oldPrice":"$129",
+    "categories":"Small Plants",
+    "sale":"9% OFF",
+    "arrives":true,
+    "img":"/small/haworthia.jpg"
+},{
+    "id":"42",
+    "name":"Davana Blue Star",
+    "price":"$129",
+    "oldPrice":"",
+    "categories":"Small Plants",
+    "sale":"",
+    "arrives":true,
+    "img":"/small/living-lace-davana-blue-star.webp"
+},{
+    "id":"43",
+    "name":"Watermalon Peperomia",
+    "price":"$179",
+    "oldPrice":"",
+    "categories":"Small Plants",
+    "sale":"",
+    "arrives":false,
+    "img":"/small/watermelon-peperomia.jpg"
+},{
+    "id":"44",
+    "name":"White Butterfly",
+    "price":"$119",
+    "oldPrice":"$139",
+    "categories":"Small Plants",
+    "sale":"12% OFF",
+    "arrives":false,
+    "img":"/small/white-butterfly.jpg"
+},{
+    "id":"45",
+    "name":"Actiflora",
+    "price":"$89",
+    "oldPrice":"",
+    "categories":"Trerrariums",
+    "sale":"",
+    "arrives":false,
+    "img":"/trerrariums/actiflora.jpg"
+},{
+    "id":"46",
+    "name":"Alluminium",
+    "price":"$139",
+    "oldPrice":"",
+    "categories":"Trerrariums",
+    "sale":"",
+    "arrives":false,
+    "img":"/trerrariums/alluminium.webp"
+},{
+    "id":"47",
+    "name":"Baby Tears Plant",
+    "price":"$149",
+    "oldPrice":"",
+    "categories":"Trerrariums",
+    "sale":"",
+    "arrives":true,
+    "img":"/trerrariums/baby-tears-plant.webp"
+},{
+    "id":"48",
+    "name":"Boxwood Shrub",
+    "price":"$159",
+    "oldPrice":"",
+    "categories":"Trerrariums",
+    "sale":"",
+    "arrives":false,
+    "img":"/trerrariums/boxwood-shrub.jpg"
+},{
+    "id":"49",
+    "name":"Button Fern",
+    "price":"$169",
+    "oldPrice":"",
+    "categories":"Trerrariums",
+    "sale":"",
+    "arrives":false,
+    "img":"/trerrariums/button-fern.webp"
+},{
+    "id":"50",
+    "name":"Arborescens",
+    "price":"$179",
+    "oldPrice":"",
+    "categories":"Trerrariums",
+    "sale":"",
+    "arrives":false,
+    "img":"/trerrariums/arborescens.jpg"
+},{
+    "id":"51",
+    "name":"Foliage",
+    "price":"$189",
+    "oldPrice":"",
+    "categories":"Trerrariums",
+    "sale":"",
+    "arrives":false,
+    "img":"/trerrariums/foliage.jpg"
+},{
+    "id":"52",
+    "name":"Gaillardia",
+    "price":"$149",
+    "oldPrice":"",
+    "categories":"Trerrariums",
+    "sale":"",
+    "arrives":false,
+    "img":"/trerrariums/gaillardia.jpg"
+},{
+    "id":"53",
+    "name":"Grow Maranta",
+    "price":"$159",
+    "oldPrice":"",
+    "categories":"Trerrariums",
+    "sale":"",
+    "arrives":false,
+    "img":"/trerrariums/grow-maranta.webp"
+},{
+    "id":"54",
+    "name":"Hakonechloa",
+    "price":"$159",
+    "oldPrice":"",
+    "categories":"Trerrariums",
+    "sale":"",
+    "arrives":false,
+    "img":"/trerrariums/hakonechloa.jpg"
+},{
+    "id":"55",
+    "name":"Indoors",
+    "price":"$166",
+    "oldPrice":"",
+    "categories":"Trerrariums",
+    "sale":"",
+    "arrives":false,
+    "img":"/trerrariums/indoors.webp"
+},{
+    "id":"56",
+    "name":"Lilly",
+    "price":"$219",
+    "oldPrice":"",
+    "categories":"Trerrariums",
+    "sale":"",
+    "arrives":false,
+    "img":"/trerrariums/lily.jpg"
+},{
+    "id":"57",
+    "name":"Petunia",
+    "price":"$199",
+    "oldPrice":"",
+    "categories":"Trerrariums",
+    "sale":"",
+    "arrives":false,
+    "img":"/trerrariums/petunia.jpg"
+},{
+    "id":"58",
+    "name":"Rubber Tree",
+    "price":"$119",
+    "oldPrice":"",
+    "categories":"Big Plants",
+    "sale":"",
+    "arrives":true,
+    "img":"/big/-large-rubber-tree.webp"
+},{
+    "id":"59",
+    "name":"Blue Couch",
+    "price":"$99",
+    "oldPrice":"",
+    "categories":"Big Plants",
+    "sale":"",
+    "arrives":true,
+    "img":"/big/blue-couch.webp"
+},{
+    "id":"60",
+    "name":"Blue Couch",
+    "price":"$99",
+    "oldPrice":"$119",
+    "categories":"Big Plants",
+    "sale":"15% OFF",
+    "arrives":false,
+    "img":"/big/blue-couch.webp"
+},{
+    "id":"61",
+    "name":"Brighterblooms",
+    "price":"$199",
+    "oldPrice":"",
+    "categories":"Big Plants",
+    "sale":"",
+    "arrives":false,
+    "img":"/big/brighterblooms.webp"
+},{
+    "id":"62",
+    "name":"Brighterblooms Blue",
+    "price":"$189",
+    "oldPrice":"",
+    "categories":"Big Plants",
+    "sale":"",
+    "arrives":false,
+    "img":"/big/brighterblooms1.webp"
+},{
+    "id":"63",
+    "name":"Corn Plant",
+    "price":"$179",
+    "oldPrice":"",
+    "categories":"Big Plants",
+    "sale":"",
+    "arrives":false,
+    "img":"/big/corn-plant.webp"
+},{
+    "id":"64",
+    "name":"Earthandjungle",
+    "price":"$149",
+    "oldPrice":"",
+    "categories":"Big Plants",
+    "sale":"",
+    "arrives":true,
+    "img":"/big/earthandjungle.webp"
+},{
+    "id":"65",
+    "name":"Green Plant Pot",
+    "price":"$129",
+    "oldPrice":"$149",
+    "categories":"Big Plants",
+    "sale":"15% OFF",
+    "arrives":false,
+    "img":"/big/green-plant-pot.webp"
+},{
+    "id":"66",
+    "name":"Monstera Deliciosa",
+    "price":"$179",
+    "oldPrice":"",
+    "categories":"Big Plants",
+    "sale":"",
+    "arrives":false,
+    "img":"/big/monstera-deliciosa.webp"
+},{
+    "id":"67",
+    "name":"Person Holding",
+    "price":"$199",
+    "oldPrice":"",
+    "categories":"Big Plants",
+    "sale":"",
+    "arrives":false,
+    "img":"/big/person-holding.webp"
+},{
+    "id":"68",
+    "name":"Westelm Huge",
+    "price":"$199",
+    "oldPrice":"",
+    "categories":"Big Plants",
+    "sale":"",
+    "arrives":false,
+    "img":"/big/westelm-huge-houseplants.webp"
+},{
+    "id":"69",
+    "name":"Yellow-pot",
+    "price":"$229",
+    "oldPrice":"$250",
+    "categories":"Big Plants",
+    "sale":"20% OFF",
+    "arrives":false,
+    "img":"/big/yellow-pot.webp"
+},{
+    "id":"70",
+    "name":"Yucca",
+    "price":"$179",
+    "oldPrice":"",
+    "categories":"Big Plants",
+    "sale":"",
+    "arrives":false,
+    "img":"/big/yucca.webp"
+},{
+    "id":"71",
+    "name":"Aeonium Kiwi Pink",
+    "price":"$169",
+    "oldPrice":"",
+    "categories":"Asucculents",
+    "sale":"",
+    "arrives":false,
+    "img":"/accul/aeonium-kiwi-pink.webp"
+},{
+    "id":"72",
+    "name":"Agave Blue",
+    "price":"$119",
+    "oldPrice":"",
+    "categories":"Asucculents",
+    "sale":"",
+    "arrives":true,
+    "img":"/accul/agave-blue.webp"
+},{
+    "id":"73",
+    "name":"Brevifolia",
+    "price":"$129",
+    "oldPrice":"",
+    "categories":"Asucculents",
+    "sale":"",
+    "arrives":false,
+    "img":"/accul/brevifolia.webp"
+},{
+    "id":"74",
+    "name":"Chalksticks",
+    "price":"$133",
+    "oldPrice":"",
+    "categories":"Asucculents",
+    "sale":"",
+    "arrives":false,
+    "img":"/accul/chalksticks.webp"
+},{
+    "id":"75",
+    "name":"Crassula Varieties",
+    "price":"$139",
+    "oldPrice":"",
+    "categories":"Asucculents",
+    "sale":"",
+    "arrives":true,
+    "img":"/accul/crassula varieties.webp"
+},{
+    "id":"76",
+    "name":"Fragilis Cactus",
+    "price":"$149",
+    "oldPrice":"",
+    "categories":"Asucculents",
+    "sale":"",
+    "arrives":true,
+    "img":"/accul/fragilis-cactus.jpg"
+},{
+    "id":"77",
+    "name":"Gasteria",
+    "price":"$149",
+    "oldPrice":"",
+    "categories":"Asucculents",
+    "sale":"",
+    "arrives":true,
+    "img":"/accul/gasteria-varieties.jpg"
+},{
+    "id":"78",
+    "name":"Golden Barrel Cactus",
+    "price":"$169",
+    "oldPrice":"",
+    "categories":"Asucculents",
+    "sale":"",
+    "arrives":true,
+    "img":"/accul/golden-barrel-cactus.jpg"
+},{
+    "id":"79",
+    "name":"Graptosedum Ghosty",
+    "price":"$239",
+    "oldPrice":"",
+    "categories":"Asucculents",
+    "sale":"",
+    "arrives":true,
+    "img":"/accul/graptosedum-ghosty.webp"
+},{
+    "id":"80",
+    "name":"Sempervivum",
+    "price":"$219",
+    "oldPrice":"",
+    "categories":"Asucculents",
+    "sale":"",
+    "arrives":true,
+    "img":"/accul/sempervivum.jpg"
+},{
+    "id":"81",
+    "name":"Zebra Plant",
+    "price":"$219",
+    "oldPrice":"",
+    "categories":"Asucculents",
+    "sale":"",
+    "arrives":true,
+    "img":"/accul/zebra-plant.jpg"
+},{
+    "id":"82",
+    "name":"Accesory 1",
+    "price":"$19",
+    "oldPrice":"",
+    "categories":"Accesories",
+    "sale":"",
+    "arrives":true,
+    "img":"/accesories/1_.webp"
+},{
+    "id":"83",
+    "name":"Accesory 2",
+    "price":"$15",
+    "oldPrice":"",
+    "categories":"Accesories",
+    "sale":"",
+    "arrives":true,
+    "img":"/accesories/2_.webp"
+},{
+    "id":"84",
+    "name":"Accesory 3",
+    "price":"$17",
+    "oldPrice":"",
+    "categories":"Accesories",
+    "sale":"",
+    "arrives":true,
+    "img":"/accesories/3_.webp"
+},{
+    "id":"85",
+    "name":"Accesory 4",
+    "price":"$16",
+    "oldPrice":"",
+    "categories":"Accesories",
+    "sale":"",
+    "arrives":false,
+    "img":"/accesories/4_.webp"
+},{
+    "id":"86",
+    "name":"Accesory 5",
+    "price":"$21",
+    "oldPrice":"",
+    "categories":"Accesories",
+    "sale":"",
+    "arrives":false,
+    "img":"/accesories/5_.webp"
+},{
+    "id":"87",
+    "name":"Accesory 6",
+    "price":"$25",
+    "oldPrice":"",
+    "categories":"Accesories",
+    "sale":"",
+    "arrives":false,
+    "img":"/accesories/6_.webp"
+},{
+    "id":"88",
+    "name":"Accesory 7",
+    "price":"$19",
+    "oldPrice":"",
+    "categories":"Accesories",
+    "sale":"",
+    "arrives":false,
+    "img":"/accesories/7_.webp"
+},{
+    "id":"89",
+    "name":"Accesory 8",
+    "price":"$18",
+    "oldPrice":"",
+    "categories":"Accesories",
+    "sale":"",
+    "arrives":false,
+    "img":"/accesories/8_.webp"
+},{
+    "id":"90",
+    "name":"Accesory 9",
+    "price":"$35",
+    "oldPrice":"",
+    "categories":"Accesories",
+    "sale":"",
+    "arrives":false,
+    "img":"/accesories/9_.webp"
+},{
+    "id":"91",
+    "name":"Accesory 10",
+    "price":"$39",
+    "oldPrice":"",
+    "categories":"Accesories",
+    "sale":"",
+    "arrives":false,
+    "img":"/accesories/10_.jpg"
+},{
+    "id":"92",
+    "name":"Accesory 11",
+    "price":"$34",
+    "oldPrice":"",
+    "categories":"Accesories",
+    "sale":"",
+    "arrives":true,
+    "img":"/accesories/11_.jpg"
+},{
+    "id":"93",
+    "name":"Accesory 12",
+    "price":"$24",
+    "oldPrice":"",
+    "categories":"Accesories",
+    "sale":"",
+    "arrives":false,
+    "img":"/accesories/12_.jpg"
+},{
+    "id":"94",
+    "name":"Accesory 13",
+    "price":"$32",
+    "oldPrice":"",
+    "categories":"Accesories",
+    "sale":"",
+    "arrives":false,
+    "img":"/accesories/13_.jpg"
+}
+    ]
+
+ }
+
+
+
+

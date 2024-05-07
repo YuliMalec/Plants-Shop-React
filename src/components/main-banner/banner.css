@@ -1,0 +1,255 @@
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 450px;
+    background: rgba(245, 245, 245, 0.5);
+    margin-top: 12px;
+}
+.content{
+    max-width: 573px;
+    padding-left: 43px;
+}
+.sub-title{
+    padding-top: 68px;
+    font-weight: 500;
+    line-height: 16px;
+    line-height: 14px;
+    
+    color: var(--text-color);
+    
+   
+}
+.main-title{
+color: var(--text-color);
+font-weight: 900;
+font-size: 70px;
+line-height: 70px;
+margin: 10px 0px 8px 0px;
+}
+.main-title>span{
+color: var(--green-color);
+}
+.text{
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 14px; 
+       margin-bottom: 44px;
+}
+.main-button{
+    
+    border-radius: 6px;
+    background: var(--green-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+
+}
+.main-button.main{
+    width: 140px;
+    height: 40px;
+}
+.main-button:hover{
+    background: #2f7a3e;
+}
+.img-part{
+    max-width: 518px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: self-end;
+    overflow: hidden;
+}
+.little-img{
+width: 135px;
+height: 135px;
+margin-right: -35%;
+margin-bottom: 35px;
+}
+.big-img{
+    object-fit: cover;
+    overflow: hidden;
+}
+img{
+    height: auto;
+  max-width: 100%;
+ 
+}
+@media (max-width:1024px) {
+    .content{
+        max-width: 480px;
+        padding-left: 33px;
+    }
+    .main-title{
+        font-size: 55px;
+    }
+    .img-part{
+        max-width: 480px;
+    }
+    .little-img{
+        margin-bottom: -20px;
+    }
+}
+@media (max-width:768px){
+    .banner{
+        height: 350px;
+    }
+    .text>span{
+        display: none;
+    }
+    .main-title{
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .little-img{
+        margin-bottom: -25px;
+    
+    }
+    .img-part{
+        max-width: 300px;
+    }
+    
+}
+@media (max-width:540px){
+.main-title{
+    font-size: 28px;
+    line-height: 32px;
+}
+.main-button{
+    margin-top: 20px;
+}
+.little-img{
+    margin-bottom: -45px;
+    width: 50px;
+    
+
+
+}
+.little-img>img{
+   max-width: 200%; 
+}
+}
+@media (max-width:450px){
+    .banner{
+        flex-direction: row;
+        
+        background: linear-gradient(to left, rgba(245, 245, 245, 0.5) 30%,
+        rgba(70, 163, 88, 0.1) 70%);
+        height: 200px;
+        border-radius: 10px;
+    }
+    .logo{
+        display: none;
+    }
+    .content{
+       width: 210px;
+    }
+    .main-title{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .content{
+        padding-left: 23px;
+    }
+    .text{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .img-part{
+        object-fit:cover;
+ width: 200px;
+        height: 200px;
+    }
+    
+    .sub-title{
+        font-size: 11px;
+        padding-top: 24px;
+    }
+    .little-img{
+        margin-bottom: -15px;
+        margin-left: -20px;
+     height: 80px;
+     
+     
+       
+      
+    }
+    .little-img>img{
+          max-width: 100%;
+    }
+    .big-img{
+       max-width: 153px;
+        height: 200px; 
+        
+       
+        overflow: hidden;
+       
+    }
+    .big-img>img{
+   
+
+     height:100%;
+   
+     object-fit: cover;
+    
+  
+    
+    }
+    
+    .text>span{
+        display: none;
+    }
+    .main-button{
+        background: inherit;
+        color: var(--green-color);
+        font-size: 12px;
+        margin-top: 10px;
+        width: 83px;
+        height: 16px;
+    }
+}
+@media (max-width:290px){
+.banner{
+    max-width: 260px;
+    width: 260px;
+    height: 180px;
+}
+.content{
+    width: 50%;
+    padding-left: 15px;
+}
+.main-title{
+    font-size: 18px;
+    line-height: 18px;
+}
+.text{
+    display: none;
+}
+.img-part{
+    width: 50%;
+}
+.big-img>img{
+    
+    min-width: 100%;
+  
+    
+ 
+ }
+ .little-img{
+    height: auto;
+  width:auto ;
+   margin-bottom: 20px;
+ }
+ .little-img>img{
+  object-fit: cover;
+  min-width: 100%;
+  max-width: 0; 
+}
+main{
+    width: 260px;
+}
+}

@@ -1,0 +1,168 @@
+header{
+    width: var(--width-container);
+    height: 53px;
+    font-family: var(--font-family);
+    font-weight: 300;
+   display: flex;
+   flex-direction: row;
+  justify-content: space-between;
+  height: 45px;
+  margin-top: 25px;
+  border-bottom: 3px solid rgba(245, 245, 245, 0.5);
+    
+}
+.logo{
+display:flex;
+flex-direction: row;
+height: 34.3px;
+
+}
+.logo>.img{
+width: 34.3px;
+height: 34.3px;
+
+}
+.logo>.title{
+    margin-left: 8px;
+   align-self: center;
+   font-weight: bold;
+   color: var(--green-color);
+   
+
+}
+
+.menu>.list{
+ display: grid;
+    grid-template-columns: 40px 40px 80px 40px;
+    column-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    height: 34.3px;
+}
+.menu>.list>.link{
+font-weight: 400;
+line-height:20.11px;
+color: var(--main-color);
+height: 43px;
+transition: all 0.3s ease-in 0s;
+cursor: pointer;
+
+}
+.menu>.list>.link:active{
+    border-bottom:2px solid var(--green-color);
+    font-weight: 600;
+}
+.active{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  row-gap: 30px;
+  width: 364px;
+  height: 35px;
+
+}
+
+.active>.basket{
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+   cursor: pointer;
+
+}
+.active>.search{
+    cursor: pointer;  
+}
+.active>svg{
+    width: 20px;
+    height: 20px; 
+}
+.active>.main-button{
+    width: 100px;
+    height: 35px;
+    border-radius: 6px;
+    
+    color:#fff;
+    display: flex;
+    align-items: center ;
+    justify-content: space-evenly;
+    font-weight: 500;
+    line-height: 20.11px;
+    margin-left: 30px;
+  
+} 
+ @media (max-width:991.98px) {
+    .active>.button{
+      margin-left: 15px;   
+    }
+    .active>.basket{
+        margin-left: 15px; 
+    }
+    .searchInput{
+        width: 150px;
+    }
+    .active{
+       width: 270px; 
+    }
+}
+
+@media (max-width:768px){
+    .active>.basket{
+        margin-right: 15px; 
+    }
+}
+.login{
+    font-weight: bold;
+    
+}
+.searchInput{
+  border: 1px solid rgba(200, 200, 200, 0.5);
+  background-color: rgba(245, 245, 245, 0.5);
+   border-radius: 10px;
+   height: 45px;
+   color: rgba(165, 165, 165, 1);
+   padding-left: 40px;
+   background: url('./../img/find.svg') 10px center no-repeat;
+
+}
+.mobile-button{
+    width: 45px;
+    height: 45px;
+background: linear-gradient(to right,rgba(70, 163, 88, 0.45),
+rgba(70, 163, 88, 1) );
+border-radius: 14px;
+box-shadow: 0 10px 20px 0 rgba(70, 163, 88, 0.3)  ;
+margin-left: 8px;
+
+
+}
+@media (max-width:540px) {
+    .active{
+        width: 100%;
+    }
+    .logo{
+        font-size: 14px;
+      font-weight: 400;
+    }
+    .logo>.img{
+        max-width: 30px;
+        max-height: 30px;
+    }
+    .menu{
+        display: none;
+    }
+    .active>.basket{
+        display: none;
+    }
+    .searchInput{
+        width: 313px;
+    }
+}
+@media (max-width:290px){
+    .header{
+        width: 260px;
+    }
+    .searchInput{
+        width: 190px;
+    }
+}
