@@ -7,7 +7,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import Product from './Product';
 import Sidebar from '../sidebar/Sidebar';
 import Pagination from './Pagination';
-
+import plants from '../../data/plants.json'
 import { useEffect, useState, useMemo } from 'react';
 
 
@@ -15,21 +15,20 @@ const titles = ['All Plants', 'New Arrives', 'Sale']
 const sortMenu = ['Defolt sorting','Rising price','Descending prices']
     
 function Shop(props){ 
-   
-    
+
     const limitPage = 9;
     const lastIndex = props.currentPage*limitPage;
-    const [minValue,setMinValue] = useState(39)
-    const [maxValue,setMaxValue] = useState(10000)
+    const [minValue,setMinValue] = useState(9)
+    const [maxValue,setMaxValue] = useState(500)
     const [selected,setSelected] = useState('Defolt sorting');
     const [isSelected,setIsSelected] = useState(false)
     const firstIndex = lastIndex-limitPage;  
     const totalPage= props.list.length;
   /* let listProd = props.list.slice(firstIndex,lastIndex)*/
    
-let listProd = chooseTitle(props.list)
+let listProd = sortList(props.list)
   
-let finalList = sortList(listProd).slice(firstIndex,lastIndex)
+let finalList = chooseTitle(listProd).slice(firstIndex,lastIndex)
     
     const paginate = pageNumber=>props.setCurrentPage(pageNumber)
     function selectOption(){
@@ -38,25 +37,28 @@ let finalList = sortList(listProd).slice(firstIndex,lastIndex)
         
        }
 
-       function sortList(arr){
-       
-            let result = arr;
+       function sortList(arr){ 
+        
+        let result;
+        if(selected === 'Defolt sorting'){
+             result= plants.plants.filter((el)=> el.categories === props.cat)
+        }   
       
         if(selected === 'Rising price'){
-          props.setList(props.list.sort((a,b)=>Number(a.price.slice(1))-Number(b.price.slice(1))))
+       result =   arr.sort((a,b)=>Number(a.price.slice(1))-Number(b.price.slice(1)))
         }
         if(selected === 'Descending prices'){
-        props.setList(props.list.sort((a,b)=>Number(b.price.slice(1))-Number(a.price.slice(1))))
+       result = arr.sort((a,b)=>Number(b.price.slice(1))-Number(a.price.slice(1)))
        }
-          console.log(result)
-          return result || props.list
+        
+          return result
        }
      
 
       function selectList(event){
        setSelected(event.target.innerHTML)
         setIsSelected(!isSelected) 
-        console.log(selected)
+        
     
        }  
      
@@ -88,15 +90,15 @@ let finalList = sortList(listProd).slice(firstIndex,lastIndex)
      
      useEffect(()=>{
        
-     document.querySelector('.range-track').style.left = (minValue/10000) *100 + '%';
-     document.querySelector('.range-track').style.right =100-(maxValue/10000) *100 + '%' ;
+     document.querySelector('.range-track').style.left = (minValue/500) *100 + '%';
+     document.querySelector('.range-track').style.right =100-(maxValue/500) *100 + '%' ;
      
      },[minValue,maxValue])
 
 
     return <>
     <section className="shop">
-       <Sidebar chooseProduct={props.chooseProduct}cat={props.cat}minValue={minValue}useMinRangeInput={useMinRangeInput}maxValue={maxValue}useMaxRangeInput={useMaxRangeInput}/>
+       <Sidebar list ={props.list} chooseProduct={props.chooseProduct}cat={props.cat}minValue={minValue}useMinRangeInput={useMinRangeInput}maxValue={maxValue}useMaxRangeInput={useMaxRangeInput}/>
         <article className="products-section">
 <div className='products-top'>
             <div className='products-titles'>

@@ -17,15 +17,15 @@ function Sidebar(props){
     category.map((el,ind)=>{
         return <li 
       className={props.cat===el ? "category-link choosen" : "category-link" }
-        key={ind} onClick={()=>props.chooseProduct(el)}><span>{el}</span><span>({listLength[ind]})</span></li>
+        key={ind} onClick={()=>props.chooseProduct(el)}><span>{el}</span><span>({props.list.length})</span></li>
     })
     }</ul>
     </div>
     <div className="price-range"><h3 className=" range title-sidebar">Price Range</h3>
     <div className="range-slider">
         <div className='range-track'></div>
-       <input className='min-val' type='range'onChange={(event)=>props.useMinRangeInput(event)} value={props.minValue} min={39} max={10000} />
-       <input className='max-val' type='range'onChange={(event)=>props.useMaxRangeInput(event)} value={props.maxValue} min={39} max={10000} />
+       <input className='min-val' type='range'onChange={(event)=>props.useMinRangeInput(event)} value={props.minValue} min={9} max={500} />
+       <input className='max-val' type='range'onChange={(event)=>props.useMaxRangeInput(event)} value={props.maxValue} min={9} max={500} />
        
     </div>
     <div className="price">Price:<div> $ {props.minValue} - $ {props.maxValue}</div></div>

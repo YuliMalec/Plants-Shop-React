@@ -9,7 +9,7 @@ import plants from '../../data/plants.json'
 const category= ['House Plant','Potter Plants','Seeds','Small Plants','Big Plants','Asucculents','Trerrariums','Accesories'];
 
 const titles = ['All Plants', 'New Arrives', 'Sale']
-console.log(plants.plants)
+
 function App() {
 
 
@@ -32,14 +32,13 @@ const [currentPage,setCurrentPage] = useState(1)
      setProductTitle(titles[0])
      setCat(param)
      setCurrentPage(1)
-      console.log(list)
+  
      } 
      
      useEffect(()=>{
      chooseProduct()
-      localStorage.setItem('list',JSON.stringify(list))
+   
     },[])
-  let localList =JSON.parse(localStorage.getItem('list'))
 
 function handleInput(){
   setIsHome(!isHome)
@@ -62,7 +61,7 @@ function handleInput(){
        productTitle={productTitle}
        setProductTitle={setProductTitle}
        setCurrentPage={setCurrentPage} 
-      localList ={localList}
+     
        setList={setList}
        list={list} cat={cat}
       />
