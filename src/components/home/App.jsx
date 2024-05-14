@@ -40,6 +40,8 @@ const [currentPage,setCurrentPage] = useState(1)
    
     },[])
 
+    
+
 function handleInput(){
   setIsHome(!isHome)
   setIsSearch(!isSearch)

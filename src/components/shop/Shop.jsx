@@ -22,11 +22,12 @@ function Shop(props){
     const [maxValue,setMaxValue] = useState(500)
     const [selected,setSelected] = useState('Defolt sorting');
     const [isSelected,setIsSelected] = useState(false)
+    const [isFilter,setIsFilter] = useState(false)
     const firstIndex = lastIndex-limitPage;  
     const totalPage= props.list.length;
   /* let listProd = props.list.slice(firstIndex,lastIndex)*/
-   
-let listProd = sortList(props.list)
+   let sortedList=sortList(props.list)
+let listProd = getFiltered(sortedList)
   
 let finalList = chooseTitle(listProd).slice(firstIndex,lastIndex)
     
@@ -34,6 +35,15 @@ let finalList = chooseTitle(listProd).slice(firstIndex,lastIndex)
     function selectOption(){
        setIsSelected(!isSelected) 
       
+        
+       }
+
+       function getFiltered(arr){
+        if(isFilter){
+        return arr.filter(el=>Number(el.price.slice(1))>=minValue&&Number(el.price.slice(1))<=maxValue)  
+        } else{
+          return arr
+        }
         
        }
 
@@ -98,7 +108,7 @@ let finalList = chooseTitle(listProd).slice(firstIndex,lastIndex)
 
     return <>
     <section className="shop">
-       <Sidebar list ={props.list} chooseProduct={props.chooseProduct}cat={props.cat}minValue={minValue}useMinRangeInput={useMinRangeInput}maxValue={maxValue}useMaxRangeInput={useMaxRangeInput}/>
+       <Sidebar list ={props.list} isFilter={isFilter} setIsFilter={setIsFilter}chooseProduct={props.chooseProduct}cat={props.cat}minValue={minValue}useMinRangeInput={useMinRangeInput}maxValue={maxValue}useMaxRangeInput={useMaxRangeInput}/>
         <article className="products-section">
 <div className='products-top'>
             <div className='products-titles'>

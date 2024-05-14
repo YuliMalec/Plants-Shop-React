@@ -1,15 +1,18 @@
 import '../shop/shop.css'
 
-
+import { useState, useMemo } from 'react';
 import sidebarImg from './../img/sidebar-img.jpg'
 import SuperSale from './../img/Super Sale.png'
-
+import plants from '../../data/plants.json'
 
 const category= ['House Plant','Potter Plants','Seeds','Small Plants','Big Plants','Asucculents','Trerrariums','Accesories'];
 const size = ['Small','Medium','Large'];
 const listLength = [9,12,13,10,13,11,13,13]
-
+  
 function Sidebar(props){
+    
+
+
 
     return <article className="sidebar">
     <div className="categories"><h3 className="categories-title title-sidebar">Gategories</h3>
@@ -17,7 +20,7 @@ function Sidebar(props){
     category.map((el,ind)=>{
         return <li 
       className={props.cat===el ? "category-link choosen" : "category-link" }
-        key={ind} onClick={()=>props.chooseProduct(el)}><span>{el}</span><span>({props.list.length})</span></li>
+        key={ind} onClick={()=>props.chooseProduct(el)}><span>{el}</span><span>({listLength[ind]})</span></li>
     })
     }</ul>
     </div>
@@ -29,7 +32,7 @@ function Sidebar(props){
        
     </div>
     <div className="price">Price:<div> $ {props.minValue} - $ {props.maxValue}</div></div>
-    <button className="main-button main">Filter</button>
+    <button className="main-button main" onClick={()=>props.setIsFilter(!props.isFilter)}>Filter</button>
     </div>
     <div className="size">
         <h3 className="title-sidebar">Size</h3>
