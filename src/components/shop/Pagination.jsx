@@ -10,7 +10,7 @@ function Pagination(props){
   return (<nav className="navigation">
     {
        pageNumber.map(number=>(
-       <button className={props.currentPage === number ? "nav nav-active":"nav"}onClick={()=>props.paginate(number)} key={number}>{number}</button>
+       <button className={props.value.currentPage === number ? "nav nav-active":"nav"}onClick={()=>props.paginate(number)} key={number}>{number}</button>
        ))
     }
   </nav>)

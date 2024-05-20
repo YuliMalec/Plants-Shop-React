@@ -1,7 +1,8 @@
 import './banner.css'
 import bigImg from './../img/main-big.svg';
 import littleImg from './../img/main-little.svg';
-import arrow from './../img/Arrow - Right.png'
+import arrow from './../img/Arrow - Right.png';
+
 
 function Banner({width}){
 

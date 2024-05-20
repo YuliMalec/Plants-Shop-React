@@ -7,10 +7,14 @@ import { Link } from "react-router-dom";
 /*import { Link, animateScroll as scroll } from "react-scroll";*/
 import filter from "./../img/Filter.svg"
 import find from './../img/find.svg'
+import Context from "../../hooks/Context";
+import { useContext } from "react";
 
 
+function Header(props){
 
-function Header({handleInput,isHome,isSearch,isScreenMd,width}){
+
+  const value = useContext(Context);
 
     return <header className="header">
       <div className="logo">
@@ -27,14 +31,14 @@ function Header({handleInput,isHome,isSearch,isScreenMd,width}){
         </ul>
       </div>
       <div className="active">
-        {(isHome || width <= 765 ) && <input className="searchInput"  placeholder='Find your plants' />}
-        <div className="search" onClick={()=>handleInput()}>
-        {(isSearch && width >= 768 ) && <img src={search}/>} 
+        {(value.isHome || value.width <= 765 ) && <input className="searchInput"  placeholder='Find your plants' />}
+        <div className="search" onClick={()=>value.handleInput()}>
+        {(value.isSearch && value.width >= 768 ) && <img src={search}/>} 
         </div>
         <div className="basket" >
         <SlBasket size={20} />
         </div>
-     {width <= 768 ? <button className="mobile-button"><img src={filter}/></button> : <button className="main-button"><BiLogIn  size={20} className="login"/>Login</button> }
+     {value.width <= 768 ? <button className="mobile-button"><img src={filter}/></button> : <button className="main-button"><BiLogIn  size={20} className="login"/>Login</button> }
      </div>
     </header>
 

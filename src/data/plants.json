@@ -11,7 +11,8 @@
     "categories":"House Plant",
     "sale":"",
     "arrives":false,
-    "img":"/house/image 1.png"
+    "img":"/house/image 1.png",
+    "size":"Medium"
 
 },{
  "id":"2",
@@ -21,7 +22,8 @@
     "categories":"House Plant",
     "sale":"",
     "arrives":false,
-    "img":"/house/product-21-320x320 1.png"
+    "img":"/house/product-21-320x320 1.png",
+    "size":"Medium"
 },{
     "id":"3",
     "name":"African Viollet",
@@ -30,7 +32,8 @@
     "categories":"House Plant",
     "sale":"13% OFF",
     "arrives":false,
-    "img":"/house/image 2.png"
+    "img":"/house/image 2.png",
+    "size":"Medium"
 },{
     "id":"4",
     "name":"Beach Spider Lilly",
@@ -39,7 +42,8 @@
     "categories":"House Plant",
     "sale":"",
     "arrives":true,
-    "img":"/house/01 3.png"
+    "img":"/house/01 3.png",
+    "size":"Medium"
 },{
     "id":"5",
     "name":"Blushing Bromeliad",
@@ -48,7 +52,8 @@
     "categories":"House Plant",
     "sale":"",
     "arrives":true,
-    "img":"/house/image 7.png"
+    "img":"/house/image 7.png",
+    "size":"Medium"
 },{
     "id":"6",
     "name":"Aluminum Plant",
@@ -57,7 +62,8 @@
     "categories":"House Plant",
     "sale":"",
     "arrives":true,
-    "img":"/house/image 8.png"
+    "img":"/house/image 8.png",
+    "size":"Medium"
 },{
     "id":"7",
     "name":"Birds Nest Fern",
@@ -66,7 +72,8 @@
     "categories":"House Plant",
     "sale":"",
     "arrives":false,
-    "img":"/house/image 9.png"
+    "img":"/house/image 9.png",
+    "size":"Medium"
 },{
     "id":"8",
     "name":"Broadleaf Lady Palm",
@@ -75,7 +82,8 @@
     "categories":"House Plant",
     "sale":"",
     "arrives":false,
-    "img":"/house/product-20-320x320 1.png"
+    "img":"/house/product-20-320x320 1.png",
+    "size":"Medium"
 },{
     "id":"9",
     "name":"Ghineze Evergreen",
@@ -84,7 +92,8 @@
     "categories":"House Plant",
     "sale":"",
     "arrives":false,
-    "img":"/house/image 10.png"
+    "img":"/house/image 10.png",
+    "size":"Medium"
 },{
     "id":"10",
     "name":"Ghineze Evergreen",
@@ -93,7 +102,8 @@
     "categories":"Potter Plants",
     "sale":"",
     "arrives":false,
-    "img":"/potter plants/chinese evergreen.webp"
+    "img":"/potter plants/chinese evergreen.webp",
+    "size":"Medium"
 },{
     "id":"11",
     "name":"Crape Ivy",
@@ -102,7 +112,8 @@
     "categories":"Potter Plants",
     "sale":"12% OFF",
     "arrives":false,
-    "img":"/potter plants/crape ivy.webp"
+    "img":"/potter plants/crape ivy.webp",
+    "size":"Medium"
 },{
     "id":"12",
     "name":"Dieffenbachia",
@@ -111,7 +122,8 @@
     "categories":"Potter Plants",
     "sale":"",
     "arrives":false,
-    "img":"/potter plants/dieffenbachia.webp"
+    "img":"/potter plants/dieffenbachia.webp",
+    "size":"Medium"
 },{
     "id":"13",
     "name":"Hoya wax plant",
@@ -120,7 +132,8 @@
     "categories":"Potter Plants",
     "sale":"",
     "arrives":false,
-    "img":"/potter plants/hoya-wax-plant.webp"
+    "img":"/potter plants/hoya-wax-plant.webp",
+    "size":"Medium"
 },{
     "id":"14",
     "name":"Jade Plant",
@@ -129,7 +142,8 @@
     "categories":"Potter Plant",
     "sale":"",
     "arrives":true,
-    "img":"/potter plants/jade-plant.webp"
+    "img":"/potter plants/jade-plant.webp",
+    "size":"Medium"
 },{
     "id":"15",
     "name":"Kalanchoe Blossfeldiana",
@@ -138,7 +152,8 @@
     "categories":"Potter Plants",
     "sale":"",
     "arrives":true,
-    "img":"/potter plants/kalanchoe-blossfeldiana.webp"
+    "img":"/potter plants/kalanchoe-blossfeldiana.webp",
+    "size":"Medium"
 },{
     "id":"16",
     "name":"Nerfolk Island Pine",
@@ -147,7 +162,8 @@
     "categories":"Potter Plants",
     "sale":"12% OFF",
     "arrives":false,
-    "img":"/potter plants/nerfolk island pine.webp"
+    "img":"/potter plants/nerfolk island pine.webp",
+    "size":"Medium"
 },{
     "id":"17",
     "name":"Ponytail Palm Plant",
@@ -156,7 +172,8 @@
     "categories":"Potter Plants",
     "sale":"",
     "arrives":false,
-    "img":"/potter plants/ponytail-palm-plant.webp"
+    "img":"/potter plants/ponytail-palm-plant.webp",
+    "size":"Medium"
 },{
     "id":"18",
     "name":"Rubber tree plant",
@@ -165,7 +182,8 @@
     "categories":"Potter Plants",
     "sale":"",
     "arrives":true,
-    "img":"/potter plants/rubber-tree-plant.webp"
+    "img":"/potter plants/rubber-tree-plant.webp",
+    "size":"Medium"
 },{
     "id":"19",
     "name":"Schefflera actinophylla amate",
@@ -174,7 +192,8 @@
     "categories":"Potter Plants",
     "sale":"",
     "arrives":true,
-    "img":"/potter plants/schefflera-actinophylla-amate.webp"
+    "img":"/potter plants/schefflera-actinophylla-amate.webp",
+    "size":"Medium"
 },{
     "id":"20",
     "name":"Spider plant",
@@ -183,7 +202,8 @@
     "categories":"Potter Plants",
     "sale":"",
     "arrives":true,
-    "img":"/potter plants/spider-plant.webp"
+    "img":"/potter plants/spider-plant.webp",
+    "size":"Medium"
 },{
     "id":"21",
     "name":"Syngonium Podophyllum Plant",
@@ -192,7 +212,8 @@
     "categories":"Potter Plants",
     "sale":"",
     "arrives":true,
-    "img":"/potter plants/syngonium-podophyllum-plant.webp"
+    "img":"/potter plants/syngonium-podophyllum-plant.webp",
+    "size":"Medium"
 },{
     "id":"22",
     "name":"ZZ Plant",
@@ -201,7 +222,8 @@
     "categories":"Potter Plants",
     "sale":"",
     "arrives":false,
-    "img":"/potter plants/zz-plant.webp"
+    "img":"/potter plants/zz-plant.webp",
+    "size":"Medium"
 },{
     "id":"23",
     "name":"Seed Plant",
@@ -210,7 +232,8 @@
     "categories":"Seeds",
     "sale":"",
     "arrives":false,
-    "img":"/seeds/11.webp"
+    "img":"/seeds/11.webp",
+    "size":""
 },{
     "id":"24",
     "name":"Crocus chrysanthus",
@@ -219,7 +242,8 @@
     "categories":"Seeds",
     "sale":"",
     "arrives":false,
-    "img":"/seeds/25 crocus chrysanthus.webp"
+    "img":"/seeds/25 crocus chrysanthus.webp",
+    "size":""
 },{
     "id":"25",
     "name":"Crocus",
@@ -228,7 +252,8 @@
     "categories":"Seeds",
     "sale":"",
     "arrives":false,
-    "img":"/seeds/44.webp"
+    "img":"/seeds/44.webp",
+    "size":""
 },{
     "id":"26",
     "name":"Altari",
@@ -237,7 +262,8 @@
     "categories":"Seeds",
     "sale":"",
     "arrives":true,
-    "img":"/seeds/altari .webp"
+    "img":"/seeds/altari .webp",
+    "size":""
 },{
     "id":"27",
     "name":"Amaryllis assorted",
@@ -246,7 +272,8 @@
     "categories":"Seeds",
     "sale":"",
     "arrives":true,
-    "img":"/seeds/amaryllis assorted.webp"
+    "img":"/seeds/amaryllis assorted.webp",
+    "size":""
 },{
     "id":"28",
     "name":"Anemone buibs",
@@ -255,7 +282,8 @@
     "categories":"Seeds",
     "sale":"",
     "arrives":true,
-    "img":"/seeds/anemone bulbs.webp"
+    "img":"/seeds/anemone bulbs.webp",
+    "size":""
 },{
     "id":"29",
     "name":"Daffodil buibs",
@@ -264,7 +292,8 @@
     "categories":"Seeds",
     "sale":"",
     "arrives":true,
-    "img":"/seeds/daffodil bulbs.webp"
+    "img":"/seeds/daffodil bulbs.webp",
+    "size":""
 },{
     "id":"30",
     "name":"Itoh Peonyroots",
@@ -273,7 +302,8 @@
     "categories":"Seeds",
     "sale":"",
     "arrives":true,
-    "img":"/seeds/itoh peonyroots.webp"
+    "img":"/seeds/itoh peonyroots.webp",
+    "size":""
 },{
     "id":"31",
     "name":"Pretty Easter Candy",
@@ -282,7 +312,8 @@
     "categories":"Seeds",
     "sale":"",
     "arrives":true,
-    "img":"/seeds/pretty easter candy bearded iris.webp"
+    "img":"/seeds/pretty easter candy bearded iris.webp",
+    "size":""
 },{
     "id":"32",
     "name":"Shirley",
@@ -291,7 +322,8 @@
     "categories":"Seeds",
     "sale":"",
     "arrives":true,
-    "img":"/seeds/shirley.webp"
+    "img":"/seeds/shirley.webp",
+    "size":""
 },{
     "id":"33",
     "name":"Tulip Barbados",
@@ -300,7 +332,8 @@
     "categories":"Seeds",
     "sale":"",
     "arrives":true,
-    "img":"/seeds/tulip barbados.webp"
+    "img":"/seeds/tulip barbados.webp",
+    "size":""
 },{
     "id":"34",
     "name":"Tulip Bulb",
@@ -309,7 +342,8 @@
     "categories":"Seeds",
     "sale":"",
     "arrives":true,
-    "img":"/seeds/tulip bulb_.webp"
+    "img":"/seeds/tulip bulb_.webp",
+    "size":""
 },{
     "id":"35",
     "name":"Bambino Dwarf",
@@ -318,7 +352,8 @@
     "categories":"Small Plants",
     "sale":"",
     "arrives":true,
-    "img":"/small/bambino-dwarf.webp"
+    "img":"/small/bambino-dwarf.webp",
+    "size":"Small"
 },{
     "id":"36",
     "name":"Birkin",
@@ -327,7 +362,8 @@
     "categories":"Small Plants",
     "sale":"",
     "arrives":true,
-    "img":"/small/birkin.webp"
+    "img":"/small/birkin.webp",
+    "size":"Small"
 },{
     "id":"37",
     "name":"Calathea",
@@ -336,7 +372,8 @@
     "categories":"Small Plants",
     "sale":"",
     "arrives":false,
-    "img":"/small/calathea.webp"
+    "img":"/small/calathea.webp",
+    "size":"Small"
 },{
     "id":"38",
     "name":"Ctenanthe",
@@ -345,7 +382,8 @@
     "categories":"Small Plants",
     "sale":"",
     "arrives":true,
-    "img":"/small/ctenanthe.jpg"
+    "img":"/small/ctenanthe.jpg",
+    "size":"Small"
 },{
     "id":"39",
     "name":"Tradescantia",
@@ -354,7 +392,8 @@
     "categories":"Small Plants",
     "sale":"",
     "arrives":false,
-    "img":"/small/feeling-flirty-tradescantia.jpg"
+    "img":"/small/feeling-flirty-tradescantia.jpg",
+    "size":"Small"
 },{
     "id":"40",
     "name":"Hawaiian Pothos",
@@ -363,7 +402,8 @@
     "categories":"Small Plants",
     "sale":"",
     "arrives":false,
-    "img":"/small/hawaiian-pothos.jpg"
+    "img":"/small/hawaiian-pothos.jpg",
+    "size":"Small"
 },{
     "id":"41",
     "name":"Haworthia",
@@ -372,7 +412,8 @@
     "categories":"Small Plants",
     "sale":"9% OFF",
     "arrives":true,
-    "img":"/small/haworthia.jpg"
+    "img":"/small/haworthia.jpg",
+    "size":"Small"
 },{
     "id":"42",
     "name":"Davana Blue Star",
@@ -381,7 +422,8 @@
     "categories":"Small Plants",
     "sale":"",
     "arrives":true,
-    "img":"/small/living-lace-davana-blue-star.webp"
+    "img":"/small/living-lace-davana-blue-star.webp",
+    "size":"Small"
 },{
     "id":"43",
     "name":"Watermalon Peperomia",
@@ -390,7 +432,8 @@
     "categories":"Small Plants",
     "sale":"",
     "arrives":false,
-    "img":"/small/watermelon-peperomia.jpg"
+    "img":"/small/watermelon-peperomia.jpg",
+    "size":"Small"
 },{
     "id":"44",
     "name":"White Butterfly",
@@ -399,7 +442,8 @@
     "categories":"Small Plants",
     "sale":"12% OFF",
     "arrives":false,
-    "img":"/small/white-butterfly.jpg"
+    "img":"/small/white-butterfly.jpg",
+    "size":"Small"
 },{
     "id":"45",
     "name":"Actiflora",
@@ -408,7 +452,8 @@
     "categories":"Trerrariums",
     "sale":"",
     "arrives":false,
-    "img":"/trerrariums/actiflora.jpg"
+    "img":"/trerrariums/actiflora.jpg",
+    "size":""
 },{
     "id":"46",
     "name":"Alluminium",
@@ -417,7 +462,8 @@
     "categories":"Trerrariums",
     "sale":"",
     "arrives":false,
-    "img":"/trerrariums/alluminium.webp"
+    "img":"/trerrariums/alluminium.webp",
+    "size":"Medium"
 },{
     "id":"47",
     "name":"Baby Tears Plant",
@@ -426,7 +472,8 @@
     "categories":"Trerrariums",
     "sale":"",
     "arrives":true,
-    "img":"/trerrariums/baby-tears-plant.webp"
+    "img":"/trerrariums/baby-tears-plant.webp",
+    "size":"Medium"
 },{
     "id":"48",
     "name":"Boxwood Shrub",
@@ -435,7 +482,8 @@
     "categories":"Trerrariums",
     "sale":"",
     "arrives":false,
-    "img":"/trerrariums/boxwood-shrub.jpg"
+    "img":"/trerrariums/boxwood-shrub.jpg",
+    "size":"Medium"
 },{
     "id":"49",
     "name":"Button Fern",
@@ -444,7 +492,8 @@
     "categories":"Trerrariums",
     "sale":"",
     "arrives":false,
-    "img":"/trerrariums/button-fern.webp"
+    "img":"/trerrariums/button-fern.webp",
+    "size":"Medium"
 },{
     "id":"50",
     "name":"Arborescens",
@@ -453,7 +502,8 @@
     "categories":"Trerrariums",
     "sale":"",
     "arrives":false,
-    "img":"/trerrariums/arborescens.jpg"
+    "img":"/trerrariums/arborescens.jpg",
+    "size":"Medium"
 },{
     "id":"51",
     "name":"Foliage",
@@ -462,7 +512,8 @@
     "categories":"Trerrariums",
     "sale":"",
     "arrives":false,
-    "img":"/trerrariums/foliage.jpg"
+    "img":"/trerrariums/foliage.jpg",
+    "size":"Medium"
 },{
     "id":"52",
     "name":"Gaillardia",
@@ -471,7 +522,8 @@
     "categories":"Trerrariums",
     "sale":"",
     "arrives":false,
-    "img":"/trerrariums/gaillardia.jpg"
+    "img":"/trerrariums/gaillardia.jpg",
+    "size":"Medium"
 },{
     "id":"53",
     "name":"Grow Maranta",
@@ -480,7 +532,8 @@
     "categories":"Trerrariums",
     "sale":"",
     "arrives":false,
-    "img":"/trerrariums/grow-maranta.webp"
+    "img":"/trerrariums/grow-maranta.webp",
+    "size":"Medium"
 },{
     "id":"54",
     "name":"Hakonechloa",
@@ -489,7 +542,8 @@
     "categories":"Trerrariums",
     "sale":"",
     "arrives":false,
-    "img":"/trerrariums/hakonechloa.jpg"
+    "img":"/trerrariums/hakonechloa.jpg",
+    "size":"Medium"
 },{
     "id":"55",
     "name":"Indoors",
@@ -498,7 +552,8 @@
     "categories":"Trerrariums",
     "sale":"",
     "arrives":false,
-    "img":"/trerrariums/indoors.webp"
+    "img":"/trerrariums/indoors.webp",
+    "size":"Medium"
 },{
     "id":"56",
     "name":"Lilly",
@@ -507,7 +562,8 @@
     "categories":"Trerrariums",
     "sale":"",
     "arrives":false,
-    "img":"/trerrariums/lily.jpg"
+    "img":"/trerrariums/lily.jpg",
+    "size":"Medium"
 },{
     "id":"57",
     "name":"Petunia",
@@ -516,7 +572,8 @@
     "categories":"Trerrariums",
     "sale":"",
     "arrives":false,
-    "img":"/trerrariums/petunia.jpg"
+    "img":"/trerrariums/petunia.jpg",
+    "size":"Medium"
 },{
     "id":"58",
     "name":"Rubber Tree",
@@ -525,7 +582,8 @@
     "categories":"Big Plants",
     "sale":"",
     "arrives":true,
-    "img":"/big/-large-rubber-tree.webp"
+    "img":"/big/-large-rubber-tree.webp",
+    "size":"Large"
 },{
     "id":"59",
     "name":"Blue Couch",
@@ -534,7 +592,8 @@
     "categories":"Big Plants",
     "sale":"",
     "arrives":true,
-    "img":"/big/blue-couch.webp"
+    "img":"/big/blue-couch.webp",
+    "size":"Large"
 },{
     "id":"60",
     "name":"Blue Couch",
@@ -543,7 +602,8 @@
     "categories":"Big Plants",
     "sale":"15% OFF",
     "arrives":false,
-    "img":"/big/blue-couch.webp"
+    "img":"/big/blue-couch.webp",
+    "size":"Large"
 },{
     "id":"61",
     "name":"Brighterblooms",
@@ -552,7 +612,8 @@
     "categories":"Big Plants",
     "sale":"",
     "arrives":false,
-    "img":"/big/brighterblooms.webp"
+    "img":"/big/brighterblooms.webp",
+    "size":"Large"
 },{
     "id":"62",
     "name":"Brighterblooms Blue",
@@ -561,7 +622,8 @@
     "categories":"Big Plants",
     "sale":"",
     "arrives":false,
-    "img":"/big/brighterblooms1.webp"
+    "img":"/big/brighterblooms1.webp",
+    "size":"Large"
 },{
     "id":"63",
     "name":"Corn Plant",
@@ -570,7 +632,8 @@
     "categories":"Big Plants",
     "sale":"",
     "arrives":false,
-    "img":"/big/corn-plant.webp"
+    "img":"/big/corn-plant.webp",
+    "size":"Large"
 },{
     "id":"64",
     "name":"Earthandjungle",
@@ -579,7 +642,8 @@
     "categories":"Big Plants",
     "sale":"",
     "arrives":true,
-    "img":"/big/earthandjungle.webp"
+    "img":"/big/earthandjungle.webp",
+    "size":"Large"
 },{
     "id":"65",
     "name":"Green Plant Pot",
@@ -588,7 +652,8 @@
     "categories":"Big Plants",
     "sale":"15% OFF",
     "arrives":false,
-    "img":"/big/green-plant-pot.webp"
+    "img":"/big/green-plant-pot.webp",
+    "size":"Large"
 },{
     "id":"66",
     "name":"Monstera Deliciosa",
@@ -597,7 +662,8 @@
     "categories":"Big Plants",
     "sale":"",
     "arrives":false,
-    "img":"/big/monstera-deliciosa.webp"
+    "img":"/big/monstera-deliciosa.webp",
+    "size":"Large"
 },{
     "id":"67",
     "name":"Person Holding",
@@ -606,7 +672,8 @@
     "categories":"Big Plants",
     "sale":"",
     "arrives":false,
-    "img":"/big/person-holding.webp"
+    "img":"/big/person-holding.webp",
+    "size":"Large"
 },{
     "id":"68",
     "name":"Westelm Huge",
@@ -615,7 +682,8 @@
     "categories":"Big Plants",
     "sale":"",
     "arrives":false,
-    "img":"/big/westelm-huge-houseplants.webp"
+    "img":"/big/westelm-huge-houseplants.webp",
+    "size":"Large"
 },{
     "id":"69",
     "name":"Yellow-pot",
@@ -624,7 +692,8 @@
     "categories":"Big Plants",
     "sale":"20% OFF",
     "arrives":false,
-    "img":"/big/yellow-pot.webp"
+    "img":"/big/yellow-pot.webp",
+    "size":"Large"
 },{
     "id":"70",
     "name":"Yucca",
@@ -633,7 +702,8 @@
     "categories":"Big Plants",
     "sale":"",
     "arrives":false,
-    "img":"/big/yucca.webp"
+    "img":"/big/yucca.webp",
+    "size":"Large"
 },{
     "id":"71",
     "name":"Aeonium Kiwi Pink",
@@ -642,7 +712,8 @@
     "categories":"Asucculents",
     "sale":"",
     "arrives":false,
-    "img":"/accul/aeonium-kiwi-pink.webp"
+    "img":"/accul/aeonium-kiwi-pink.webp",
+    "size":""
 },{
     "id":"72",
     "name":"Agave Blue",
@@ -651,7 +722,8 @@
     "categories":"Asucculents",
     "sale":"",
     "arrives":true,
-    "img":"/accul/agave-blue.webp"
+    "img":"/accul/agave-blue.webp",
+    "size":""
 },{
     "id":"73",
     "name":"Brevifolia",
@@ -660,7 +732,8 @@
     "categories":"Asucculents",
     "sale":"",
     "arrives":false,
-    "img":"/accul/brevifolia.webp"
+    "img":"/accul/brevifolia.webp",
+    "size":""
 },{
     "id":"74",
     "name":"Chalksticks",
@@ -669,7 +742,8 @@
     "categories":"Asucculents",
     "sale":"",
     "arrives":false,
-    "img":"/accul/chalksticks.webp"
+    "img":"/accul/chalksticks.webp",
+    "size":""
 },{
     "id":"75",
     "name":"Crassula Varieties",
@@ -678,7 +752,8 @@
     "categories":"Asucculents",
     "sale":"",
     "arrives":true,
-    "img":"/accul/crassula varieties.webp"
+    "img":"/accul/crassula varieties.webp",
+    "size":""
 },{
     "id":"76",
     "name":"Fragilis Cactus",
@@ -687,7 +762,8 @@
     "categories":"Asucculents",
     "sale":"",
     "arrives":true,
-    "img":"/accul/fragilis-cactus.jpg"
+    "img":"/accul/fragilis-cactus.jpg",
+    "size":""
 },{
     "id":"77",
     "name":"Gasteria",
@@ -696,7 +772,8 @@
     "categories":"Asucculents",
     "sale":"",
     "arrives":true,
-    "img":"/accul/gasteria-varieties.jpg"
+    "img":"/accul/gasteria-varieties.jpg",
+    "size":""
 },{
     "id":"78",
     "name":"Golden Barrel Cactus",
@@ -705,7 +782,8 @@
     "categories":"Asucculents",
     "sale":"",
     "arrives":true,
-    "img":"/accul/golden-barrel-cactus.jpg"
+    "img":"/accul/golden-barrel-cactus.jpg",
+    "size":""
 },{
     "id":"79",
     "name":"Graptosedum Ghosty",
@@ -714,7 +792,8 @@
     "categories":"Asucculents",
     "sale":"",
     "arrives":true,
-    "img":"/accul/graptosedum-ghosty.webp"
+    "img":"/accul/graptosedum-ghosty.webp",
+    "size":""
 },{
     "id":"80",
     "name":"Sempervivum",
@@ -723,7 +802,8 @@
     "categories":"Asucculents",
     "sale":"",
     "arrives":true,
-    "img":"/accul/sempervivum.jpg"
+    "img":"/accul/sempervivum.jpg",
+    "size":""
 },{
     "id":"81",
     "name":"Zebra Plant",
@@ -732,7 +812,8 @@
     "categories":"Asucculents",
     "sale":"",
     "arrives":true,
-    "img":"/accul/zebra-plant.jpg"
+    "img":"/accul/zebra-plant.jpg",
+    "size":""
 },{
     "id":"82",
     "name":"Accesory 1",
@@ -741,7 +822,8 @@
     "categories":"Accesories",
     "sale":"",
     "arrives":true,
-    "img":"/accesories/1_.webp"
+    "img":"/accesories/1_.webp",
+    "size":""
 },{
     "id":"83",
     "name":"Accesory 2",
@@ -750,7 +832,8 @@
     "categories":"Accesories",
     "sale":"",
     "arrives":true,
-    "img":"/accesories/2_.webp"
+    "img":"/accesories/2_.webp",
+    "size":""
 },{
     "id":"84",
     "name":"Accesory 3",
@@ -759,7 +842,8 @@
     "categories":"Accesories",
     "sale":"",
     "arrives":true,
-    "img":"/accesories/3_.webp"
+    "img":"/accesories/3_.webp",
+    "size":""
 },{
     "id":"85",
     "name":"Accesory 4",
@@ -768,7 +852,8 @@
     "categories":"Accesories",
     "sale":"",
     "arrives":false,
-    "img":"/accesories/4_.webp"
+    "img":"/accesories/4_.webp",
+    "size":""
 },{
     "id":"86",
     "name":"Accesory 5",
@@ -777,7 +862,8 @@
     "categories":"Accesories",
     "sale":"",
     "arrives":false,
-    "img":"/accesories/5_.webp"
+    "img":"/accesories/5_.webp",
+    "size":""
 },{
     "id":"87",
     "name":"Accesory 6",
@@ -786,7 +872,8 @@
     "categories":"Accesories",
     "sale":"",
     "arrives":false,
-    "img":"/accesories/6_.webp"
+    "img":"/accesories/6_.webp",
+    "size":""
 },{
     "id":"88",
     "name":"Accesory 7",
@@ -795,7 +882,8 @@
     "categories":"Accesories",
     "sale":"",
     "arrives":false,
-    "img":"/accesories/7_.webp"
+    "img":"/accesories/7_.webp",
+    "size":""
 },{
     "id":"89",
     "name":"Accesory 8",
@@ -804,7 +892,8 @@
     "categories":"Accesories",
     "sale":"",
     "arrives":false,
-    "img":"/accesories/8_.webp"
+    "img":"/accesories/8_.webp",
+    "size":""
 },{
     "id":"90",
     "name":"Accesory 9",
@@ -813,7 +902,8 @@
     "categories":"Accesories",
     "sale":"",
     "arrives":false,
-    "img":"/accesories/9_.webp"
+    "img":"/accesories/9_.webp",
+    "size":""
 },{
     "id":"91",
     "name":"Accesory 10",
@@ -822,7 +912,8 @@
     "categories":"Accesories",
     "sale":"",
     "arrives":false,
-    "img":"/accesories/10_.jpg"
+    "img":"/accesories/10_.jpg",
+    "size":""
 },{
     "id":"92",
     "name":"Accesory 11",
@@ -831,7 +922,8 @@
     "categories":"Accesories",
     "sale":"",
     "arrives":true,
-    "img":"/accesories/11_.jpg"
+    "img":"/accesories/11_.jpg",
+    "size":""
 },{
     "id":"93",
     "name":"Accesory 12",
@@ -840,7 +932,8 @@
     "categories":"Accesories",
     "sale":"",
     "arrives":false,
-    "img":"/accesories/12_.jpg"
+    "img":"/accesories/12_.jpg",
+    "size":""
 },{
     "id":"94",
     "name":"Accesory 13",
@@ -849,7 +942,8 @@
     "categories":"Accesories",
     "sale":"",
     "arrives":false,
-    "img":"/accesories/13_.jpg"
+    "img":"/accesories/13_.jpg",
+    "size":""
 }
     ]
 
