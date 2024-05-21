@@ -30,19 +30,29 @@ function Shop(props){
     
 
     const firstIndex = lastIndex-limitPage;  
-    const totalPage=value.isShowSize ? value.size.length : value.list.length;
+   
+    
+    let sortedList=sortList(value.list)
+  /*  if(value.isShowSize) {
+      totalPage=value.size.length
+   
+    } else{
+      totalPage= value.list.length;
+     
+    }*/
   /* let listProd = props.list.slice(firstIndex,lastIndex)*/
 
-   let sortedList=value.isShowSize ? sortList(value.size) :sortList(value.list)
+
+
 let listProd = getFiltered(sortedList)
-  console.log(value.isShowSize,sortedList)
-let finalList = chooseTitle(listProd).slice(firstIndex,lastIndex)
-    
+ let listProd2 =chooseTitle(listProd)
+let finalList = listProd2.slice(firstIndex,lastIndex)
+ let totalPage =  listProd2.length  
     const paginate = pageNumber=>value.setCurrentPage(pageNumber)
 
     function chooseSize (param){
       value.setIsShowSize(true)
-
+value.setProductTitle(titles[0])
     value.setSize( plants.plants.filter(item=>{
        return item.size===param
       }))
@@ -56,6 +66,7 @@ let finalList = chooseTitle(listProd).slice(firstIndex,lastIndex)
        }
 
        function getFiltered(arr){
+        if(value.isShowSize) arr = value.size; 
         if(isFilter){
         return arr.filter(el=>Number(el.price.slice(1))>=minValue&&Number(el.price.slice(1))<=maxValue)  
         } else{
@@ -65,6 +76,8 @@ let finalList = chooseTitle(listProd).slice(firstIndex,lastIndex)
        }
 
        function sortList(arr){ 
+        if(value.isShowSize) arr = value.size; 
+
         
         let result;
         if(selected === 'Defolt sorting'){
@@ -91,7 +104,8 @@ let finalList = chooseTitle(listProd).slice(firstIndex,lastIndex)
      
    
       function chooseTitle(arr){ 
-           
+        if(value.isShowSize) arr = value.size; 
+        
  let filteredList ;
         if(value.productTitle==='All Plants') filteredList = arr
         
@@ -104,6 +118,7 @@ let finalList = chooseTitle(listProd).slice(firstIndex,lastIndex)
          return item.sale!=='' 
         } )      
    }
+   console.log(filteredList)  
        return filteredList;
       }
 
@@ -148,9 +163,7 @@ let finalList = chooseTitle(listProd).slice(firstIndex,lastIndex)
             </div>
             </div>
              <div className='products'>
-              {value.isShowSize ? value.size.map((elem,index)=>{
-                return <Product elem={elem} index={index} key={index}/>
-              }):    
+              {
                finalList.map((elem,index)=>{
                 return <Product elem={elem} index={index} key={index}/>
               })   
