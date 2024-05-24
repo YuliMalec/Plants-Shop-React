@@ -156,8 +156,7 @@ img{
         padding-left: 23px;
     }
     .text{
-        font-size: 12px;
-        line-height: 12px;
+        display: none;
     }
     .img-part{
         object-fit:cover;
@@ -210,6 +209,7 @@ img{
         margin-top: 10px;
         width: 83px;
         height: 16px;
+        justify-content: start;
     }
 }
 @media (max-width:290px){

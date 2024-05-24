@@ -102,7 +102,7 @@ body{
     font-size: inherit;
   }
   .container{
-    width: 1251px;
+    width: var(--container-width);
     padding:0 var(--container-padding);
     margin: 0 auto;
   }

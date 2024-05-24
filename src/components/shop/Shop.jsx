@@ -18,7 +18,7 @@ function Shop(props){
 
   const value = useContext(Context)
 
-    const limitPage = 9;
+    const limitPage =value.width <= 768 ? 6 : 9;
     const lastIndex = value.currentPage*limitPage;
     const [minValue,setMinValue] = useState(9);
     const [maxValue,setMaxValue] = useState(500);
