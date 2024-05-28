@@ -24,7 +24,7 @@ const [productTitle,setProductTitle]=useState(titles[0])
 const [currentPage,setCurrentPage] = useState(1)
  const [isShowSize, setIsShowSize]=useState(false)
  const [size,setSize] = useState([]);
-
+ const[isShowSidebar,setIsShowSidebar] = useState(false)
     const url = 'https://fakestoreapi.com/products?';
 
     const chooseProduct=(param = 'House Plant')=>{
@@ -34,7 +34,7 @@ const [currentPage,setCurrentPage] = useState(1)
      setProductTitle(titles[0])
      setCat(param)
      setCurrentPage(1)
-  
+  setIsShowSidebar(!isShowSidebar)
      } 
      
      useEffect(()=>{
@@ -54,11 +54,14 @@ function handleInput(){
   width,
   isSearch,
   isScreenMd,
+  isScreenSm,
   isHome,currentPage,size,setSize,
   chooseProduct,productTitle,
   setProductTitle,
   setCurrentPage,setIsShowSize,isShowSize,
-  setList,list,cat
+  setList,list,cat,
+  setIsShowSidebar,
+isShowSidebar
 
  }
 

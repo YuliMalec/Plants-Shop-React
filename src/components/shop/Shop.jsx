@@ -10,6 +10,7 @@ import Pagination from './Pagination';
 import plants from '../../data/plants.json'
 import { useEffect, useState, useMemo,useContext } from 'react';
 import Context from '../../hooks/Context';
+import MobileMenu from './MobileMenu';
 
 const titles = ['All Plants', 'New Arrives', 'Sale']
 const sortMenu = ['Defolt sorting','Rising price','Descending prices']
@@ -118,7 +119,7 @@ value.setProductTitle(titles[0])
          return item.sale!=='' 
         } )      
    }
-   console.log(filteredList)  
+   
        return filteredList;
       }
 
@@ -131,9 +132,11 @@ value.setProductTitle(titles[0])
      }
      
      useEffect(()=>{
-       
-     document.querySelector('.range-track').style.left = (minValue/500) *100 + '%';
+       if(value.isShowSidebar){
+        document.querySelector('.range-track').style.left = (minValue/500) *100 + '%';
      document.querySelector('.range-track').style.right =100-(maxValue/500) *100 + '%' ;
+     
+       }
      
      },[minValue,maxValue])
 
@@ -141,7 +144,7 @@ value.setProductTitle(titles[0])
     return <>
     <section className="shop">
 
-       <Sidebar chooseSize={chooseSize} value={value}  isFilter={isFilter} setIsFilter={setIsFilter}minValue={minValue}useMinRangeInput={useMinRangeInput}maxValue={maxValue}useMaxRangeInput={useMaxRangeInput}/>
+     {value.isShowSidebar && <Sidebar chooseSize={chooseSize} value={value}  isFilter={isFilter} setIsFilter={setIsFilter}minValue={minValue}useMinRangeInput={useMinRangeInput}maxValue={maxValue}useMaxRangeInput={useMaxRangeInput}/>}
         <article className="products-section">
 <div className='products-top'>
             <div className='products-titles'>
@@ -172,7 +175,10 @@ value.setProductTitle(titles[0])
         </article>
      
             <Pagination value={value} paginate={paginate} limitPage={limitPage} totalPage={totalPage}/>
-
+{value.width < 414 && <MobileMenu 
+setIsShowSidebar={value.setIsShowSidebar}
+isShowSidebar={value.isShowSidebar}
+/>}
     </section>
     </>
 }
