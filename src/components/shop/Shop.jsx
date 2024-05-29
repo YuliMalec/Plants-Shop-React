@@ -132,11 +132,11 @@ value.setProductTitle(titles[0])
      }
      
      useEffect(()=>{
-       if(value.isShowSidebar){
+      
         document.querySelector('.range-track').style.left = (minValue/500) *100 + '%';
      document.querySelector('.range-track').style.right =100-(maxValue/500) *100 + '%' ;
      
-       }
+       
      
      },[minValue,maxValue])
 
@@ -144,7 +144,7 @@ value.setProductTitle(titles[0])
     return <>
     <section className="shop">
 
-     {value.isShowSidebar && <Sidebar chooseSize={chooseSize} value={value}  isFilter={isFilter} setIsFilter={setIsFilter}minValue={minValue}useMinRangeInput={useMinRangeInput}maxValue={maxValue}useMaxRangeInput={useMaxRangeInput}/>}
+     {value.width > 414 && <Sidebar chooseSize={chooseSize} value={value}  isFilter={isFilter} setIsFilter={setIsFilter}minValue={minValue}useMinRangeInput={useMinRangeInput}maxValue={maxValue}useMaxRangeInput={useMaxRangeInput}/>}
         <article className="products-section">
 <div className='products-top'>
             <div className='products-titles'>
@@ -178,6 +178,11 @@ value.setProductTitle(titles[0])
 {value.width < 414 && <MobileMenu 
 setIsShowSidebar={value.setIsShowSidebar}
 isShowSidebar={value.isShowSidebar}
+cat={value.cat} value={value}
+chooseSize={chooseSize}  isFilter={isFilter} 
+setIsFilter={setIsFilter}minValue={minValue}
+useMinRangeInput={useMinRangeInput}
+maxValue={maxValue}useMaxRangeInput={useMaxRangeInput}
 />}
     </section>
     </>

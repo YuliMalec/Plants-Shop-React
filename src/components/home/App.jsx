@@ -6,7 +6,7 @@ import { useResize } from '../../hooks/use-resize';
 import Shop from '../shop/Shop';
 import '../../index.css'
 import plants from '../../data/plants.json'
-
+import MaskGroup from '../maskGroup/MaskGroup';
 
 const category= ['House Plant','Potter Plants','Seeds','Small Plants','Big Plants','Asucculents','Trerrariums','Accesories'];
 
@@ -34,7 +34,10 @@ const [currentPage,setCurrentPage] = useState(1)
      setProductTitle(titles[0])
      setCat(param)
      setCurrentPage(1)
-  setIsShowSidebar(!isShowSidebar)
+     if(isShowSidebar){
+       setIsShowSidebar(!isShowSidebar)
+     }
+ 
      } 
      
      useEffect(()=>{
@@ -74,7 +77,7 @@ isShowSidebar
       <Banner width={width}/>
       
       <Shop/>
-     
+     <MaskGroup/>
      </main>
     </div>
     </Context.Provider>
