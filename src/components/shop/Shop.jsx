@@ -19,7 +19,7 @@ function Shop(props){
 
   const value = useContext(Context)
 
-    const limitPage =value.width <= 768 ? 6 : 9;
+    const limitPage =value.width <= 911 ? 8  : 9 ;
     const lastIndex = value.currentPage*limitPage;
     const [minValue,setMinValue] = useState(9);
     const [maxValue,setMaxValue] = useState(500);
@@ -144,7 +144,7 @@ value.setProductTitle(titles[0])
     return <>
     <section className="shop">
 
-     {value.width > 414 && <Sidebar chooseSize={chooseSize} value={value}  isFilter={isFilter} setIsFilter={setIsFilter}minValue={minValue}useMinRangeInput={useMinRangeInput}maxValue={maxValue}useMaxRangeInput={useMaxRangeInput}/>}
+     {value.width > 431 && <Sidebar chooseSize={chooseSize} value={value}  isFilter={isFilter} setIsFilter={setIsFilter}minValue={minValue}useMinRangeInput={useMinRangeInput}maxValue={maxValue}useMaxRangeInput={useMaxRangeInput}/>}
         <article className="products-section">
 <div className='products-top'>
             <div className='products-titles'>
@@ -175,7 +175,7 @@ value.setProductTitle(titles[0])
         </article>
      
             <Pagination value={value} paginate={paginate} limitPage={limitPage} totalPage={totalPage}/>
-{value.width < 414 && <MobileMenu 
+{value.width < 431 && <MobileMenu 
 setIsShowSidebar={value.setIsShowSidebar}
 isShowSidebar={value.isShowSidebar}
 cat={value.cat} value={value}

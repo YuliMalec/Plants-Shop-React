@@ -7,6 +7,7 @@ import Shop from '../shop/Shop';
 import '../../index.css'
 import plants from '../../data/plants.json'
 import MaskGroup from '../maskGroup/MaskGroup';
+import BlogPost from '../blogPost/BlogPost';
 
 const category= ['House Plant','Potter Plants','Seeds','Small Plants','Big Plants','Asucculents','Trerrariums','Accesories'];
 
@@ -78,6 +79,7 @@ isShowSidebar
       
       <Shop/>
      <MaskGroup/>
+     <BlogPost/>
      </main>
     </div>
     </Context.Provider>

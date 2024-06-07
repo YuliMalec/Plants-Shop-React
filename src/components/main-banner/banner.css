@@ -49,10 +49,7 @@ color: var(--green-color);
     color: #fff;
 
 }
-.main-button.main{
-    width: 140px;
-    height: 40px;
-}
+
 .main-button:hover{
     background: #2f7a3e;
 }
@@ -78,6 +75,9 @@ img{
     height: auto;
   max-width: 100%;
  
+}   .main-button.main{
+    width: 140px;
+    height: 40px;
 }
 @media (max-width:1024px) {
     .content{
@@ -93,6 +93,7 @@ img{
     .little-img{
         margin-bottom: -20px;
     }
+ 
 }
 @media (max-width:768px){
     .banner{
@@ -119,8 +120,10 @@ img{
     font-size: 28px;
     line-height: 32px;
 }
-.main-button{
+.main-button.main{
     margin-top: 20px;
+    width: 100px;
+
 }
 .little-img{
     margin-bottom: -45px;
