@@ -1,7 +1,8 @@
 import SingleBlog from "./SingleBlog";
+import './blog.css'
 
 const blogObj = [
-    { img:'./../blog/01.jpg',
+    { img:'/../../blog/01.jpg',
     data:'September 12  I Read in 6 minutes',
    title:'Cactus & Succulent Care Tips',
     text:'Cacti are succulents are easy care plants for any home or patio. '
@@ -29,11 +30,13 @@ function BlogPost(){
 
     return <>
     <article className="blog-post">
-
-      {blogObj.map(item=>{
-        return <SingleBlog img={item.img} data={item.data} title={item.title} text={item.text}/>
+      <h3 className="blogs-title">Our Blog Posts</h3>
+      <div className="blog-sub-title">We are an online plant shop offering a wide range of cheap and trendy plants. </div>
+      <div className="blogs">
+      {blogObj.map((item,index)=>{
+        return <SingleBlog key={index} img={item.img} data={item.data} title={item.title} text={item.text}/>
       })}  
-        
+        </div>
     </article>
     </>
 }

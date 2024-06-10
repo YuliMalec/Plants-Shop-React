@@ -8,6 +8,7 @@ import '../../index.css'
 import plants from '../../data/plants.json'
 import MaskGroup from '../maskGroup/MaskGroup';
 import BlogPost from '../blogPost/BlogPost';
+import Footer from '../footer/Footer';
 
 const category= ['House Plant','Potter Plants','Seeds','Small Plants','Big Plants','Asucculents','Trerrariums','Accesories'];
 
@@ -81,6 +82,7 @@ isShowSidebar
      <MaskGroup/>
      <BlogPost/>
      </main>
+     <Footer/>
     </div>
     </Context.Provider>
   )
