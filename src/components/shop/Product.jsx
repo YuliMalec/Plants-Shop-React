@@ -5,7 +5,7 @@ import { CiShoppingCart } from "react-icons/ci";
 import { GrFavorite } from "react-icons/gr";
 
 function Product({elem,index}){
-    return <><Link className='product' key={index}>
+    return <><Link className='product' key={index} to={'/'}>
     <div className='product'>
 
    

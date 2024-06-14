@@ -16,20 +16,33 @@ function Footer(){
     <section className="footer">
       <div className='garden-email'>
         <div className='garden-item'>
-          <div className='garden-img'></div>
+          <div className='garden-img part'>
+          <div className='garden-img-01'>
+            <img src='/public/footer icons/Frame 02.png'/>
+            </div>
+             <div className='garden-img-02'>
+            <img src='/public/footer icons/Frame 01.png'/>
+           </div>
+         </div>
           <div className='garden-title'>Garden Care</div>
           <div className='garden-text'>We are an online plant shop offering a wide range of cheap and trendy plants.</div>
         </div>
+       
         <div className='garden-item'>
-          <div className='garden-img'></div>
+          <div className='garden-img'>
+          <img src='/public/footer icons/Group 03.png'/>
+          </div>
           <div className='garden-title'>Plant Renovation</div>
           <div className='garden-text'>We are an online plant shop offering a wide range of cheap and trendy plants.</div>
         </div>
         <div className='garden-item'>
-          <div className='garden-img'></div>
+          <div className='garden-img'>
+          <img src='/public/footer icons/frame 4.png'/>
+          </div>
           <div className='garden-title'>Watering Graden</div>
           <div className='garden-text'>We are an online plant shop offering a wide range of cheap and trendy plants.</div>
         </div>
+       
         <div className='email-letter'>
             <div className='email-title'>Would you like to join newsletters?</div>
             <form className='form'>
@@ -39,22 +52,23 @@ function Footer(){
             <div className='email-text'>We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours! </div>
         </div>
       </div>
+     
       <div className='logo-sect'>
       <div className="img">
        <img  src={logo}/>
        <div className="title">GREENSHOP</div>
        </div>
       <div className='adress'>
-        <div className='adress-icon'><GoLocation /></div>
+        <div className='adress-icon'><GoLocation size={20} fill='hsl(132, 40%, 46%)'/></div>
         <div className='adress-text'>70 West Buckingham Ave.
 Farmingdale, NY 11735</div>
       </div>
       <div className='email-adress'>
-         <div className='email-icon'><MdOutlineMail /></div>
+         <div className='email-icon'><MdOutlineMail size={20} fill='hsl(132, 40%, 46%)'/></div>
         <div className='email-text'>contact@greenshop.com</div>
         </div>
       <div className='phone'>
-      <div className='phone-icon'><FaPhoneVolume /></div>
+      <div className='phone-icon'><FaPhoneVolume size={20} fill='hsl(132, 40%, 46%)'/></div>
         <div className='phone-text'>+88 01911 717 490</div>
       </div>
      </div>
@@ -85,17 +99,17 @@ Farmingdale, NY 11735</div>
         </div>
         <div className='navig-links'>
             <div className='navig-group'>
-            <div className='navig-title'>Social Media</div>
+            <div className='nav-title'>Social Media</div>
             <div className='navig-icons'>
-                <span className='icon'><FaFacebookF /></span>
-                <span className='icon'><FaInstagram /></span>
-                <span className='icon'><FaTwitter /></span>
-                <span className='icon'><FaLinkedinIn /></span>
-                <span className='icon'><MdCameraAlt /></span>
+                <span className='icon'><FaFacebookF size={20} fill='hsl(132, 40%, 46%)'/></span>
+                <span className='icon'><FaInstagram size={20} fill='hsl(132, 40%, 46%)'/></span>
+                <span className='icon'><FaTwitter size={20} fill='hsl(132, 40%, 46%)'/></span>
+                <span className='icon'><FaLinkedinIn size={20} fill='hsl(132, 40%, 46%)'/></span>
+                <span className='icon'><MdCameraAlt size={20} fill='hsl(132, 40%, 46%)'/></span>
             </div>
             </div>
             <div className='navig-group'>
-            <div className='navig-title'>We accept</div>
+            <div className='nav-title'>We accept</div>
             <div className='navig-icons'>
                 <img src='../../footer icons/paypall.png'/>
             </div>

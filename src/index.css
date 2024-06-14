@@ -12,7 +12,7 @@ body{
   --container-padding: 20px;
   --container-width: var(--max-width-container) + var(--container-padding);
   --main-color:#3D3D3D;
-  --green-color:#46A358;
+  --green-color:hsl(132, 40%, 46%);
   --gray-color:#727272;
   --font-family:'Cera Pro';
   --text-color:rgba(61, 61, 61, 1)

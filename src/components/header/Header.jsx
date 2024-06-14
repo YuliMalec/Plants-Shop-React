@@ -36,7 +36,8 @@ function Header(props){
         {(value.isSearch && value.width >= 768 ) && <img src={search}/>} 
         </div>
         <div className="basket" >
-        <SlBasket size={20} />
+          <Link to={'/card'}>
+        <SlBasket size={20} /></Link>
         </div>
      {value.width <= 768 ? <button className="mobile-button"><img src={filter}/></button> : <button className="main-button"><BiLogIn  size={20} className="login"/>Login</button> }
      </div>

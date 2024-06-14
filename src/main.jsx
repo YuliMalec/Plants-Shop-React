@@ -9,16 +9,21 @@ import ErrorPage from "./error-page";
 import App from './components/home/App'
 import './index.css'
 import Shop from './components/shop/Shop';
-
+import Card from './components/card/Card';
 const router = createBrowserRouter([
   {
     path: "/",
     element:<App/>,
      },
       {
-        path:"/shop",
-        element:<Shop/>,
-      }
+        path:"/card",
+        element:<Card/>,
+      },
+      {
+       
+        element:<ErrorPage/>,
+      },
+
     
    
     

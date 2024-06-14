@@ -3,7 +3,7 @@ import './shop.css';
 
 
 import { IoIosArrowDown } from "react-icons/io";
-
+import { Link } from 'react-router-dom';
 import Product from './Product';
 import Sidebar from '../sidebar/Sidebar';
 import Pagination from './Pagination';
@@ -11,6 +11,7 @@ import plants from '../../data/plants.json'
 import { useEffect, useState, useMemo,useContext } from 'react';
 import Context from '../../hooks/Context';
 import MobileMenu from './MobileMenu';
+import SingleProduct from './SingleProduct';
 
 const titles = ['All Plants', 'New Arrives', 'Sale']
 const sortMenu = ['Defolt sorting','Rising price','Descending prices']
@@ -169,6 +170,7 @@ value.setProductTitle(titles[0])
               {
                finalList.map((elem,index)=>{
                 return <Product elem={elem} index={index} key={index}/>
+                 
               })   
                  }
              </div>
