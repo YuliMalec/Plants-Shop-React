@@ -27,6 +27,7 @@ const [currentPage,setCurrentPage] = useState(1)
  const [isShowSize, setIsShowSize]=useState(false)
  const [size,setSize] = useState([]);
  const[isShowSidebar,setIsShowSidebar] = useState(false)
+ const [prod,setProd]=useState(1)
     const url = 'https://fakestoreapi.com/products?';
 
     const chooseProduct=(param = 'House Plant')=>{
@@ -66,7 +67,7 @@ function handleInput(){
   setCurrentPage,setIsShowSize,isShowSize,
   setList,list,cat,
   setIsShowSidebar,
-isShowSidebar
+isShowSidebar,prod,setProd
 
  }
 

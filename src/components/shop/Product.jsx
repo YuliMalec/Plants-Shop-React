@@ -1,11 +1,12 @@
-import { Link } from 'react-router-dom';
+
 
 import { CiSearch } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 import { GrFavorite } from "react-icons/gr";
 
 function Product({elem,index}){
-    return <><Link className='product' key={index} to={'/'}>
+    
+    return <><article className='product' key={index} >
     <div className='product'>
 
    
@@ -25,6 +26,6 @@ function Product({elem,index}){
         {elem.oldPrice!==''? <div className='old-price'>{elem.oldPrice}</div>:''}
         </div>
        
-    </div></Link> </>
+    </div></article> </>
 }
 export default Product;

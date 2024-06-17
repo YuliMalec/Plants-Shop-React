@@ -11,7 +11,7 @@ import plants from '../../data/plants.json'
 import { useEffect, useState, useMemo,useContext } from 'react';
 import Context from '../../hooks/Context';
 import MobileMenu from './MobileMenu';
-import SingleProduct from './SingleProduct';
+import SingleProduct from '../single-product/SingleProduct';
 
 const titles = ['All Plants', 'New Arrives', 'Sale']
 const sortMenu = ['Defolt sorting','Rising price','Descending prices']
@@ -27,7 +27,7 @@ function Shop(props){
     const [selected,setSelected] = useState('Defolt sorting');
     const [isSelected,setIsSelected] = useState(false);
     const [isFilter,setIsFilter] = useState(false);
-
+    
     
     
 
@@ -169,7 +169,8 @@ value.setProductTitle(titles[0])
              <div className='products'>
               {
                finalList.map((elem,index)=>{
-                return <Product elem={elem} index={index} key={index}/>
+                return <Link to={`/shop/${elem.id}` }key={elem.id} onClick={(e)=>value.setProd(e,elem)}
+                ><Product elem={elem}key={elem.id} index={index} /></Link>
                  
               })   
                  }
