@@ -8,20 +8,25 @@ import { Link } from "react-router-dom";
 import filter from "./../img/Filter.svg"
 import find from './../img/find.svg'
 import Context from "../../hooks/Context";
-import { useContext } from "react";
+import { useContext,useState } from "react";
+import { useResize } from '../../hooks/use-resize';
 
 
 function Header(props){
-
-
-  const value = useContext(Context);
+  const [isHome,setIsHome] = useState(false)
+  const [isSearch,setIsSearch] = useState(true)
+  const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
+  function handleInput(){
+    setIsHome(!isHome)
+    setIsSearch(!isSearch)
+   }
 
     return <header className="header">
-      <div className="logo">
+      <Link className="logo" to={'/'}>
         <div className="img">
        <img  src={logo}/></div>
        <div className="title">GREENSHOP</div>
-      </div>
+      </Link>
       <div className="menu">
         <ul className="list">
            <li className="link">Home</li>
@@ -31,15 +36,15 @@ function Header(props){
         </ul>
       </div>
       <div className="active">
-        {(value.isHome || value.width <= 765 ) && <input className="searchInput"  placeholder='Find your plants' />}
-        <div className="search" onClick={()=>value.handleInput()}>
-        {(value.isSearch && value.width >= 768 ) && <img src={search}/>} 
+        {(isHome || width <= 765 ) && <input className="searchInput"  placeholder='Find your plants' />}
+        <div className="search" onClick={()=>handleInput()}>
+        {(isSearch && width >= 768 ) && <img src={search}/>} 
         </div>
         <div className="basket" >
           <Link to={'/card'}>
         <SlBasket size={20} /></Link>
         </div>
-     {value.width <= 768 ? <button className="mobile-button"><img src={filter}/></button> : <button className="main-button"><BiLogIn  size={20} className="login"/>Login</button> }
+     {width <= 768 ? <button className="mobile-button"><img src={filter}/></button> : <button className="main-button"><BiLogIn  size={20} className="login"/>Login</button> }
      </div>
     </header>
 

@@ -145,7 +145,13 @@ value.setProductTitle(titles[0])
     return <>
     <section className="shop">
 
-     {value.width > 431 && <Sidebar chooseSize={chooseSize} value={value}  isFilter={isFilter} setIsFilter={setIsFilter}minValue={minValue}useMinRangeInput={useMinRangeInput}maxValue={maxValue}useMaxRangeInput={useMaxRangeInput}/>}
+     {value.width > 431 && <Sidebar chooseSize={chooseSize} 
+     value={value}  isFilter={isFilter}
+      setIsFilter={setIsFilter}
+      minValue={minValue}useMinRangeInput={useMinRangeInput}
+      maxValue={maxValue}useMaxRangeInput={useMaxRangeInput}
+      
+      />}
         <article className="products-section">
 <div className='products-top'>
             <div className='products-titles'>

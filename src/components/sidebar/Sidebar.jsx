@@ -11,7 +11,10 @@ const listLength = [9,12,13,10,13,11,13,13]
   
 function Sidebar(props){
     
-    
+    function getFilter(){
+        props.setIsFilter(!props.isFilter)
+        props.value.setIsShowSidebar(!props.value.isShowSidebar)
+    }
   
 
     return <article className="sidebar">
@@ -32,7 +35,7 @@ function Sidebar(props){
        
     </div>
     <div className="price">Price:<div> $ {props.minValue} - $ {props.maxValue}</div></div>
-    <button className="main-button main" onClick={()=>props.setIsFilter(!props.isFilter)}>Filter</button>
+    <button className="main-button main" onClick={()=>getFilter()}>Filter</button>
     </div>
     <div className="size">
         <h3 className="title-sidebar">Size</h3>
