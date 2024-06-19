@@ -11,11 +11,17 @@ import { useState } from "react";
 function SingleProduct(){
     let params = useParams()
     const item = plants.plants.find((el)=>el.id===params.id)
-    const [isShowImg,setIsShowImg] = useState(false)
-
-    function getShowImg(e){
-    console.log(e.target)
-    setIsShowImg(!isShowImg)
+    const [showImg,setShowImg] = useState(item.subImg[0])
+  
+    function getShowImg(e,elem){
+      let string = e.target.src.slice(21)
+    
+    if(string === elem){
+       setShowImg(elem)
+    } else{
+      setShowImg(item.subImg[0])
+    }
+   
     }
     return <>
       
@@ -25,26 +31,20 @@ function SingleProduct(){
     <section className="product-view">
       <div className="product-view-image">
         <div className="vertical-imges">
-          {}
-        <div className={isShowImg?"vertical-img active":'vertical-img'}  onClick={(e)=>getShowImg(e)}>
-            <img src={item.img}/>
-        </div>
-        <div className={isShowImg?"vertical-img active":'vertical-img'} onClick={(e)=>getShowImg(e)}>
-        <img src={item.img}/>
-        </div>
-        <div className={isShowImg?"vertical-img active":'vertical-img'}onClick={(e)=>getShowImg(e)}>
-        <img src={item.img}/>
-        </div>
-        <div className={isShowImg?"vertical-img active":'vertical-img'}onClick={(e)=>getShowImg(e)}>
-        <img src={item.img}/>
-        </div>
+          {item.subImg.map((elem)=>{
+             return <div className={showImg===elem?"vertical-img active":'vertical-img'} onClick={(e)=>getShowImg(e,elem)}>
+            
+             <img src={elem} />
+             </div>
+          })}
+           
         </div>
         <div className="big-img">
           <div className="big-img-icon" >
             <img  src={search} />
           </div>
           <div className="big-img-img">
-        <img src={item.img}/></div>
+        <img src={showImg}/></div>
         </div>
       </div>
       <div className="product-view-details">

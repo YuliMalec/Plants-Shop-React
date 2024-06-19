@@ -12,6 +12,7 @@
     "sale":"",
     "arrives":false,
     "img":"/house/image 1.png",
+    "subImg":["/house/image 1.png","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 
 },{
@@ -23,6 +24,7 @@
     "sale":"",
     "arrives":false,
     "img":"/house/product-21-320x320 1.png",
+    "subImg":["/house/product-21-320x320 1.png","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"3",
@@ -33,6 +35,7 @@
     "sale":"13% OFF",
     "arrives":false,
     "img":"/house/image 2.png",
+    "subImg":["/house/image 2.png","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"4",
@@ -43,6 +46,7 @@
     "sale":"",
     "arrives":true,
     "img":"/house/01 3.png",
+    "subImg":["/house/01 3.png","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"5",
@@ -53,6 +57,7 @@
     "sale":"",
     "arrives":true,
     "img":"/house/image 7.png",
+    "subImg":["/house/image 7.png","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"6",
@@ -63,6 +68,7 @@
     "sale":"",
     "arrives":true,
     "img":"/house/image 8.png",
+    "subImg":["/house/image 8.png","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"7",
@@ -73,6 +79,7 @@
     "sale":"",
     "arrives":false,
     "img":"/house/image 9.png",
+    "subImg":["/house/image 9.png","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"8",
@@ -83,6 +90,7 @@
     "sale":"",
     "arrives":false,
     "img":"/house/product-20-320x320 1.png",
+    "subImg":["/house/product-20-320x320 1.png","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"9",
@@ -93,6 +101,7 @@
     "sale":"",
     "arrives":false,
     "img":"/house/image 10.png",
+    "subImg":["/house/image 10.png","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"10",
@@ -103,6 +112,7 @@
     "sale":"",
     "arrives":false,
     "img":"/potter plants/chinese evergreen.webp",
+    "subImg":["/potter plants/chinese evergreen.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"11",
@@ -113,6 +123,7 @@
     "sale":"12% OFF",
     "arrives":false,
     "img":"/potter plants/crape ivy.webp",
+    "subImg":["/potter plants/crape ivy.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"12",
@@ -123,6 +134,7 @@
     "sale":"",
     "arrives":false,
     "img":"/potter plants/dieffenbachia.webp",
+    "subImg":["/potter plants/dieffenbachia.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"13",
@@ -133,6 +145,7 @@
     "sale":"",
     "arrives":false,
     "img":"/potter plants/hoya-wax-plant.webp",
+    "subImg":["/potter plants/hoya-wax-plant.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"14",
@@ -143,6 +156,7 @@
     "sale":"",
     "arrives":true,
     "img":"/potter plants/jade-plant.webp",
+    "subImg":["/potter plants/jade-plant.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"15",
@@ -153,6 +167,7 @@
     "sale":"",
     "arrives":true,
     "img":"/potter plants/kalanchoe-blossfeldiana.webp",
+    "subImg":["/potter plants/kalanchoe-blossfeldiana.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"16",
@@ -163,6 +178,7 @@
     "sale":"12% OFF",
     "arrives":false,
     "img":"/potter plants/nerfolk island pine.webp",
+    "subImg":["/potter plants/nerfolk island pine.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"17",
@@ -173,6 +189,7 @@
     "sale":"",
     "arrives":false,
     "img":"/potter plants/ponytail-palm-plant.webp",
+    "subImg":["/potter plants/ponytail-palm-plant.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"18",
@@ -183,6 +200,7 @@
     "sale":"",
     "arrives":true,
     "img":"/potter plants/rubber-tree-plant.webp",
+    "subImg":["/potter plants/rubber-tree-plant.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"19",
@@ -193,6 +211,7 @@
     "sale":"",
     "arrives":true,
     "img":"/potter plants/schefflera-actinophylla-amate.webp",
+    "subImg":["/potter plants/schefflera-actinophylla-amate.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"20",
@@ -203,6 +222,7 @@
     "sale":"",
     "arrives":true,
     "img":"/potter plants/spider-plant.webp",
+    "subImg":["/potter plants/spider-plant.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"21",
@@ -213,6 +233,7 @@
     "sale":"",
     "arrives":true,
     "img":"/potter plants/syngonium-podophyllum-plant.webp",
+    "subImg":["/potter plants/syngonium-podophyllum-plant.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"22",
@@ -223,6 +244,7 @@
     "sale":"",
     "arrives":false,
     "img":"/potter plants/zz-plant.webp",
+    "subImg":["/potter plants/zz-plant.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"23",
@@ -233,6 +255,7 @@
     "sale":"",
     "arrives":false,
     "img":"/seeds/11.webp",
+    "subImg":["/seeds/11.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"24",
@@ -243,6 +266,7 @@
     "sale":"",
     "arrives":false,
     "img":"/seeds/25 crocus chrysanthus.webp",
+    "subImg":["/seeds/25 crocus chrysanthus.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"25",
@@ -253,6 +277,7 @@
     "sale":"",
     "arrives":false,
     "img":"/seeds/44.webp",
+    "subImg":["/seeds/44.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"26",
@@ -263,6 +288,7 @@
     "sale":"",
     "arrives":true,
     "img":"/seeds/altari .webp",
+    "subImg":["/seeds/altari .webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"27",
@@ -273,6 +299,7 @@
     "sale":"",
     "arrives":true,
     "img":"/seeds/amaryllis assorted.webp",
+    "subImg":["/seeds/amaryllis assorted.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"28",
@@ -283,6 +310,7 @@
     "sale":"",
     "arrives":true,
     "img":"/seeds/anemone bulbs.webp",
+    "subImg":["/seeds/anemone bulbs.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"29",
@@ -293,6 +321,7 @@
     "sale":"",
     "arrives":true,
     "img":"/seeds/daffodil bulbs.webp",
+    "subImg":["/seeds/daffodil bulbs.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"30",
@@ -303,6 +332,7 @@
     "sale":"",
     "arrives":true,
     "img":"/seeds/itoh peonyroots.webp",
+    "subImg":["/seeds/itoh peonyroots.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"31",
@@ -313,6 +343,7 @@
     "sale":"",
     "arrives":true,
     "img":"/seeds/pretty easter candy bearded iris.webp",
+    "subImg":["/seeds/pretty easter candy bearded iris.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"32",
@@ -323,6 +354,7 @@
     "sale":"",
     "arrives":true,
     "img":"/seeds/shirley.webp",
+    "subImg":["/seeds/shirley.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"33",
@@ -333,6 +365,7 @@
     "sale":"",
     "arrives":true,
     "img":"/seeds/tulip barbados.webp",
+    "subImg":["/seeds/tulip barbados.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"34",
@@ -343,6 +376,7 @@
     "sale":"",
     "arrives":true,
     "img":"/seeds/tulip bulb_.webp",
+    "subImg":["/seeds/tulip bulb_.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"35",
@@ -353,6 +387,7 @@
     "sale":"",
     "arrives":true,
     "img":"/small/bambino-dwarf.webp",
+    "subImg":["/small/bambino-dwarf.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Small"
 },{
     "id":"36",
@@ -363,6 +398,7 @@
     "sale":"",
     "arrives":true,
     "img":"/small/birkin.webp",
+    "subImg":["/small/birkin.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Small"
 },{
     "id":"37",
@@ -373,6 +409,7 @@
     "sale":"",
     "arrives":false,
     "img":"/small/calathea.webp",
+    "subImg":["/small/calathea.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Small"
 },{
     "id":"38",
@@ -383,6 +420,7 @@
     "sale":"",
     "arrives":true,
     "img":"/small/ctenanthe.jpg",
+    "subImg":["/small/ctenanthe.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Small"
 },{
     "id":"39",
@@ -393,6 +431,7 @@
     "sale":"",
     "arrives":false,
     "img":"/small/feeling-flirty-tradescantia.jpg",
+    "subImg":["/small/feeling-flirty-tradescantia.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Small"
 },{
     "id":"40",
@@ -403,6 +442,7 @@
     "sale":"",
     "arrives":false,
     "img":"/small/hawaiian-pothos.jpg",
+    "subImg":["/small/hawaiian-pothos.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Small"
 },{
     "id":"41",
@@ -413,6 +453,7 @@
     "sale":"9% OFF",
     "arrives":true,
     "img":"/small/haworthia.jpg",
+    "subImg":["/small/haworthia.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Small"
 },{
     "id":"42",
@@ -423,6 +464,7 @@
     "sale":"",
     "arrives":true,
     "img":"/small/living-lace-davana-blue-star.webp",
+    "subImg":["/small/living-lace-davana-blue-star.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Small"
 },{
     "id":"43",
@@ -433,6 +475,7 @@
     "sale":"",
     "arrives":false,
     "img":"/small/watermelon-peperomia.jpg",
+    "subImg":["/small/watermelon-peperomia.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Small"
 },{
     "id":"44",
@@ -443,6 +486,7 @@
     "sale":"12% OFF",
     "arrives":false,
     "img":"/small/white-butterfly.jpg",
+    "subImg":["/small/white-butterfly.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Small"
 },{
     "id":"45",
@@ -453,6 +497,7 @@
     "sale":"",
     "arrives":false,
     "img":"/trerrariums/actiflora.jpg",
+    "subImg":["/trerrariums/actiflora.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"46",
@@ -463,6 +508,7 @@
     "sale":"",
     "arrives":false,
     "img":"/trerrariums/alluminium.webp",
+    "subImg":["/trerrariums/alluminium.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"47",
@@ -473,6 +519,7 @@
     "sale":"",
     "arrives":true,
     "img":"/trerrariums/baby-tears-plant.webp",
+    "subImg":["/trerrariums/baby-tears-plant.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"48",
@@ -483,6 +530,7 @@
     "sale":"",
     "arrives":false,
     "img":"/trerrariums/boxwood-shrub.jpg",
+    "subImg":["/trerrariums/boxwood-shrub.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"49",
@@ -493,6 +541,7 @@
     "sale":"",
     "arrives":false,
     "img":"/trerrariums/button-fern.webp",
+    "subImg":["/trerrariums/button-fern.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"50",
@@ -503,6 +552,7 @@
     "sale":"",
     "arrives":false,
     "img":"/trerrariums/arborescens.jpg",
+    "subImg":["/trerrariums/arborescens.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"51",
@@ -513,6 +563,7 @@
     "sale":"",
     "arrives":false,
     "img":"/trerrariums/foliage.jpg",
+    "subImg":["/trerrariums/foliage.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"52",
@@ -523,6 +574,7 @@
     "sale":"",
     "arrives":false,
     "img":"/trerrariums/gaillardia.jpg",
+    "subImg":["/trerrariums/gaillardia.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"53",
@@ -533,6 +585,7 @@
     "sale":"",
     "arrives":false,
     "img":"/trerrariums/grow-maranta.webp",
+    "subImg":["/trerrariums/grow-maranta.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"54",
@@ -543,6 +596,7 @@
     "sale":"",
     "arrives":false,
     "img":"/trerrariums/hakonechloa.jpg",
+    "subImg":["/trerrariums/hakonechloa.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"55",
@@ -553,6 +607,7 @@
     "sale":"",
     "arrives":false,
     "img":"/trerrariums/indoors.webp",
+    "subImg":["/trerrariums/indoors.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"56",
@@ -563,6 +618,7 @@
     "sale":"",
     "arrives":false,
     "img":"/trerrariums/lily.jpg",
+    "subImg":["/trerrariums/lily.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"57",
@@ -573,6 +629,7 @@
     "sale":"",
     "arrives":false,
     "img":"/trerrariums/petunia.jpg",
+    "subImg":["/trerrariums/petunia.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Medium"
 },{
     "id":"58",
@@ -583,6 +640,7 @@
     "sale":"",
     "arrives":true,
     "img":"/big/-large-rubber-tree.webp",
+    "subImg":["/big/-large-rubber-tree.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Large"
 },{
     "id":"59",
@@ -593,6 +651,7 @@
     "sale":"",
     "arrives":true,
     "img":"/big/blue-couch.webp",
+    "subImg":["/big/blue-couch.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Large"
 },{
     "id":"60",
@@ -603,6 +662,7 @@
     "sale":"15% OFF",
     "arrives":false,
     "img":"/big/blue-couch.webp",
+    "subImg":["/big/blue-couch.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Large"
 },{
     "id":"61",
@@ -613,6 +673,7 @@
     "sale":"",
     "arrives":false,
     "img":"/big/brighterblooms.webp",
+    "subImg":["/big/brighterblooms.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Large"
 },{
     "id":"62",
@@ -623,6 +684,7 @@
     "sale":"",
     "arrives":false,
     "img":"/big/brighterblooms1.webp",
+    "subImg":["/big/brighterblooms1.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Large"
 },{
     "id":"63",
@@ -633,6 +695,7 @@
     "sale":"",
     "arrives":false,
     "img":"/big/corn-plant.webp",
+    "subImg":["/big/corn-plant.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Large"
 },{
     "id":"64",
@@ -643,6 +706,7 @@
     "sale":"",
     "arrives":true,
     "img":"/big/earthandjungle.webp",
+    "subImg":["/big/earthandjungle.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Large"
 },{
     "id":"65",
@@ -653,6 +717,7 @@
     "sale":"15% OFF",
     "arrives":false,
     "img":"/big/green-plant-pot.webp",
+    "subImg":["/big/green-plant-pot.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Large"
 },{
     "id":"66",
@@ -663,6 +728,7 @@
     "sale":"",
     "arrives":false,
     "img":"/big/monstera-deliciosa.webp",
+    "subImg":["/big/monstera-deliciosa.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Large"
 },{
     "id":"67",
@@ -673,6 +739,7 @@
     "sale":"",
     "arrives":false,
     "img":"/big/person-holding.webp",
+    "subImg":["/big/person-holding.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Large"
 },{
     "id":"68",
@@ -683,6 +750,7 @@
     "sale":"",
     "arrives":false,
     "img":"/big/westelm-huge-houseplants.webp",
+    "subImg":["/big/westelm-huge-houseplants.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Large"
 },{
     "id":"69",
@@ -693,6 +761,7 @@
     "sale":"20% OFF",
     "arrives":false,
     "img":"/big/yellow-pot.webp",
+    "subImg":["/big/yellow-pot.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Large"
 },{
     "id":"70",
@@ -703,6 +772,7 @@
     "sale":"",
     "arrives":false,
     "img":"/big/yucca.webp",
+    "subImg":["/big/yucca.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":"Large"
 },{
     "id":"71",
@@ -713,6 +783,7 @@
     "sale":"",
     "arrives":false,
     "img":"/accul/aeonium-kiwi-pink.webp",
+    "subImg":["/accul/aeonium-kiwi-pink.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"72",
@@ -723,6 +794,7 @@
     "sale":"",
     "arrives":true,
     "img":"/accul/agave-blue.webp",
+    "subImg":["/accul/agave-blue.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"73",
@@ -733,6 +805,7 @@
     "sale":"",
     "arrives":false,
     "img":"/accul/brevifolia.webp",
+    "subImg":["/accul/brevifolia.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"74",
@@ -743,6 +816,7 @@
     "sale":"",
     "arrives":false,
     "img":"/accul/chalksticks.webp",
+     "subImg":["/accul/chalksticks.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"75",
@@ -753,6 +827,7 @@
     "sale":"",
     "arrives":true,
     "img":"/accul/crassula varieties.webp",
+    "subImg":["/accul/crassula varieties.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"76",
@@ -763,6 +838,7 @@
     "sale":"",
     "arrives":true,
     "img":"/accul/fragilis-cactus.jpg",
+    "subImg":["/accul/fragilis-cactus.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"77",
@@ -773,6 +849,7 @@
     "sale":"",
     "arrives":true,
     "img":"/accul/gasteria-varieties.jpg",
+    "subImg":["/accul/gasteria-varieties.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"78",
@@ -783,6 +860,7 @@
     "sale":"",
     "arrives":true,
     "img":"/accul/golden-barrel-cactus.jpg",
+    "subImg":["/accul/golden-barrel-cactus.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"79",
@@ -793,6 +871,7 @@
     "sale":"",
     "arrives":true,
     "img":"/accul/graptosedum-ghosty.webp",
+    "subImg":["/accul/graptosedum-ghosty.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"80",
@@ -803,6 +882,7 @@
     "sale":"",
     "arrives":true,
     "img":"/accul/sempervivum.jpg",
+    "subImg":["/accul/sempervivum.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"81",
@@ -813,6 +893,7 @@
     "sale":"",
     "arrives":true,
     "img":"/accul/zebra-plant.jpg",
+    "subImg":["/accul/zebra-plant.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"82",
@@ -823,6 +904,7 @@
     "sale":"",
     "arrives":true,
     "img":"/accesories/1_.webp",
+    "subImg":["/accesories/1_.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"83",
@@ -833,6 +915,7 @@
     "sale":"",
     "arrives":true,
     "img":"/accesories/2_.webp",
+    "subImg":["/accesories/2_.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"84",
@@ -843,6 +926,7 @@
     "sale":"",
     "arrives":true,
     "img":"/accesories/3_.webp",
+    "subImg":["/accesories/3_.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"85",
@@ -853,6 +937,7 @@
     "sale":"",
     "arrives":false,
     "img":"/accesories/4_.webp",
+    "subImg":["/accesories/4_.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"86",
@@ -863,6 +948,7 @@
     "sale":"",
     "arrives":false,
     "img":"/accesories/5_.webp",
+    "subImg":["/accesories/5_.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"87",
@@ -873,6 +959,7 @@
     "sale":"",
     "arrives":false,
     "img":"/accesories/6_.webp",
+    "subImg":["/accesories/6_.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"88",
@@ -883,6 +970,7 @@
     "sale":"",
     "arrives":false,
     "img":"/accesories/7_.webp",
+    "subImg":["/accesories/7_.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"89",
@@ -893,6 +981,7 @@
     "sale":"",
     "arrives":false,
     "img":"/accesories/8_.webp",
+    "subImg":["/accesories/8_.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"90",
@@ -903,6 +992,7 @@
     "sale":"",
     "arrives":false,
     "img":"/accesories/9_.webp",
+    "subImg":["/accesories/9_.webp","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"91",
@@ -913,6 +1003,7 @@
     "sale":"",
     "arrives":false,
     "img":"/accesories/10_.jpg",
+    "subImg":["/accesories/10_.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"92",
@@ -923,6 +1014,7 @@
     "sale":"",
     "arrives":true,
     "img":"/accesories/11_.jpg",
+    "subImg":["/accesories/11_.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"93",
@@ -933,6 +1025,7 @@
     "sale":"",
     "arrives":false,
     "img":"/accesories/12_.jpg",
+    "subImg":["/accesories/12_.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 },{
     "id":"94",
@@ -943,6 +1036,7 @@
     "sale":"",
     "arrives":false,
     "img":"/accesories/13_.jpg",
+    "subImg":["/accesories/13_.jpg","/subplants/2.jpg","/subplants/3.jpg","/subplants/4.jpg"],
     "size":""
 }
     ]
