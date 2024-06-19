@@ -6,8 +6,13 @@ import Footer from "../footer/Footer";
 import './single-product.css'
 import search from './../img/search.svg'
 import { useState } from "react";
+import ReactStars from "react-rating-stars-component";
+import { CiStar } from "react-icons/ci";
+import { FaStarHalf } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
+import { MdFavoriteBorder } from "react-icons/md";
 
-
+const sizeButtons=['S','M','L','XL']
 function SingleProduct(){
     let params = useParams()
     const item = plants.plants.find((el)=>el.id===params.id)
@@ -23,6 +28,10 @@ function SingleProduct(){
     }
    
     }
+    const ratingChanged = (newRating)=>{
+    console.log(newRating)
+
+}
     return <>
       
    <div className='wrapper  container'>
@@ -31,27 +40,40 @@ function SingleProduct(){
     <section className="product-view">
       <div className="product-view-image">
         <div className="vertical-imges">
-          {item.subImg.map((elem)=>{
-             return <div className={showImg===elem?"vertical-img active":'vertical-img'} onClick={(e)=>getShowImg(e,elem)}>
-            
+          {item.subImg.map((elem,ind)=>{
+             return <div key={ind} className={showImg===elem?"vertical-img active":'vertical-img'} onClick={(e)=>getShowImg(e,elem)}>
              <img src={elem} />
              </div>
           })}
            
         </div>
-        <div className="big-img">
-          <div className="big-img-icon" >
+        <div className="big-image">
+          <div className="big-image-icon" >
             <img  src={search} />
           </div>
-          <div className="big-img-img">
+          <div className="big-image-img">
         <img src={showImg}/></div>
         </div>
       </div>
       <div className="product-view-details">
         <h4 className="product-view-title">{item.name}</h4>
       <div className="price-rating">
-        <div className="price">{item.price}</div>
-        <div className="rating"></div>
+        <div className="price-rating-price">{item.price}</div>
+        <div className="price-rating-rating">
+          <div className="price-rating-rating-stars"id="rating-stars">
+          <ReactStars
+    count={5}
+    onChange={ratingChanged}
+    size={24}
+    activeColor="#ffd700"
+    emptyIcon={<CiStar/>}
+    halfIcon={<FaStarHalf/>}
+    fullIcon={<FaStar/>}
+    
+    />
+          </div>
+          <div className="price-rating-rating-title">19 Customer Review</div>
+        </div>
       </div>
       <div className="short-dect">
          <h5 className="subtitle">Short Description:</h5>
@@ -61,7 +83,17 @@ function SingleProduct(){
       </div>
       <div className="product-size">
       <h5 className="subtitle">Size:</h5>
-      <div className="size-choose"></div>
+      <div className="size-choose">
+       { sizeButtons.map((el)=>{
+        return <button className="size-choose-button">{el}</button>
+       })}
+       <div className="buy-now-buttons">
+        <input type="number"/>
+        <button className="main-button">BUY NOW</button>
+        <button className="button-border">ADD TO CARD</button>
+        <button className="favorite-button"><MdFavoriteBorder fill="rgba(70, 163, 88, 1)"/></button>
+       </div>
+      </div>
       </div>
       <div className="addition-data">
     <p>SKU:<span></span></p>
