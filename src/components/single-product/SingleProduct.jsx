@@ -1,5 +1,6 @@
 import { Link,useParams } from "react-router-dom";
 import Context from '../../hooks/Context';
+
 import plants from '../../data/plants.json'
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
@@ -11,13 +12,23 @@ import { CiStar } from "react-icons/ci";
 import { FaStarHalf } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { MdFavoriteBorder } from "react-icons/md";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { MdCameraAlt } from "react-icons/md";
 
 const sizeButtons=['S','M','L','XL']
 function SingleProduct(){
     let params = useParams()
     const item = plants.plants.find((el)=>el.id===params.id)
     const [showImg,setShowImg] = useState(item.subImg[0])
-  
+    const [count,setCount] = useState(1);
+    const [chooseSize,setChooseSize] = useState(sizeButtons[0])
+     const ratingChanged = (newRating)=>{
+    console.log(newRating)
+
+}
     function getShowImg(e,elem){
       let string = e.target.src.slice(21)
     
@@ -28,15 +39,20 @@ function SingleProduct(){
     }
    
     }
-    const ratingChanged = (newRating)=>{
-    console.log(newRating)
 
-}
+    function getSize(e,elem){
+    
+      if(e.target.innerHTML===elem){
+        setChooseSize(elem)
+      }
+    }
+ 
     return <>
       
    <div className='wrapper  container'>
   <Header/>
-   <main>  <h3 className="product-view-path">Home / Shop</h3>
+   <main>  
+    <h3 className="product-view-path">Home / Shop</h3>
     <section className="product-view">
       <div className="product-view-image">
         <div className="vertical-imges">
@@ -80,29 +96,41 @@ function SingleProduct(){
          <div className="short-dect-text">
             <p>The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. </p>
          </div>
-      </div>
-      <div className="product-size">
+      </div> 
       <h5 className="subtitle">Size:</h5>
+      <div className="product-size">
+     
       <div className="size-choose">
        { sizeButtons.map((el)=>{
-        return <button className="size-choose-button">{el}</button>
+        return <button className={chooseSize===el ? "size-choose-button-active" : "size-choose-button"} onClick={(e)=>getSize(e,el)}>{el}</button>
        })}
+     </div>
        <div className="buy-now-buttons">
-        <input type="number"/>
+        <div className="input-counter">
+          <button className="in-count" onClick={()=>setCount(count+1)}>+</button>
+        <span  className="put-count">{count>=1 ? count : 1}</span>
+        <button className="in-count"onClick={()=>setCount(count-1)} >-</button>
+        </div>
         <button className="main-button">BUY NOW</button>
         <button className="button-border">ADD TO CARD</button>
-        <button className="favorite-button"><MdFavoriteBorder fill="rgba(70, 163, 88, 1)"/></button>
+        <button className="favorite-button"><MdFavoriteBorder size={20} fill="rgba(70, 163, 88, 1)"/></button>
        </div>
-      </div>
+        
       </div>
       <div className="addition-data">
     <p>SKU:<span></span></p>
     <p>Categories:<span>{item.categories}</span></p>
-    <p>Tags:<span></span></p>
+    <p>Tags:<span> Home, Garden, Plants</span></p>
       </div>
       <div className="share">
-      <h5 className="subtitle"></h5>
-      <div className="share-icons"></div>
+      <h5 className="subtitle">Share this products:</h5>
+      <div className="share-icons">
+        <FaFacebookF className="share-icon" size={18} />
+        <FaInstagram  className="share-icon"size={18}/>
+        <FaLinkedinIn className="share-icon" size={18}/>
+        <FaTwitter className="share-icon" size={18}/>
+        <MdCameraAlt className="share-icon" size={18}/>
+      </div>
       </div>
       </div>
       <div className="product-view-descriptions">
@@ -123,6 +151,7 @@ Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis f
     </section>
    </main>
 <Footer/>
-    </div></>
+    </div>
+    </>
 }
 export default SingleProduct;
