@@ -257,12 +257,29 @@ grid-column-start: 1;
     grid-column-end:3 ;
 }
 
-.product-view-descriptions>p{
+.product-view-descriptions>p{ 
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(114, 114, 114, 1);
+    margin: 18px 0px 18px 0px;
  }
 .titlles{
+display: flex;
+flex-direction: row;
+column-gap: 30px;
+color: rgba(61, 61, 61, 1);
 
 }
 .subtitle-description{
-   
+ font-size: 17px;
+line-height: 16px;
+font-weight: 400; 
+padding-bottom: 12px; 
+cursor: pointer;
 
+}
+.subtitle-description-active{
+    color: var(--green-color);
+    font-weight: 700;
+    border-bottom: 1px solid var(--green-color);
 }

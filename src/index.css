@@ -124,6 +124,9 @@ body{
    * {
     min-width: 0;
   }
+  .ReactModal__Content.ReactModal__Content--after-open{
+    padding: 0 !important;
+    }
   @font-face {
     font-family: 'Cera Pro';
     src: url('font/CeraPro-Light.eot');

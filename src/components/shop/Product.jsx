@@ -4,17 +4,17 @@ import { CiSearch } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 import { GrFavorite } from "react-icons/gr";
 
-function Product({elem,index}){
-    
+function Product({elem,index,value}){
+   
+   
+      
     return <><article className='product' key={index} >
     <div className='product'>
-
-   
-       
         <div className='img'>
            <div className='cover'>
             <div className='cover-img'>
-            <CiShoppingCart size={20} className='icon' /><GrFavorite size={20} className='icon'/><CiSearch size={20}className='icon'/>
+            <CiShoppingCart size={20} className='icon' onClick={value.openModal}/>
+            <GrFavorite size={20} className='icon'/><CiSearch size={20}className='icon'/>
             </div>
             </div>
           

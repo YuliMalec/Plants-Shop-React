@@ -7,28 +7,26 @@ import Footer from "../footer/Footer";
 import './single-product.css'
 import search from './../img/search.svg'
 import { useState } from "react";
-import ReactStars from "react-rating-stars-component";
-import { CiStar } from "react-icons/ci";
-import { FaStarHalf } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
 import { MdFavoriteBorder } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { MdCameraAlt } from "react-icons/md";
+import Text from "./Text";
+import CounterButtons from "./counter-buttons/CounterButtons";
+import Rating from "./rating/Rating";
 
 const sizeButtons=['S','M','L','XL']
+const descriptionTitles = ['Product Description','Reviews (19)']
 function SingleProduct(){
     let params = useParams()
     const item = plants.plants.find((el)=>el.id===params.id)
     const [showImg,setShowImg] = useState(item.subImg[0])
     const [count,setCount] = useState(1);
     const [chooseSize,setChooseSize] = useState(sizeButtons[0])
-     const ratingChanged = (newRating)=>{
-    console.log(newRating)
-
-}
+    const [isActiveTitle,setIsActiveTitile] = useState(descriptionTitles[0])
+   
     function getShowImg(e,elem){
       let string = e.target.src.slice(21)
     
@@ -46,7 +44,11 @@ function SingleProduct(){
         setChooseSize(elem)
       }
     }
- 
+   function getActiveTitile(e,elem){
+       if(elem === e.target.innerHTML){
+        setIsActiveTitile(elem)
+       }
+   }
     return <>
       
    <div className='wrapper  container'>
@@ -75,21 +77,7 @@ function SingleProduct(){
         <h4 className="product-view-title">{item.name}</h4>
       <div className="price-rating">
         <div className="price-rating-price">{item.price}</div>
-        <div className="price-rating-rating">
-          <div className="price-rating-rating-stars"id="rating-stars">
-          <ReactStars
-    count={5}
-    onChange={ratingChanged}
-    size={24}
-    activeColor="#ffd700"
-    emptyIcon={<CiStar/>}
-    halfIcon={<FaStarHalf/>}
-    fullIcon={<FaStar/>}
-    
-    />
-          </div>
-          <div className="price-rating-rating-title">19 Customer Review</div>
-        </div>
+        <Rating/>
       </div>
       <div className="short-dect">
          <h5 className="subtitle">Short Description:</h5>
@@ -106,11 +94,7 @@ function SingleProduct(){
        })}
      </div>
        <div className="buy-now-buttons">
-        <div className="input-counter">
-          <button className="in-count" onClick={()=>setCount(count+1)}>+</button>
-        <span  className="put-count">{count>=1 ? count : 1}</span>
-        <button className="in-count"onClick={()=>setCount(count-1)} >-</button>
-        </div>
+       <CounterButtons count={count} setCount={setCount}/>
         <button className="main-button">BUY NOW</button>
         <button className="button-border">ADD TO CARD</button>
         <button className="favorite-button"><MdFavoriteBorder size={20} fill="rgba(70, 163, 88, 1)"/></button>
@@ -135,18 +119,14 @@ function SingleProduct(){
       </div>
       <div className="product-view-descriptions">
       <div className="titlles">
-      <h5 className="subtitle-description">Product Description</h5>
-      <h5 className="subtitle-description">Reviews (19)</h5></div>
-      <p>The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.
-
-Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, in accumsan elit odio quis mi. Cras neque metus, consequat et blandit et, luctus a nunc. Etiam gravida vehicula tellus, in imperdiet ligula euismod eget. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. </p>
-      <h5 className="subtitle">Living Room:</h5>
-      <p>The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <h5 className="subtitle">Dining Room:</h5>
-      <p>The benefits of houseplants are endless. In addition to cleaning the air of harmful toxins, they can help to improve your mood, reduce stress and provide you with better sleep. Fill every room of your home with houseplants and their restorative qualities will improve your life.</p>
-      <h5 className="subtitle">Office:</h5>
-      <p>The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
+        {descriptionTitles.map((el,ind)=>{
+           return  <h5 className={isActiveTitle===el ? "subtitle-description-active" :  "subtitle-description"}
+          onClick={(e)=> getActiveTitile(e,el)}
+          key={ind}>{el}</h5>
+        })}
+      </div>
+      {isActiveTitle===descriptionTitles[0] ? <Text/>
+      : "Reviews"}
       </div>
     </section>
    </main>

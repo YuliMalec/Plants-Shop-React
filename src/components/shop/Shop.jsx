@@ -176,7 +176,10 @@ value.setProductTitle(titles[0])
               {
                finalList.map((elem,index)=>{
                 return <Link to={`/shop/${elem.id}` }key={elem.id} onClick={(e)=>value.setProd(e,elem)}
-                ><Product elem={elem}key={elem.id} index={index} /></Link>
+                ><Product elem={elem}key={elem.id} 
+                index={index} 
+                value={value}
+                /></Link>
                  
               })   
                  }

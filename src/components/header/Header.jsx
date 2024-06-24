@@ -44,7 +44,7 @@ function Header(props){
           <Link to={'/card'}>
         <SlBasket size={20} /></Link>
         </div>
-     {width <= 768 ? <button className="mobile-button"><img src={filter}/></button> : <button className="main-button"><BiLogIn  size={20} className="login"/>Login</button> }
+     {width <= 768 ? <button className="mobile-button" onClick={props.openModal}><img src={filter}/></button> : <button className="main-button"onClick={props.openModal}><BiLogIn  size={20} className="login"/>Login</button> }
      </div>
     </header>
 

@@ -22,7 +22,7 @@ function Sidebar(props){
     <ul className="category-list">{
     category.map((el,ind)=>{
         return <li 
-      className={props.cat===el ? "category-link choosen" : "category-link" }
+      className={props.value.cat===el ? "category-link choosen" : "category-link" }
         key={ind} onClick={()=>props.value.chooseProduct(el)}><span>{el}</span><span>({listLength[ind]})</span></li>
     })
     }</ul>
