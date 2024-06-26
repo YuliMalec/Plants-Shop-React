@@ -13,6 +13,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { MdCameraAlt } from "react-icons/md";
+import  Releted  from "./Releted";
 import Text from "./Text";
 import CounterButtons from "./counter-buttons/CounterButtons";
 import Rating from "./rating/Rating";
@@ -129,6 +130,7 @@ function SingleProduct(){
       : "Reviews"}
       </div>
     </section>
+    <Releted item ={item}/>
    </main>
 <Footer/>
     </div>

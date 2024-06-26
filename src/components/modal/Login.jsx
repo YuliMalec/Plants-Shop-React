@@ -3,10 +3,12 @@ import React from 'react';
 import style from './modal.module.css'
 import { FcGoogle } from "react-icons/fc";
 import { GrFacebookOption } from "react-icons/gr";
+import { IoMdClose } from "react-icons/io";
 
 function Login(props) {
     return (
         <article className={style.modal}>
+            <button onClick={props.closeModal}><IoMdClose size={18} fill='rgba(70, 163, 88, 1)'/></button>
         <div className={style.titles}>
        <h3 className={style.title}>Login</h3>|
        <h3 className={style.title}>Register</h3>
@@ -25,7 +27,7 @@ function Login(props) {
 
        </div>
        
-      <button onClick={closeModal}>close</button>
+      
     </article>
     );
 }

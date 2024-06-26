@@ -1,6 +1,6 @@
 import { useState,useEffect,useMemo } from 'react';
 import Context from '../../hooks/Context';
-import Modal from 'react-modal';
+
 import Header from '../header/Header'
 import Banner from '../main-banner/Banner'
 import { useResize } from '../../hooks/use-resize';
@@ -50,9 +50,6 @@ const [currentPage,setCurrentPage] = useState(1)
      chooseProduct()
    
     },[])
-
-    
-
 
     function openModal() {
       setIsOpen(true);

@@ -3,11 +3,13 @@ import '../shop/shop.css'
 
 import sidebarImg from './../img/sidebar-img.jpg'
 import SuperSale from './../img/Super Sale.png'
+import PriceRange from './PriceRange';
 
 
 const category= ['House Plant','Potter Plants','Seeds','Small Plants','Big Plants','Asucculents','Trerrariums','Accesories'];
 const size = ['Small','Medium','Large'];
 const listLength = [9,12,13,10,13,11,13,13]
+
   
 function Sidebar(props){
     
@@ -27,16 +29,10 @@ function Sidebar(props){
     })
     }</ul>
     </div>
-    <div className="price-range"><h3 className=" range title-sidebar">Price Range</h3>
-    <div className="range-slider">
-        <div className='range-track'></div>
-       <input className='min-val' type='range'onChange={(event)=>props.useMinRangeInput(event)} value={props.minValue} min={9} max={500} />
-       <input className='max-val' type='range'onChange={(event)=>props.useMaxRangeInput(event)} value={props.maxValue} min={9} max={500} />
-       
-    </div>
-    <div className="price">Price:<div> $ {props.minValue} - $ {props.maxValue}</div></div>
-    <button className="main-button main" onClick={()=>getFilter()}>Filter</button>
-    </div>
+  <PriceRange getFilter={getFilter} setMaxValue={props.setMaxValue}
+  setMinValue={props.setMinValue}
+  minValue={props.minValue} maxValue={props.maxValue}
+  />
     <div className="size">
         <h3 className="title-sidebar">Size</h3>
         <ul className="size-list">

@@ -40,7 +40,7 @@ function AddToCard (props){
       style={customStyles}
       contentLabel="Example Modal"
     >
-  {isLogin && <Login/>}
+  {isLogin && <Login closeModal={closeModal}/>}
     </Modal>
   </div>
     </>
