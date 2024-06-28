@@ -30,14 +30,14 @@ const [currentPage,setCurrentPage] = useState(1)
  const [size,setSize] = useState([]);
  const[isShowSidebar,setIsShowSidebar] = useState(false)
  const [prod,setProd]=useState(1)
-
+ const [filter,setFilter] = useState({title:titles[0],query:'',price:false,sort:'Defolt sorting'})  
     const url = 'https://fakestoreapi.com/products?';
 
     const chooseProduct=(param = 'House Plant')=>{
         
        setList(plants.plants.filter((el)=> el.categories === param))
       setIsShowSize(false)
-     setProductTitle(titles[0])
+    /*setFilter({...filter,title:titles[0]})*/
      setCat(param)
      setCurrentPage(1)
      if(isShowSidebar){
@@ -49,7 +49,7 @@ const [currentPage,setCurrentPage] = useState(1)
      useEffect(()=>{
      chooseProduct()
    
-    },[])
+    },[filter])
 
     function openModal() {
       setIsOpen(true);
@@ -61,13 +61,13 @@ const [currentPage,setCurrentPage] = useState(1)
   isScreenMd,
   isScreenSm,
   currentPage,size,setSize,
-  chooseProduct,productTitle,
-  setProductTitle,
+  chooseProduct,
   setCurrentPage,setIsShowSize,isShowSize,
   setList,list,cat,
   setIsShowSidebar,
 isShowSidebar,prod,setProd,
-modalIsOpen,setIsOpen,
+modalIsOpen,setIsOpen,openModal,
+filter,setFilter
 
 
  }

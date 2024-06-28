@@ -1,12 +1,13 @@
 import { Link,useParams } from "react-router-dom";
-import Context from '../../hooks/Context';
+
+
 
 import plants from '../../data/plants.json'
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import './single-product.css'
 import search from './../img/search.svg'
-import { useState } from "react";
+import { useState} from "react";
 import { MdFavoriteBorder } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -21,6 +22,8 @@ import Rating from "./rating/Rating";
 const sizeButtons=['S','M','L','XL']
 const descriptionTitles = ['Product Description','Reviews (19)']
 function SingleProduct(){
+  
+
     let params = useParams()
     const item = plants.plants.find((el)=>el.id===params.id)
     const [showImg,setShowImg] = useState(item.subImg[0])
@@ -53,7 +56,7 @@ function SingleProduct(){
     return <>
       
    <div className='wrapper  container'>
-  <Header/>
+  <Header />
    <main>  
     <h3 className="product-view-path">Home / Shop</h3>
     <section className="product-view">

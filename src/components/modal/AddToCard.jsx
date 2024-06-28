@@ -3,13 +3,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import style from './modal.module.css'
 import Login from './Login';
+
 Modal.setAppElement(document.getElementById('root'));
 function AddToCard (props){
 
     const [isLogin,setIsLogin] = React.useState(true)
     const [isRegister,setIsRegister] = React.useState(true)
   
-    let subtitle;
+
     const customStyles = {
         content: {
           top: '50%',
@@ -23,10 +24,7 @@ function AddToCard (props){
 
     
   
-      function afterOpenModal() {
-        // references are now sync'd and can be accessed.
-        subtitle.style.color = '#f00';
-      }
+    
        function closeModal() {
         props.setIsOpen(false);
       }
@@ -35,7 +33,7 @@ function AddToCard (props){
  
     <Modal
       isOpen={props.modalIsOpen}
-      onAfterOpen={afterOpenModal}
+      
       onRequestClose={closeModal}
       style={customStyles}
       contentLabel="Example Modal"

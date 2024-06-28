@@ -4,11 +4,11 @@ import './shop.css';
 import Sidebar from '../sidebar/Sidebar';
 import Pagination from './Pagination';
 import plants from '../../data/plants.json'
-import { useState,useContext } from 'react';
+import { useState,useContext,useMemo } from 'react';
 import Context from '../../hooks/Context';
 import MobileMenu from './MobileMenu';
 import ProductsSection from './ProductsSection';
-import {useFilter,sortList,chooseTitle,getFiltered} from '../../hooks/useFilter';
+import {useFilter,sortList,chooseTitle} from '../../hooks/useFilter';
 
   
 function Shop(props){ 
@@ -19,19 +19,20 @@ function Shop(props){
     const lastIndex = value.currentPage*limitPage;
     const [minValue,setMinValue] = useState(9);
     const [maxValue,setMaxValue] = useState(500);
-    const [selected,setSelected] = useState('Defolt sorting');
-    const [isSelected,setIsSelected] = useState(false);
-    const [isFilter,setIsFilter] = useState(false);
-    
-    const firstIndex = lastIndex-limitPage;  
    
+    const [isSelected,setIsSelected] = useState(false);
+      
+    const firstIndex = lastIndex-limitPage;  
     
-    let sortedList=sortList(value,selected)
-  
+const getFiltered =()=>useMemo(()=>{
+  let arr = sortList(value);
+  console.log(arr)
+     if(value.isShowSize) arr = value.size; 
+  return arr.filter(el=>Number(el.price.slice(1))>=minValue&&Number(el.price.slice(1))<=maxValue)  
 
-  const [filter,setFilter] = useState({sort:'',query:''})  
-
-let listProd = getFiltered(sortedList,value)
+     },[value.filter]) 
+    
+    let listProd = getFiltered(value)
  let listProd2 =chooseTitle(listProd,value)
 let finalList = listProd2.slice(firstIndex,lastIndex)
  let totalPage =  listProd2.length  
@@ -39,54 +40,49 @@ let finalList = listProd2.slice(firstIndex,lastIndex)
 
     function chooseSize (param){
       value.setIsShowSize(true)
-value.setProductTitle(titles[0])
+value.setFilter({...value.filter,title:titles[0]})
     value.setSize( plants.plants.filter(item=>{
        return item.size===param
       }))
       }
-     
-
-
-    
-
 
       function selectList(event){
-       setSelected(event.target.innerHTML)
+       value.setFilter({...value.filter,sort:event.target.innerHTML})
         setIsSelected(!isSelected) 
-        
-    
+   
        } 
        function selectOption(){
         setIsSelected(!isSelected) 
  
         } 
-     
   
-
     return <>
     <section className="shop">
 
-     {value.width > 431 && <Sidebar chooseSize={chooseSize} 
-     value={value}  isFilter={isFilter}
-      setIsFilter={setIsFilter}
+     {value.width > 431 && 
+     <Sidebar 
+     chooseSize={chooseSize} 
+     value={value} 
       minValue={minValue}setMinValue={setMinValue}
       maxValue={maxValue}setMaxValue={setMaxValue}
       
       />}
-      <ProductsSection  setTitle={value.setProductTitle} title={value.productTitle}
-      selectList={selectList} selectOption={selectOption} setProd={value.setProd}
-      selected={selected } isSelected={isSelected} value={value} finalList={finalList}
+      <ProductsSection
+      selectList={selectList} selectOption={selectOption} 
+       isSelected={isSelected} 
+      value={value} finalList={finalList}
       />
      
-            <Pagination value={value} paginate={paginate} limitPage={limitPage} totalPage={totalPage}/>
-{value.width < 431 && <MobileMenu 
-setIsShowSidebar={value.setIsShowSidebar}
-isShowSidebar={value.isShowSidebar}
-cat={value.cat} value={value}
-chooseSize={chooseSize}  isFilter={isFilter} 
-setIsFilter={setIsFilter}minValue={minValue}
-useMinRangeInput={useMinRangeInput}
-maxValue={maxValue}useMaxRangeInput={useMaxRangeInput}
+  <Pagination value={value} 
+  paginate={paginate} 
+  limitPage={limitPage} 
+  totalPage={totalPage}/>
+{value.width < 431 && 
+<MobileMenu 
+ value={value}
+chooseSize={chooseSize}  
+minValue={minValue}
+maxValue={maxValue}
 />}
     </section>
     </>

@@ -1,13 +1,23 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect,useMemo } from 'react';
 import '../shop/shop.css'
 function PriceRange(props) {
-    function useMinRangeInput(event){
-        props.setMinValue(event.target.value)
-      }
+
+ useMemo(()=>{
+     useMaxRangeInput
+     useMinRangeInput
+ 
+        },[])
+
+
+        function  useMinRangeInput(event){
+          props.setMinValue(event.target.value)  
+     }
       function useMaxRangeInput(event){
        props.setMaxValue(event.target.value)
      }
+
+   
      
      useEffect(()=>{
       

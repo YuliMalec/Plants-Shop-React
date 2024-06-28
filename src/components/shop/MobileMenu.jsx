@@ -7,12 +7,13 @@ import { BsFillHouseDoorFill } from "react-icons/bs";
 import { BsHeartFill } from "react-icons/bs";
 import { BsPersonFill } from "react-icons/bs";
 import Sidebar from '../sidebar/Sidebar';
+import PriceRange from '../sidebar/PriceRange';
 
 function MobileMenu (props){
 
-    return(<div className={props.isShowSidebar?"mobile-menu":"mobile-menu hide"}>
+    return(<div className={props.value.isShowSidebar?"mobile-menu":"mobile-menu hide"}>
     <div className='mobile-menu-container'>
-        <button  className='button-icon' onClick={()=>props.setIsShowSidebar(!props.isShowSidebar)}>
+        <button  className='button-icon' onClick={()=>props.value.setIsShowSidebar(!props.isShowSidebar)}>
         <BsDashSquare size={26}/></button>
          </div>
          <div className='mobile-icons' >
@@ -22,11 +23,11 @@ function MobileMenu (props){
       
         <BsPersonFill className='icon' size={20}/></div>
         <div className='menu-container'>
-      <Sidebar cat={props.cat} value={props.value} 
-      chooseSize={props.chooseSize}  isFilter={props.isFilter} 
-      setIsFilter={props.setIsFilter}minValue={props.minValue}
-      useMinRangeInput={props.useMinRangeInput}
-      maxValue={props.maxValue}useMaxRangeInput={props.useMaxRangeInput}
+      <Sidebar cat={props.value.cat} value={props.value} 
+      chooseSize={props.chooseSize}  
+     minValue={props.minValue}
+    
+      maxValue={props.maxValue}
       />
 
         </div>

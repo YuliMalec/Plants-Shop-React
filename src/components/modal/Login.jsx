@@ -10,7 +10,7 @@ function Login(props) {
         <article className={style.modal}>
             <button onClick={props.closeModal}><IoMdClose size={18} fill='rgba(70, 163, 88, 1)'/></button>
         <div className={style.titles}>
-       <h3 className={style.title}>Login</h3>|
+       <h3 className={style.title}>Login</h3><span>|</span>
        <h3 className={style.title}>Register</h3>
        </div>
        <form className={style.form}>
