@@ -9,20 +9,21 @@ const sortMenu = ['Defolt sorting','Rising price','Descending prices']
 const titles = ['All Plants', 'New Arrives', 'Sale']
 function ProductsSection(props) {
 
-  
+  const value = useContext(Context);
+  console.log(value.filter.title)
     return (
         <article className="products-section">
         <div className='products-top'>
                     <div className='products-titles'>
                       {titles.map((elem,ind)=>{
-                        return <h4 onClick={()=>{props.value.setFilter({title:elem})}}
-                        className={props.value.filter.title===elem ?'product-title choosen':'product-title'} key={ind}>{elem}</h4>
+                        return <h4 onClick={()=>{value.setFilter({...value.filter,title:elem})}}
+                        className={value.filter.title===elem ?'product-title choosen':'product-title'} key={ind}>{elem}</h4>
                       })}
                        
                     </div>
                     <div className='sort'>
                        <div className='sort-title'>Sorted by:</div>
-                    <ul className='title-select' >{props.value.filter.sort}
+                    <ul className='title-select' >{value.filter.sort}
                    {props.isSelected && sortMenu.map((el,index)=>{
                     return <li className='option' key={index} onClick={(event)=>props.selectList(event)}>{el}</li>
                    })} 
@@ -34,7 +35,7 @@ function ProductsSection(props) {
                      <div className='products'>
                       {
                        props.finalList.map((elem,index)=>{
-                        return <Link to={`/shop/${elem.id}` }key={elem.id} onClick={(e)=>props.value.setProd(e,elem)}
+                        return <Link to={`/shop/${elem.id}` }key={elem.id}
                         ><Product elem={elem}key={elem.id} 
                         index={index} 
                         value={props.value}

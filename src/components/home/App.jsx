@@ -18,18 +18,14 @@ const titles = ['All Plants', 'New Arrives', 'Sale']
 
 
 function App() {
-
-
   const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
   const [list,setList] = useState([])
   const [modalIsOpen, setIsOpen] = useState(false); 
 const [cat,setCat]=useState(category[0])
-const [productTitle,setProductTitle]=useState(titles[0])
 const [currentPage,setCurrentPage] = useState(1)
  const [isShowSize, setIsShowSize]=useState(false)
  const [size,setSize] = useState([]);
  const[isShowSidebar,setIsShowSidebar] = useState(false)
- const [prod,setProd]=useState(1)
  const [filter,setFilter] = useState({title:titles[0],query:'',price:false,sort:'Defolt sorting'})  
     const url = 'https://fakestoreapi.com/products?';
 
@@ -37,27 +33,25 @@ const [currentPage,setCurrentPage] = useState(1)
         
        setList(plants.plants.filter((el)=> el.categories === param))
       setIsShowSize(false)
-    /*setFilter({...filter,title:titles[0]})*/
+    setFilter({...filter,title:titles[0]})
      setCat(param)
      setCurrentPage(1)
      if(isShowSidebar){
        setIsShowSidebar(!isShowSidebar)
      }
- 
+
      } 
      
      useEffect(()=>{
      chooseProduct()
    
-    },[filter])
+    },[])
 
     function openModal() {
       setIsOpen(true);
     }
  const value = {
-
   width,
-
   isScreenMd,
   isScreenSm,
   currentPage,size,setSize,
@@ -65,12 +59,13 @@ const [currentPage,setCurrentPage] = useState(1)
   setCurrentPage,setIsShowSize,isShowSize,
   setList,list,cat,
   setIsShowSidebar,
-isShowSidebar,prod,setProd,
+isShowSidebar,
 modalIsOpen,setIsOpen,openModal,
 filter,setFilter
 
 
  }
+
   return (
     <Context.Provider value={value}>
     <div className='wrapper  container ' id='main'>

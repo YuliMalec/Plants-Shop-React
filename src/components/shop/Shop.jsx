@@ -8,7 +8,7 @@ import { useState,useContext,useMemo } from 'react';
 import Context from '../../hooks/Context';
 import MobileMenu from './MobileMenu';
 import ProductsSection from './ProductsSection';
-import {useFilter,sortList,chooseTitle} from '../../hooks/useFilter';
+import {chooseTitle} from '../../hooks/useFilter';
 
   
 function Shop(props){ 
@@ -23,17 +23,8 @@ function Shop(props){
     const [isSelected,setIsSelected] = useState(false);
       
     const firstIndex = lastIndex-limitPage;  
-    
-const getFiltered =()=>useMemo(()=>{
-  let arr = sortList(value);
-  console.log(arr)
-     if(value.isShowSize) arr = value.size; 
-  return arr.filter(el=>Number(el.price.slice(1))>=minValue&&Number(el.price.slice(1))<=maxValue)  
-
-     },[value.filter]) 
-    
-    let listProd = getFiltered(value)
- let listProd2 =chooseTitle(listProd,value)
+ 
+ let listProd2 =chooseTitle(value,minValue,maxValue)
 let finalList = listProd2.slice(firstIndex,lastIndex)
  let totalPage =  listProd2.length  
     const paginate = pageNumber=>value.setCurrentPage(pageNumber)

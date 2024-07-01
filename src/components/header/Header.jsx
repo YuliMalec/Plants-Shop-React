@@ -13,6 +13,7 @@ import { useResize } from '../../hooks/use-resize';
 
 
 function Header(props){
+  const [value,setValue] = useState('')
   const [isHome,setIsHome] = useState(false)
   const [isSearch,setIsSearch] = useState(true)
   const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
@@ -36,7 +37,11 @@ function Header(props){
         </ul>
       </div>
       <div className="active">
-        {(isHome || width <= 765 ) && <input className="searchInput"  placeholder='Find your plants' />}
+        {(isHome || width <= 765 ) && <input className="searchInput"  
+        placeholder='Find your plants' 
+        value={value}
+        onChange={(e)=>setValue(e.target.value)}
+        />}
         <div className="search" onClick={()=>handleInput()}>
         {(isSearch && width >= 768 ) && <img src={search}/>} 
         </div>

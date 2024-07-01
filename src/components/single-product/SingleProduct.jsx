@@ -33,13 +33,11 @@ function SingleProduct(){
    
     function getShowImg(e,elem){
       let string = e.target.src.slice(21)
-    
     if(string === elem){
        setShowImg(elem)
     } else{
       setShowImg(item.subImg[0])
     }
-   
     }
 
     function getSize(e,elem){
