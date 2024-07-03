@@ -10,6 +10,7 @@
    
 }
 .titles{
+   
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -20,10 +21,16 @@
     margin: 0px 10px;
 }
 .title{
+     cursor:pointer;
     font-weight: 500;
     font-size: 20px;
     line-height: 16px;
 
+}
+.titleactive{
+    font-weight: 700;
+    color: var(--green-color);
+    font-size: 20px;
 }
 .form{
   

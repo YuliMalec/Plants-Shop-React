@@ -6,12 +6,17 @@ import { GrFacebookOption } from "react-icons/gr";
 import { IoMdClose } from "react-icons/io";
 
 function Login(props) {
+  function handleModal(){
+    props.setIsRegister(!props.isRegister)
+    props.setIsLogin(!props.isLogin)
+  }
+  
     return (
         <article className={style.modal}>
             <button onClick={props.closeModal}><IoMdClose size={18} fill='rgba(70, 163, 88, 1)'/></button>
         <div className={style.titles}>
-       <h3 className={style.title}>Login</h3><span>|</span>
-       <h3 className={style.title}>Register</h3>
+       <button className={style.titleactive} >Login</button><span>|</span>
+       <button className={style.title} onClick={handleModal}>Register</button>
        </div>
        <form className={style.form}>
         <h4 className={style.subtitle}>Enter your username and password to login.</h4>

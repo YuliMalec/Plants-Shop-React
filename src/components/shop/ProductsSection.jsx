@@ -10,7 +10,7 @@ const titles = ['All Plants', 'New Arrives', 'Sale']
 function ProductsSection(props) {
 
   const value = useContext(Context);
-  console.log(value.filter.title)
+
     return (
         <article className="products-section">
         <div className='products-top'>

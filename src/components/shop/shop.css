@@ -176,7 +176,7 @@ line-height: 16px;
 
   
 }
-.category-link.choosen{
+.category-link.choosen,.size-link-active{
     font-weight: 700 ;
     color:var(--green-color);
 }

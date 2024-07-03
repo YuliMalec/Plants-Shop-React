@@ -1,15 +1,8 @@
-import Modal from 'react-modal';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import style from './modal.module.css'
-import Login from './Login';
+import Modal from 'react-modal';
 
 Modal.setAppElement(document.getElementById('root'));
-function AddToCard (props){
-
-    const [isLogin,setIsLogin] = React.useState(true)
-    const [isRegister,setIsRegister] = React.useState(true)
-  
+function AddToCard(props) {
 
     const customStyles = {
         content: {
@@ -21,31 +14,11 @@ function AddToCard (props){
           transform: 'translate(-50%, -50%)',
         },
       };
-
-    
-  
-    
-       function closeModal() {
-        props.setIsOpen(false);
-      }
-     
-    return <>  <div >
- 
-    <Modal
-      isOpen={props.modalIsOpen}
-      
-      onRequestClose={closeModal}
-      style={customStyles}
-      contentLabel="Example Modal"
-    >
-  {isLogin && <Login closeModal={closeModal}/>}
-    </Modal>
-  </div>
-    </>
+    return (
+        <div>
+            
+        </div>
+    );
 }
 
-
-
-
 export default AddToCard;
-

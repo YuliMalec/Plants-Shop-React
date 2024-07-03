@@ -71,7 +71,11 @@ cursor: pointer;
 
 }
 .active>.search{
-    cursor: pointer;  
+    cursor: pointer; 
+    
+}
+.active>input{
+    border: 1px solid var(--green-color); 
 }
 .active>svg{
     width: 20px;

@@ -91,8 +91,8 @@ function SingleProduct(){
       <div className="product-size">
      
       <div className="size-choose">
-       { sizeButtons.map((el)=>{
-        return <button className={chooseSize===el ? "size-choose-button-active" : "size-choose-button"} onClick={(e)=>getSize(e,el)}>{el}</button>
+       { sizeButtons.map((el,ind)=>{
+        return <button className={chooseSize===el ? "size-choose-button-active" : "size-choose-button"}key={ind} onClick={(e)=>getSize(e,el)}>{el}</button>
        })}
      </div>
        <div className="buy-now-buttons">

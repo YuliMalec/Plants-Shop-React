@@ -4,15 +4,16 @@ import './shop.css';
 import Sidebar from '../sidebar/Sidebar';
 import Pagination from './Pagination';
 import plants from '../../data/plants.json'
-import { useState,useContext,useMemo } from 'react';
+import { useState,useContext,useMemo} from 'react';
 import Context from '../../hooks/Context';
 import MobileMenu from './MobileMenu';
 import ProductsSection from './ProductsSection';
-import {chooseTitle} from '../../hooks/useFilter';
+import {chooseTitle,getQueryPlant} from '../../hooks/useFilter';
 
+const titles = ['All Plants', 'New Arrives', 'Sale']
   
 function Shop(props){ 
-
+  
   const value = useContext(Context)
 
     const limitPage =value.width <= 911 ? 8  : 9 ;
@@ -23,20 +24,22 @@ function Shop(props){
     const [isSelected,setIsSelected] = useState(false);
       
     const firstIndex = lastIndex-limitPage;  
- 
+
  let listProd2 =chooseTitle(value,minValue,maxValue)
-let finalList = listProd2.slice(firstIndex,lastIndex)
+ 
+let finalList =value.querystring!==''? getQueryPlant(value.querystring) :listProd2.slice(firstIndex,lastIndex)
  let totalPage =  listProd2.length  
     const paginate = pageNumber=>value.setCurrentPage(pageNumber)
 
     function chooseSize (param){
       value.setIsShowSize(true)
 value.setFilter({...value.filter,title:titles[0]})
+value.setCurrentPage(1)
+value.setChooseTitleSize(param)
     value.setSize( plants.plants.filter(item=>{
        return item.size===param
       }))
       }
-
       function selectList(event){
        value.setFilter({...value.filter,sort:event.target.innerHTML})
         setIsSelected(!isSelected) 

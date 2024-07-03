@@ -1,11 +1,11 @@
 import { useMemo } from "react";
-import plants from './../data/plants.json';
+import plants from '../data/plants.json';
 
 
-const sortList =(value)=>{ 
+const sortList =(value)=>useMemo(()=>{ 
       
       if(value.isShowSize) value.list = value.size; 
- 
+  
         let result;
         if(value.filter.sort === 'Defolt sorting'){
              result= plants.plants.filter((el)=> el.categories === value.cat)
@@ -20,12 +20,13 @@ const sortList =(value)=>{
     
        return result;
          
-       }
+       },[value.filter])
     
    export const chooseTitle=(value,minValue,maxValue)=>{ 
+   
     let arr =getFiltered(value,minValue,maxValue);  
        if(value.isShowSize) arr = value.size; 
-        
+         
  let filteredList ;
         if(value.filter.title==='All Plants') filteredList = arr
         
@@ -43,20 +44,21 @@ const sortList =(value)=>{
       }
    
 
-      export const getFiltered =(value,minValue,maxValue)=>useMemo(()=>{
-        let arr = sortList(value);
-        console.log(arr)
+      export const getFiltered =(value,minValue,maxValue)=>{
+        let arr =sortList(value);
+      
            if(value.isShowSize) arr = value.size; 
         return arr.filter(el=>Number(el.price.slice(1))>=minValue&&Number(el.price.slice(1))<=maxValue)  
       
-           },[value.filter]) 
-      
+           }
+          
 
-       export const getQueryPlant =(value)=>useMemo(()=>{
-          setTimeout(()=>{
-            
-              return plants.plants.find((item)=>{
-                item.title.toLoverCase().includes(value)
-              })
-          },[1000])
-       })    
+       export const getQueryPlant =(string)=>{
+  
+       
+        const queryPlant = plants.plants.filter((item)=>{
+
+ return  item.name.toLowerCase().includes(string.toLowerCase())})
+          
+        return queryPlant;
+       }   

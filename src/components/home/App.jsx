@@ -10,7 +10,7 @@ import plants from '../../data/plants.json'
 import MaskGroup from '../maskGroup/MaskGroup';
 import BlogPost from '../blogPost/BlogPost';
 import Footer from '../footer/Footer';
-import AddToCard from '../modal/AddToCard';
+import ModalWindow from '../modal/ModalWindow';
 
 const category= ['House Plant','Potter Plants','Seeds','Small Plants','Big Plants','Asucculents','Trerrariums','Accesories'];
 
@@ -25,23 +25,28 @@ const [cat,setCat]=useState(category[0])
 const [currentPage,setCurrentPage] = useState(1)
  const [isShowSize, setIsShowSize]=useState(false)
  const [size,setSize] = useState([]);
+ const [chooseTitleSize,setChooseTitleSize] = useState('')
  const[isShowSidebar,setIsShowSidebar] = useState(false)
- const [filter,setFilter] = useState({title:titles[0],query:'',price:false,sort:'Defolt sorting'})  
+ const [querystring,setQueryString] = useState('')
+ const [isAddToCard,setIsAddToCard] = useState(false)
+ const [filter,setFilter] = useState({title:titles[0],query:false,price:false,sort:'Defolt sorting'})  
     const url = 'https://fakestoreapi.com/products?';
 
     const chooseProduct=(param = 'House Plant')=>{
-        
+    
        setList(plants.plants.filter((el)=> el.categories === param))
-      setIsShowSize(false)
+      setIsShowSize(false) 
+        setQueryString('')
     setFilter({...filter,title:titles[0]})
      setCat(param)
      setCurrentPage(1)
+     setChooseTitleSize('')
      if(isShowSidebar){
        setIsShowSidebar(!isShowSidebar)
      }
 
      } 
-     
+    
      useEffect(()=>{
      chooseProduct()
    
@@ -61,7 +66,9 @@ const [currentPage,setCurrentPage] = useState(1)
   setIsShowSidebar,
 isShowSidebar,
 modalIsOpen,setIsOpen,openModal,
-filter,setFilter
+filter,setFilter,
+chooseTitleSize,setChooseTitleSize,
+querystring,setQueryString
 
 
  }
@@ -70,9 +77,12 @@ filter,setFilter
     <Context.Provider value={value}>
     <div className='wrapper  container ' id='main'>
       
-      <Header openModal={openModal} />
+      <Header openModal={openModal} 
+     querystring={querystring} setQueryString={setQueryString}
+
+      />
       <main >
-     {modalIsOpen && <AddToCard modalIsOpen={modalIsOpen} setIsOpen={setIsOpen}/>}
+     {modalIsOpen && <ModalWindow modalIsOpen={modalIsOpen} setIsOpen={setIsOpen}/>}
       <Banner width={width}/>
       
       <Shop/>

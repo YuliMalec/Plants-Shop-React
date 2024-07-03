@@ -1,9 +1,11 @@
+import { useContext } from 'react';
 import '../shop/shop.css'
-
+import Context from '../../hooks/Context';
 
 import sidebarImg from './../img/sidebar-img.jpg'
 import SuperSale from './../img/Super Sale.png'
 import PriceRange from './PriceRange';
+
 
 
 const category= ['House Plant','Potter Plants','Seeds','Small Plants','Big Plants','Asucculents','Trerrariums','Accesories'];
@@ -12,11 +14,11 @@ const listLength = [9,12,13,10,13,11,13,13]
 
   
 function Sidebar(props){
-    
+   const value =  useContext(Context) 
     function getFilter(){
   
-  props.value.setFilter({...props.value.filter,price:true})
-        props.value.setIsShowSidebar(!props.value.isShowSidebar)
+  value.setFilter({...value.filter,price:true})
+        value.setIsShowSidebar(!value.isShowSidebar)
     }
   
 
@@ -25,8 +27,8 @@ function Sidebar(props){
     <ul className="category-list">{
     category.map((el,ind)=>{
         return <li 
-      className={props.value.cat===el ? "category-link choosen" : "category-link" }
-        key={ind} onClick={()=>props.value.chooseProduct(el)}><span>{el}</span><span>({listLength[ind]})</span></li>
+      className={value.cat===el ? "category-link choosen" : "category-link" }
+        key={ind} onClick={()=>value.chooseProduct(el)}><span>{el}</span><span>({listLength[ind]})</span></li>
     })
     }</ul>
     </div>
@@ -38,7 +40,7 @@ function Sidebar(props){
         <h3 className="title-sidebar">Size</h3>
         <ul className="size-list">
         {size.map((el,index)=>{
-            return <li className="size-link" onClick={()=>props.chooseSize(el)}key={index}>{el}</li>
+            return <li className={el===value.chooseTitleSize?"size-link-active" : "size-link"} onClick={()=>props.chooseSize(el)}key={index}>{el}</li>
         }
          
     )}
