@@ -11,6 +11,9 @@ import MaskGroup from '../maskGroup/MaskGroup';
 import BlogPost from '../blogPost/BlogPost';
 import Footer from '../footer/Footer';
 import ModalWindow from '../modal/ModalWindow';
+import { createStore } from "redux";
+import {defaultState} from './../../redusers/reduser'
+import {useDispatch,useSelector } from 'react-redux';
 
 const category= ['House Plant','Potter Plants','Seeds','Small Plants','Big Plants','Asucculents','Trerrariums','Accesories'];
 
@@ -52,9 +55,18 @@ const [currentPage,setCurrentPage] = useState(1)
    
     },[])
 
-    function openModal() {
-      setIsOpen(true);
+    
+const dispatch = useDispatch()
+const isModal = useSelector(state=>state.isModal)
+function openModal() {
+      dispatch({type:'Toggle',payload:'open'})
     }
+    const closeModal=()=> {
+      dispatch({type:'Close',payload:'close'})
+    }
+
+  console.log(isModal)
+
  const value = {
   width,
   isScreenMd,
@@ -82,7 +94,7 @@ querystring,setQueryString
 
       />
       <main >
-     {modalIsOpen && <ModalWindow modalIsOpen={modalIsOpen} setIsOpen={setIsOpen}/>}
+     {isModal==='open' && <ModalWindow  closeModal={closeModal} modalIsOpen={modalIsOpen} setIsOpen={setIsOpen}/>}
       <Banner width={width}/>
       
       <Shop/>

@@ -1,11 +1,10 @@
-import Modal from 'react-modal';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import style from './modal.module.css'
 import Login from './Login';
 import Register from './Register';
 
-Modal.setAppElement(document.getElementById('root'));
 function ModalWindow (props){
 
     const [isLogin,setIsLogin] = React.useState(true)
@@ -26,31 +25,28 @@ function ModalWindow (props){
     
   
     
-       const closeModal=()=> {
-        props.setIsOpen(false);
-      }
+    
      
-    return <>  <div >
+    return <>  <div 
  
-    <Modal
       isOpen={props.modalIsOpen}
       
-      onRequestClose={closeModal}
+      onRequestClose={props.closeModal}
       style={customStyles}
       contentLabel="Example Modal"
-    >
-  {isLogin ? <Login closeModal={closeModal}
+   > 
+  {isLogin ? <Login closeModal={props.closeModal}
     setIsLogin={setIsLogin} isLogin={isLogin} 
     isRegister={isRegister} setIsRegister={setIsRegister}
     />
 :
-      <Register closeModal={closeModal} 
+      <Register closeModal={props.closeModal} 
   setIsLogin={setIsLogin} isLogin={isLogin}
   isRegister={isRegister} setIsRegister={setIsRegister}
   />
  }
 
-    </Modal>
+  
   </div>
     </>
 }
