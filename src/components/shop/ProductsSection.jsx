@@ -35,7 +35,10 @@ function ProductsSection(props) {
                      <div className='products'>
                       {
                        props.finalList.map((elem,index)=>{
-                        return <Link to={`/shop/${elem.id}` }key={elem.id}
+                        return <Link to={{
+                          pathname:`/shop/${elem.id}`,
+                          propsSearch:props.value
+                         }}  key={elem.id}
                         ><Product elem={elem}key={elem.id} 
                         index={index} 
                         value={props.value}

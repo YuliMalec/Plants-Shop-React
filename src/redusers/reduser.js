@@ -5,6 +5,7 @@ import { createStore } from "redux";
 export function modalIsOpen (state = defaultState,action){
     switch(action.type){
        case 'Toggle':
+       
         return {...state, isModal: 'open'} 
 
         case 'Close':
@@ -15,6 +16,8 @@ export function modalIsOpen (state = defaultState,action){
 }
 
 
-console.log(defaultState)
-const store = createStore(modalIsOpen)
 
+const store = createStore(modalIsOpen)
+ console.log(
+         store.getState()
+        )

@@ -11,7 +11,7 @@ function Login(props) {
     props.setIsLogin(!props.isLogin)
   }
   
-    return (
+    return (<div className={style.container}>
         <article className={style.modal}>
             <button onClick={props.closeModal}><IoMdClose size={18} fill='rgba(70, 163, 88, 1)'/></button>
         <div className={style.titles}>
@@ -33,7 +33,7 @@ function Login(props) {
        </div>
        
       
-    </article>
+    </article></div>
     );
 }
 

@@ -14,7 +14,7 @@ import ErrorPage from "./error-page";
 import App from './components/home/App'
 import AppRoutes from './components/AppRoutes';
 const store = createStore(modalIsOpen)
-store.dispatch({type:'Toggle'})
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

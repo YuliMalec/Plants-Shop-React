@@ -12,6 +12,7 @@ function Register(props) {
       }
     console.log(props.isRegister)
     return (
+        <div className={style.container}>
         <article className={style.modal}>
             <button onClick={props.closeModal}><IoMdClose size={18} fill='rgba(70, 163, 88, 1)'/></button>
         <div className={style.titles}>
@@ -35,7 +36,7 @@ function Register(props) {
        </div>
        
       
-    </article>
+    </article></div>
     );
 }
 

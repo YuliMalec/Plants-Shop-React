@@ -21,9 +21,9 @@ import Rating from "./rating/Rating";
 
 const sizeButtons=['S','M','L','XL']
 const descriptionTitles = ['Product Description','Reviews (19)']
-function SingleProduct(){
+function SingleProduct(props){
   
-
+  console.log(props)
     let params = useParams()
     const item = plants.plants.find((el)=>el.id===params.id)
     const [showImg,setShowImg] = useState(item.subImg[0])
@@ -53,8 +53,7 @@ function SingleProduct(){
    }
     return <>
       
-   <div className='wrapper  container'>
-  <Header />
+
    <main>  
     <h3 className="product-view-path">Home / Shop</h3>
     <section className="product-view">
@@ -133,8 +132,6 @@ function SingleProduct(){
     </section>
     <Releted item ={item}/>
    </main>
-<Footer/>
-    </div>
     </>
 }
 export default SingleProduct;

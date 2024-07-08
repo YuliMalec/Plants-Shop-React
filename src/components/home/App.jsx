@@ -1,18 +1,16 @@
 import { useState,useEffect,useMemo } from 'react';
 import Context from '../../hooks/Context';
-
+import AppRoutes from '../AppRoutes';
 import Header from '../header/Header'
-import Banner from '../main-banner/Banner'
+import Home from './Home';
 import { useResize } from '../../hooks/use-resize';
-import Shop from '../shop/Shop';
+
 import '../../index.css'
 import plants from '../../data/plants.json'
-import MaskGroup from '../maskGroup/MaskGroup';
-import BlogPost from '../blogPost/BlogPost';
+
 import Footer from '../footer/Footer';
 import ModalWindow from '../modal/ModalWindow';
 import { createStore } from "redux";
-import {defaultState} from './../../redusers/reduser'
 import {useDispatch,useSelector } from 'react-redux';
 
 const category= ['House Plant','Potter Plants','Seeds','Small Plants','Big Plants','Asucculents','Trerrariums','Accesories'];
@@ -23,7 +21,7 @@ const titles = ['All Plants', 'New Arrives', 'Sale']
 function App() {
   const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
   const [list,setList] = useState([])
-  const [modalIsOpen, setIsOpen] = useState(false); 
+  
 const [cat,setCat]=useState(category[0])
 const [currentPage,setCurrentPage] = useState(1)
  const [isShowSize, setIsShowSize]=useState(false)
@@ -58,7 +56,7 @@ const [currentPage,setCurrentPage] = useState(1)
     
 const dispatch = useDispatch()
 const isModal = useSelector(state=>state.isModal)
-function openModal() {
+const openModal = () =>{
       dispatch({type:'Toggle',payload:'open'})
     }
     const closeModal=()=> {
@@ -77,7 +75,6 @@ function openModal() {
   setList,list,cat,
   setIsShowSidebar,
 isShowSidebar,
-modalIsOpen,setIsOpen,openModal,
 filter,setFilter,
 chooseTitleSize,setChooseTitleSize,
 querystring,setQueryString
@@ -90,16 +87,12 @@ querystring,setQueryString
     <div className='wrapper  container ' id='main'>
       
       <Header openModal={openModal} 
-     querystring={querystring} setQueryString={setQueryString}
-
-      />
+     querystring={querystring} setQueryString={setQueryString}/>
       <main >
-     {isModal==='open' && <ModalWindow  closeModal={closeModal} modalIsOpen={modalIsOpen} setIsOpen={setIsOpen}/>}
-      <Banner width={width}/>
-      
-      <Shop/>
-     <MaskGroup/>
-     <BlogPost/>
+     {isModal==='open' && <ModalWindow  closeModal={closeModal} />}
+
+    <Home width={width}/>
+  
      </main>
      <Footer/>
     </div>
