@@ -16,7 +16,6 @@ const listLength = [9,12,13,10,13,11,13,13]
 function Sidebar(props){
    const value =  useContext(Context) 
     function getFilter(){
-  
   value.setFilter({...value.filter,price:true})
         value.setIsShowSidebar(!value.isShowSidebar)
     }

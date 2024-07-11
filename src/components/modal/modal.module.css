@@ -1,13 +1,5 @@
 .modal{
-   position: absolute;
-   z-index: 50;
-   left: 50%;
-   top:50%;
-   right: auto;
-   bottom: auto;
-   margin-right: -50%;
-   transform: translate(-50%,-50%);
-background-position: center ;
+   
     border-bottom: 10px solid rgba(70, 163, 88, 1);
       display: flex;
     flex-direction: column;
@@ -15,18 +7,25 @@ background-position: center ;
     padding: 8px;
     width: 500px;
     height: 600px;
-   background: #fff;
-   overflow: auto;
+    position: absolute;
+    z-index: 100;
+    top: 60%;
+    left: 50%;
+    right:auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+   
 }
 .container{
     position: fixed;
-    z-index: 49;
+    z-index: 50;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.75);
- 
 }
 .titles{
    

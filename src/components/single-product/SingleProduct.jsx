@@ -3,11 +3,10 @@ import { Link,useParams } from "react-router-dom";
 
 
 import plants from '../../data/plants.json'
-import Header from "../header/Header";
-import Footer from "../footer/Footer";
+
 import './single-product.css'
 import search from './../img/search.svg'
-import { useState} from "react";
+import { useState,useContext} from "react";
 import { MdFavoriteBorder } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -18,16 +17,17 @@ import  Releted  from "./Releted";
 import Text from "./Text";
 import CounterButtons from "./counter-buttons/CounterButtons";
 import Rating from "./rating/Rating";
+import Context from "../../hooks/Context";
 
 const sizeButtons=['S','M','L','XL']
 const descriptionTitles = ['Product Description','Reviews (19)']
-function SingleProduct(props){
-  
-  console.log(props)
+function SingleProduct(){
+  const value = useContext(Context)
+
     let params = useParams()
     const item = plants.plants.find((el)=>el.id===params.id)
     const [showImg,setShowImg] = useState(item.subImg[0])
-    const [count,setCount] = useState(1);
+    
     const [chooseSize,setChooseSize] = useState(sizeButtons[0])
     const [isActiveTitle,setIsActiveTitile] = useState(descriptionTitles[0])
    
@@ -51,10 +51,14 @@ function SingleProduct(props){
         setIsActiveTitile(elem)
        }
    }
+
+    function addToCard(){
+      value.setCard([...value.card,[item.name,item.price,item.id]])
+    }
+
     return <>
       
-
-   <main>  
+  
     <h3 className="product-view-path">Home / Shop</h3>
     <section className="product-view">
       <div className="product-view-image">
@@ -95,9 +99,9 @@ function SingleProduct(props){
        })}
      </div>
        <div className="buy-now-buttons">
-       <CounterButtons count={count} setCount={setCount}/>
+       <CounterButtons count={value.count} setCount={value.setCount}/>
         <button className="main-button">BUY NOW</button>
-        <button className="button-border">ADD TO CARD</button>
+        <button className="button-border" onClick={addToCard}>ADD TO CARD</button>
         <button className="favorite-button"><MdFavoriteBorder size={20} fill="rgba(70, 163, 88, 1)"/></button>
        </div>
         
@@ -131,7 +135,7 @@ function SingleProduct(props){
       </div>
     </section>
     <Releted item ={item}/>
-   </main>
+
     </>
 }
 export default SingleProduct;

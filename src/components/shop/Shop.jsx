@@ -4,18 +4,22 @@ import './shop.css';
 import Sidebar from '../sidebar/Sidebar';
 import Pagination from './Pagination';
 import plants from '../../data/plants.json'
-import { useState,useContext,useMemo} from 'react';
+import { useState,useContext,useMemo, useEffect} from 'react';
 import Context from '../../hooks/Context';
 import MobileMenu from './MobileMenu';
 import ProductsSection from './ProductsSection';
 import {chooseTitle,getQueryPlant} from '../../hooks/useFilter';
 
+
+
+
+
 const titles = ['All Plants', 'New Arrives', 'Sale']
   
 function Shop(props){ 
-  
-  const value = useContext(Context)
 
+  const value = useContext(Context)
+   
     const limitPage =value.width <= 911 ? 8  : 9 ;
     const lastIndex = value.currentPage*limitPage;
     const [minValue,setMinValue] = useState(9);

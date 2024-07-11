@@ -1,17 +1,17 @@
 import { useState,useEffect,useMemo } from 'react';
 import Context from '../../hooks/Context';
-import AppRoutes from '../AppRoutes';
-import Header from '../header/Header'
-import Home from './Home';
-import { useResize } from '../../hooks/use-resize';
 
+import Header from '../header/Header'
+import Banner from '../main-banner/Banner'
+import { useResize } from '../../hooks/use-resize';
+import Shop from '../shop/Shop';
 import '../../index.css'
 import plants from '../../data/plants.json'
-
+import MaskGroup from '../maskGroup/MaskGroup';
+import BlogPost from '../blogPost/BlogPost';
 import Footer from '../footer/Footer';
 import ModalWindow from '../modal/ModalWindow';
-import { createStore } from "redux";
-import {useDispatch,useSelector } from 'react-redux';
+import AppRoutes from '../AppRoutes';
 
 const category= ['House Plant','Potter Plants','Seeds','Small Plants','Big Plants','Asucculents','Trerrariums','Accesories'];
 
@@ -19,17 +19,20 @@ const titles = ['All Plants', 'New Arrives', 'Sale']
 
 
 function App() {
-  const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
+
+
+ /**/ const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
   const [list,setList] = useState([])
-  
+  const [modalIsOpen, setIsOpen] = useState(false); 
 const [cat,setCat]=useState(category[0])
 const [currentPage,setCurrentPage] = useState(1)
  const [isShowSize, setIsShowSize]=useState(false)
  const [size,setSize] = useState([]);
  const [chooseTitleSize,setChooseTitleSize] = useState('')
  const[isShowSidebar,setIsShowSidebar] = useState(false)
- const [querystring,setQueryString] = useState('')
- const [isAddToCard,setIsAddToCard] = useState(false)
+ const [querystring,setQueryString] = useState('uj')
+ const [card,setCard] = useState([])
+ const [count,setCount] = useState(1);
  const [filter,setFilter] = useState({title:titles[0],query:false,price:false,sort:'Defolt sorting'})  
     const url = 'https://fakestoreapi.com/products?';
 
@@ -53,18 +56,9 @@ const [currentPage,setCurrentPage] = useState(1)
    
     },[])
 
-    
-const dispatch = useDispatch()
-const isModal = useSelector(state=>state.isModal)
-const openModal = () =>{
-      dispatch({type:'Toggle',payload:'open'})
+    function openModal() {
+      setIsOpen(true);
     }
-    const closeModal=()=> {
-      dispatch({type:'Close',payload:'close'})
-    }
-
-  console.log(isModal)
-
  const value = {
   width,
   isScreenMd,
@@ -75,9 +69,12 @@ const openModal = () =>{
   setList,list,cat,
   setIsShowSidebar,
 isShowSidebar,
+modalIsOpen,setIsOpen,openModal,
 filter,setFilter,
 chooseTitleSize,setChooseTitleSize,
-querystring,setQueryString
+querystring,setQueryString,
+card,setCard,
+count,setCount
 
 
  }
@@ -87,12 +84,13 @@ querystring,setQueryString
     <div className='wrapper  container ' id='main'>
       
       <Header openModal={openModal} 
-     querystring={querystring} setQueryString={setQueryString}/>
-      <main >
-     {isModal==='open' && <ModalWindow  closeModal={closeModal} />}
+     querystring={querystring} setQueryString={setQueryString}
 
-    <Home width={width}/>
-  
+      />
+      <main >
+     {modalIsOpen && <ModalWindow modalIsOpen={modalIsOpen} setIsOpen={setIsOpen}/>}
+     <AppRoutes/>
+
      </main>
      <Footer/>
     </div>

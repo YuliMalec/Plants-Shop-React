@@ -11,7 +11,8 @@ function Login(props) {
     props.setIsLogin(!props.isLogin)
   }
   
-    return (<div className={style.container}>
+    return (
+      <div className={style.container}>
         <article className={style.modal}>
             <button onClick={props.closeModal}><IoMdClose size={18} fill='rgba(70, 163, 88, 1)'/></button>
         <div className={style.titles}>

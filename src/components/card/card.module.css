@@ -1,0 +1,24 @@
+
+.wrap{
+    display: flex;
+    flex-direction: row;
+
+}
+.tables{
+    flex: 1 1 60%;
+}
+.table{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;  
+}
+.titles{
+  display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;   
+}
+.title-card{
+   
+
+}
+.total-prices{
+    flex: 1 1 40%;
+}
