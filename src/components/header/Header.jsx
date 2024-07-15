@@ -16,7 +16,7 @@ function Header(props){
   
   const [isHome,setIsHome] = useState(false)
   const [isSearch,setIsSearch] = useState(true)
-
+const value = useContext(Context)
   const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
   function handleInput(){
     setIsHome(!isHome)
@@ -48,7 +48,9 @@ function Header(props){
         </div>
         <div className="basket" >
           <Link to={'/card'}>
-        <SlBasket size={20} /></Link>
+        <SlBasket size={20} />{value.card.length >=1 &&
+        <span className="count-span">{value.card.length}</span>}
+        </Link>
         </div>
      {width <= 768 ? <button className="mobile-button" onClick={props.openModal}><img src={filter}/></button> : <button className="main-button"onClick={props.openModal}><BiLogIn  size={20} className="login"/>Login</button> }
      </div>

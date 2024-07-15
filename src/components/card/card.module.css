@@ -9,11 +9,21 @@
 }
 .table{
     display: grid;
-    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;  
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    height: 70px;  
+    text-align: center;
+    align-items: center;
+   justify-content: center;
+}
+.table>.quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .titles{
   display: grid;
-    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;   
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr; 
+    text-align: center;
 }
 .title-card{
    
@@ -21,4 +31,41 @@
 }
 .total-prices{
     flex: 1 1 40%;
+}
+.img{
+    width: 70px;
+    height: 70px;
+}
+.img>img{
+    object-fit: contain;
+     width: 100%;
+      height: 100%;
+}
+.prod{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.name{
+
+}
+.price{
+
+}
+.quantity{
+
+}
+.total{
+
+}
+.delete{
+
+}
+@media (max-width:769px) {
+    .wrap{
+        display: flex;
+        flex-direction: column;
+    
+    }
 }

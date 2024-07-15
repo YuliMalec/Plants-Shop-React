@@ -14,7 +14,9 @@ const listLength = [9,12,13,10,13,11,13,13]
 
   
 function Sidebar(props){
-   const value =  useContext(Context) 
+ 
+   const value =  useContext(Context)  
+   
     function getFilter(){
   value.setFilter({...value.filter,price:true})
         value.setIsShowSidebar(!value.isShowSidebar)
@@ -31,10 +33,12 @@ function Sidebar(props){
     })
     }</ul>
     </div>
+    {value.width  > 431 &&
   <PriceRange getFilter={getFilter} setMaxValue={props.setMaxValue}
   setMinValue={props.setMinValue}
   minValue={props.minValue} maxValue={props.maxValue}
-  />
+  />}
+  {value.width  > 431 && 
     <div className="size">
         <h3 className="title-sidebar">Size</h3>
         <ul className="size-list">
@@ -45,10 +49,12 @@ function Sidebar(props){
     )}
         </ul>
     </div>
+    }
+    {value.width  > 431 && 
     <div className="sidebar-img">
         <img src={SuperSale} className="sidebar-img-super"/>
         <div className="sidebar-img-text">UP TO 75% OFF</div>
-        <img src={sidebarImg} className="sidebar-img-plant"/></div>
+        <img src={sidebarImg} className="sidebar-img-plant"/></div>}
 </article>
 }
 

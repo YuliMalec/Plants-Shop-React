@@ -1,7 +1,6 @@
 .shop{
     margin-top: 46px;
   display: grid;
- 
 justify-content: space-between;
 
 
@@ -510,7 +509,7 @@ height: 32.5px;
 
 }
 
-.mobile-menu>.mobile-icons>.icon{
+.mobile-menu>.mobile-icons>a{
     color: rgba(203, 203, 203, 1);
     cursor: pointer;
   
@@ -524,9 +523,13 @@ height: 32.5px;
      flex-direction: row;
      justify-content:space-around;
      align-items: center;
-     
+ 
    
      
+}
+
+.mobile-icon-link{
+       position: relative; 
 }
 .menu-container{
     height: 100vh;

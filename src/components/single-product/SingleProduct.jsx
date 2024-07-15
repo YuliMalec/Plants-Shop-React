@@ -27,7 +27,7 @@ function SingleProduct(){
     let params = useParams()
     const item = plants.plants.find((el)=>el.id===params.id)
     const [showImg,setShowImg] = useState(item.subImg[0])
-    
+  
     const [chooseSize,setChooseSize] = useState(sizeButtons[0])
     const [isActiveTitle,setIsActiveTitile] = useState(descriptionTitles[0])
    
@@ -53,15 +53,18 @@ function SingleProduct(){
    }
 
     function addToCard(){
-      value.setCard([...value.card,[item.name,item.price,item.id]])
+   value.card.find((el)=>el[2]===item.id ?console.log('!'):'')
+  value.setCard([...value.card,[item.name,item.price,item.id,item.img,value.count]])
+
     }
+    value.card.map((el)=>console.log(el[2],item.id))
 
     return <>
       
   
     <h3 className="product-view-path">Home / Shop</h3>
     <section className="product-view">
-      <div className="product-view-image">
+      <div className="product--image">
         <div className="vertical-imges">
           {item.subImg.map((elem,ind)=>{
              return <div key={ind} className={showImg===elem?"vertical-img active":'vertical-img'} onClick={(e)=>getShowImg(e,elem)}>

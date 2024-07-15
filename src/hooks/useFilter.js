@@ -26,7 +26,7 @@ const sortList =(value)=>useMemo(()=>{
    
     let arr =getFiltered(value,minValue,maxValue);  
        if(value.isShowSize) arr = value.size; 
-         
+        
  let filteredList ;
         if(value.filter.title==='All Plants') filteredList = arr
         

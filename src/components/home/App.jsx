@@ -1,17 +1,14 @@
-import { useState,useEffect,useMemo } from 'react';
+import { useState,useEffect } from 'react';
 import Context from '../../hooks/Context';
-
 import Header from '../header/Header'
-import Banner from '../main-banner/Banner'
 import { useResize } from '../../hooks/use-resize';
-import Shop from '../shop/Shop';
 import '../../index.css'
 import plants from '../../data/plants.json'
-import MaskGroup from '../maskGroup/MaskGroup';
-import BlogPost from '../blogPost/BlogPost';
 import Footer from '../footer/Footer';
 import ModalWindow from '../modal/ModalWindow';
 import AppRoutes from '../AppRoutes';
+import MobileMenu from '../shop/MobileMenu';
+
 
 const category= ['House Plant','Potter Plants','Seeds','Small Plants','Big Plants','Asucculents','Trerrariums','Accesories'];
 
@@ -33,6 +30,7 @@ const [currentPage,setCurrentPage] = useState(1)
  const [querystring,setQueryString] = useState('uj')
  const [card,setCard] = useState([])
  const [count,setCount] = useState(1);
+ 
  const [filter,setFilter] = useState({title:titles[0],query:false,price:false,sort:'Defolt sorting'})  
     const url = 'https://fakestoreapi.com/products?';
 
@@ -67,14 +65,13 @@ const [currentPage,setCurrentPage] = useState(1)
   chooseProduct,
   setCurrentPage,setIsShowSize,isShowSize,
   setList,list,cat,
-  setIsShowSidebar,
-isShowSidebar,
 modalIsOpen,setIsOpen,openModal,
 filter,setFilter,
 chooseTitleSize,setChooseTitleSize,
 querystring,setQueryString,
 card,setCard,
-count,setCount
+count,setCount,
+isShowSidebar,setIsShowSidebar
 
 
  }
@@ -90,7 +87,8 @@ count,setCount
       <main >
      {modalIsOpen && <ModalWindow modalIsOpen={modalIsOpen} setIsOpen={setIsOpen}/>}
      <AppRoutes/>
-
+     {width < 431 && 
+<MobileMenu />}
      </main>
      <Footer/>
     </div>

@@ -35,7 +35,7 @@ let finalList =value.querystring!==''? getQueryPlant(value.querystring) :listPro
  let totalPage =  listProd2.length  
     const paginate = pageNumber=>value.setCurrentPage(pageNumber)
 
-    function chooseSize (param){
+   const chooseSize =(param)=>{
       value.setIsShowSize(true)
 value.setFilter({...value.filter,title:titles[0]})
 value.setCurrentPage(1)
@@ -75,13 +75,7 @@ value.setChooseTitleSize(param)
   paginate={paginate} 
   limitPage={limitPage} 
   totalPage={totalPage}/>
-{value.width < 431 && 
-<MobileMenu 
- value={value}
-chooseSize={chooseSize}  
-minValue={minValue}
-maxValue={maxValue}
-/>}
+
     </section>
     </>
 }
