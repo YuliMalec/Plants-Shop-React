@@ -24,11 +24,15 @@ function Card(){
                     <div className={styles['title-card']} key={ind}>{item}</div>
                 )
               })}</div>
-              {value.card.map((item,ind)=>{ 
+              {value.card.map((item,ind)=>{
+                
                 return <Table name={item[0]} 
+              
                 price={item[1]} id={item[2]} img={item[3]} quantity={item[4]}
+              
                 deleteProd={deleteProd}
                 setCount={value.setCount}
+                key={ind}
                 />
               })}
          </div>

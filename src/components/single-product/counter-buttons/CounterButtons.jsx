@@ -1,6 +1,6 @@
 
 function CounterButtons ({count,setCount}){
-    
+   
     return <>
      <div className="input-counter">
           <button className="in-count" onClick={()=>setCount(count+1)}>+</button>

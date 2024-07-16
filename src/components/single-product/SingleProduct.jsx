@@ -51,14 +51,13 @@ function SingleProduct(){
         setIsActiveTitile(elem)
        }
    }
-
+  
     function addToCard(){
-   value.card.find((el)=>el[2]===item.id ?console.log('!'):'')
-  value.setCard([...value.card,[item.name,item.price,item.id,item.img,value.count]])
-
+    
+    const found =   value.card.find((el)=>el[2]===item.id)
+      value.setCard([...value.card,[item.name,item.price,item.id,item.img,value.count]])
     }
-    value.card.map((el)=>console.log(el[2],item.id))
-
+ console.log(value.count)
     return <>
       
   
