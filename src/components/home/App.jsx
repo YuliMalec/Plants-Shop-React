@@ -8,6 +8,8 @@ import Footer from '../footer/Footer';
 import ModalWindow from '../modal/ModalWindow';
 import AppRoutes from '../AppRoutes';
 import MobileMenu from '../shop/MobileMenu';
+import { setItem } from 'localforage';
+
 
 
 const category= ['House Plant','Potter Plants','Seeds','Small Plants','Big Plants','Asucculents','Trerrariums','Accesories'];
@@ -30,6 +32,8 @@ const [currentPage,setCurrentPage] = useState(1)
  const [querystring,setQueryString] = useState('uj')
  const [card,setCard] = useState([])
  const [count,setCount] = useState(1);
+
+
  
  const [filter,setFilter] = useState({title:titles[0],query:false,price:false,sort:'Defolt sorting'})  
     const url = 'https://fakestoreapi.com/products?';
@@ -54,6 +58,14 @@ const [currentPage,setCurrentPage] = useState(1)
    
     },[])
 
+    
+   useEffect(()=>{
+   
+    localStorage.setItem('card', JSON.stringify(card));
+     
+   },[card.length])
+
+
     function openModal() {
       setIsOpen(true);
     }
@@ -71,7 +83,8 @@ chooseTitleSize,setChooseTitleSize,
 querystring,setQueryString,
 card,setCard,
 count,setCount,
-isShowSidebar,setIsShowSidebar
+isShowSidebar,setIsShowSidebar,
+
 
 
  }
@@ -90,6 +103,7 @@ isShowSidebar,setIsShowSidebar
      {width < 431 && 
 <MobileMenu />}
      </main>
+   
      <Footer/>
     </div>
     </Context.Provider>

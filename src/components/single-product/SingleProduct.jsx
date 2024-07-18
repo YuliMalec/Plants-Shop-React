@@ -53,11 +53,15 @@ function SingleProduct(){
    }
   
     function addToCard(){
+   const quantity = value.count
+    const found =   value.card.find((el)=>el[2]===item.id) || false;
     
-    const found =   value.card.find((el)=>el[2]===item.id)
-      value.setCard([...value.card,[item.name,item.price,item.id,item.img,value.count]])
+    if(!found){
+   value.setCard([...value.card,[item.name,item.price,item.id,item.img,quantity]])
+    } 
+      
     }
- console.log(value.count)
+ 
     return <>
       
   

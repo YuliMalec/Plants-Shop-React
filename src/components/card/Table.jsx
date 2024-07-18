@@ -4,7 +4,7 @@ import { AiTwotoneDelete } from "react-icons/ai";
 
 
 function Table({name,price,id,quantity,img,deleteProd}) {
-  let  count = quantity;
+
     return (
         <div className={styles.table}>
             <div className={styles.prod}>
@@ -14,7 +14,7 @@ function Table({name,price,id,quantity,img,deleteProd}) {
             <div className={styles.price}>{price}</div>
             <div className={styles.quantity}>{quantity}
                 </div>
-            <div className={styles.total}>${price.slice(1)*quantity}</div>
+            <div className={styles['total-price']}>${price.slice(1)*quantity}</div>
             <div className={styles.delete} onClick={()=>deleteProd(id)}><AiTwotoneDelete size={24}/></div>
         </div>
     );
