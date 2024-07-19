@@ -30,10 +30,16 @@ const [currentPage,setCurrentPage] = useState(1)
  const [chooseTitleSize,setChooseTitleSize] = useState('')
  const[isShowSidebar,setIsShowSidebar] = useState(false)
  const [querystring,setQueryString] = useState('uj')
- const [card,setCard] = useState([])
+ const [card,setCard] = useState(()=>{
+  let card = null;
+  try{
+    card = JSON.parse(localStorage.getItem('card'))
+  } catch (e){}
+  return Array.isArray(card) ? card : [];
+ })
  const [count,setCount] = useState(1);
 
-
+ const [goods,setGoods] = useState([])
  
  const [filter,setFilter] = useState({title:titles[0],query:false,price:false,sort:'Defolt sorting'})  
     const url = 'https://fakestoreapi.com/products?';
@@ -61,11 +67,11 @@ const [currentPage,setCurrentPage] = useState(1)
     
    useEffect(()=>{
    
-    localStorage.setItem('card', JSON.stringify(card));
-     
+     window.localStorage.setItem('card', JSON.stringify(card));
+ 
    },[card.length])
 
-
+ 
     function openModal() {
       setIsOpen(true);
     }
@@ -84,7 +90,7 @@ querystring,setQueryString,
 card,setCard,
 count,setCount,
 isShowSidebar,setIsShowSidebar,
-
+goods,setGoods
 
 
  }

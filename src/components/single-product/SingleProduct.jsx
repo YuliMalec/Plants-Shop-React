@@ -18,6 +18,7 @@ import Text from "./Text";
 import CounterButtons from "./counter-buttons/CounterButtons";
 import Rating from "./rating/Rating";
 import Context from "../../hooks/Context";
+import { useEffect } from "react";
 
 const sizeButtons=['S','M','L','XL']
 const descriptionTitles = ['Product Description','Reviews (19)']
@@ -56,10 +57,12 @@ function SingleProduct(){
    const quantity = value.count
     const found =   value.card.find((el)=>el[2]===item.id) || false;
     
-    if(!found){
+if(!found){
    value.setCard([...value.card,[item.name,item.price,item.id,item.img,quantity]])
     } 
-      
+    
+       
+   
     }
  
     return <>
