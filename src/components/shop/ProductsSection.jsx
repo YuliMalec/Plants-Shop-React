@@ -36,7 +36,8 @@ function ProductsSection(props) {
                       {
                        props.finalList.map((elem,index)=>{
                         return <Link to={`/shop/${elem.id}` }key={elem.id}
-                        ><Product elem={elem}key={elem.id} 
+                        ><Product elem={elem} 
+                        onClick={(e)=>e.stopPropagation()}
                         index={index} 
                         value={props.value}
                         /></Link>

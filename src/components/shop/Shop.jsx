@@ -4,9 +4,9 @@ import './shop.css';
 import Sidebar from '../sidebar/Sidebar';
 import Pagination from './Pagination';
 import plants from '../../data/plants.json'
-import { useState,useContext,useMemo, useEffect} from 'react';
+import { useState,useContext} from 'react';
 import Context from '../../hooks/Context';
-import MobileMenu from './MobileMenu';
+
 import ProductsSection from './ProductsSection';
 import {chooseTitle,getQueryPlant} from '../../hooks/useFilter';
 

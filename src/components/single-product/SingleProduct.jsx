@@ -13,9 +13,10 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { MdCameraAlt } from "react-icons/md";
-import  Releted  from "./Releted";
+
 import Text from "./Text";
 import CounterButtons from "./counter-buttons/CounterButtons";
+import Releted from "../releted/Releted";
 import Rating from "./rating/Rating";
 import Context from "../../hooks/Context";
 import { useEffect } from "react";
@@ -32,27 +33,7 @@ function SingleProduct(){
     const [chooseSize,setChooseSize] = useState(sizeButtons[0])
     const [isActiveTitle,setIsActiveTitile] = useState(descriptionTitles[0])
    
-    function getShowImg(e,elem){
-      let string = e.target.src.slice(21)
-    if(string === elem){
-       setShowImg(elem)
-    } else{
-      setShowImg(item.subImg[0])
-    }
-    }
 
-    function getSize(e,elem){
-    
-      if(e.target.innerHTML===elem){
-        setChooseSize(elem)
-      }
-    }
-   function getActiveTitile(e,elem){
-       if(elem === e.target.innerHTML){
-        setIsActiveTitile(elem)
-       }
-   }
-  
     function addToCard(){
    const quantity = value.count
     const found =   value.card.find((el)=>el[2]===item.id) || false;
@@ -73,7 +54,7 @@ if(!found){
       <div className="product--image">
         <div className="vertical-imges">
           {item.subImg.map((elem,ind)=>{
-             return <div key={ind} className={showImg===elem?"vertical-img active":'vertical-img'} onClick={(e)=>getShowImg(e,elem)}>
+             return <div key={ind} className={showImg===elem?"vertical-img active":'vertical-img'} onClick={()=>setShowImg(elem)}>
              <img src={elem} />
              </div>
           })}
@@ -104,7 +85,7 @@ if(!found){
      
       <div className="size-choose">
        { sizeButtons.map((el,ind)=>{
-        return <button className={chooseSize===el ? "size-choose-button-active" : "size-choose-button"}key={ind} onClick={(e)=>getSize(e,el)}>{el}</button>
+        return <button className={chooseSize===el ? "size-choose-button-active" : "size-choose-button"}key={ind} onClick={()=> setChooseSize(el)}>{el}</button>
        })}
      </div>
        <div className="buy-now-buttons">
@@ -135,15 +116,16 @@ if(!found){
       <div className="titlles">
         {descriptionTitles.map((el,ind)=>{
            return  <h5 className={isActiveTitle===el ? "subtitle-description-active" :  "subtitle-description"}
-          onClick={(e)=> getActiveTitile(e,el)}
+          onClick={()=> setIsActiveTitile(el)}
           key={ind}>{el}</h5>
         })}
       </div>
       {isActiveTitle===descriptionTitles[0] ? <Text/>
       : "Reviews"}
       </div>
+    
     </section>
-    <Releted item ={item}/>
+      <Releted/>
 
     </>
 }

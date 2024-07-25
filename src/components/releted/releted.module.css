@@ -1,0 +1,12 @@
+.title{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    color: var(--green-color);
+    margin-bottom: 56px;
+}
+.container{
+    margin-top: 87px;
+}
+
+

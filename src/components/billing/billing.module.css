@@ -1,0 +1,219 @@
+.container{
+display: flex;
+flex-direction: row;
+column-gap: 78px;
+}
+
+.title{
+margin-bottom: 21px;
+font-weight: 700;
+font-size: 17px;
+line-height: 16px;
+}
+.adress{
+    flex: 1 1 60%;
+
+}
+.order{
+    flex: 1 1 35%;
+
+}
+.inputs-block{
+   
+    display: flex;
+flex-direction: row;
+column-gap: 22px;
+width: 100%;
+
+}
+
+.input{
+    width: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.subtitle{
+    font-weight: 400;
+font-size: 15px;
+line-height: 15px;
+
+}
+.subtitle>span{
+    color: red;
+}
+.input-title{
+    margin-bottom: 30px;
+ flex: 1 1 50%;
+}
+.input-title>h4{
+margin-bottom: 10px;
+}
+.input-title>input,.input-title>.number{
+     width: 100%;
+    border: 1px solid rgba(234, 234, 234, 1);
+    height: 40px;
+    font-weight: 400;
+font-size: 14px;
+line-height: 15px;
+padding: 5px;
+color:rgba(165, 165, 165, 1);
+
+}
+.input-title>textarea{
+    width: 100%;
+    border: 1px solid rgba(234, 234, 234, 1);
+    height: 152px;
+}
+.input-title>input[type="checkbox"]{
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   border: 1px solid var(--green-color);
+}
+.input-title>.number{
+  display: grid;
+  grid-template-columns: 0.3fr 0.1fr 1fr;
+ 
+}
+.input-title.check{
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+}
+.titles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+}
+.title{
+
+}
+.products{
+
+}
+.product{
+    padding: 10px;
+    margin: 11px 0px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+height: 70px;
+background: rgba(251, 251, 251, 1);
+
+}
+.img{
+  
+   
+height: 70px;
+width: 70px;
+}
+.img-cont{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.img>img{
+    object-fit: contain;
+    width: 100%;
+     height: 100%;
+}
+.name{
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+color: rgba(61, 61, 61, 1);
+
+}
+.quantity{
+color: rgba(114, 114, 114, 1);
+font-size: 14px;
+line-height: 16px;
+font-weight: 400;
+
+}
+.price{
+font-weight: 700;
+font-size: 18px;
+line-height: 16px;
+color: var(--green-color);
+
+
+}
+.link{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+   display: flex;
+   justify-content: end;
+   margin-bottom: 19px;
+   
+}
+.link>span{
+    color: var(--green-color);
+}
+.button{
+    width: 100%;
+    height: 40px;
+
+}
+.payment{
+
+}
+.inputs{
+
+}
+.input-check,.active{
+height: 40px;
+display: flex;
+flex-direction: row;
+align-items: center;
+border: 1px solid rgba(234, 234, 234, 1);
+margin-bottom: 15px;
+}
+.check{
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--green-color);
+  border-radius: 50%;
+
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+}
+.active{
+  border: 1px solid var(--green-color);
+ 
+
+}
+.active>.check::before{
+    content: '';
+  
+    
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--green-color);
+   
+
+}@media (max-width:468px){
+    .container{
+      flex-direction:column ;  
+      margin-top: 15px;
+    }
+    .input-title>textarea{
+        height: 72px;
+    }
+
+}
+@media (max-width:768px) {
+    .inputs-block{
+        flex-direction: column;
+    }
+    
+}
