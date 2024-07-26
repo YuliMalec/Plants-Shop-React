@@ -16,6 +16,7 @@ const check = ['<img src={image}/>','Dorect bank transfer','Cash on delivery']
 function Billing(props) {
     const [isChecked,setIsChecked ]= useState(check[0])
     const [isOrder,setIsOrder] = useState(false)
+    
 const value = useContext(Context)
 
 useEffect(()=>{
@@ -38,7 +39,12 @@ setIsOrder(false)
                  
                
             </article>
-            {isOrder && <OrderModal closeOrderModal={closeOrderModal}/>}
+            {isOrder && <OrderModal 
+            isChecked={isChecked}
+            goods={value.goods} 
+            closeOrderModal={closeOrderModal}
+            totalSum={value.totalSum}
+            />}
             <article className={styles.order}>
             <h4 className={styles.title}>Your Order</h4>
             <div className={styles['order-container']}>
@@ -70,9 +76,9 @@ setIsOrder(false)
                 <h4 className={styles.title}>Payment Method</h4> 
                 <div className={styles.inputs}>
                     {check.map((item,ind)=>{
-                        console.log(ind)
+                       
                         return(
-                            <div className={isChecked===item ?styles['active']: styles['input-check']} onClick={()=>setIsChecked(item)}>
+                            <div key={ind}className={isChecked===item ?styles['active']: styles['input-check']} onClick={()=>setIsChecked(item)}>
                    <div className={styles.check}></div>
                     <p>{ind===0 ? <img src={image}/>  :item }</p>
                     </div>  

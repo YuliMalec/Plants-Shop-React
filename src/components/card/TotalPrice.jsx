@@ -5,14 +5,14 @@ import { useContext } from "react";
 
 
 
-function TotalPrice() {
+function TotalPrice({setTotalSum}) {
   const value = useContext(Context)
-    let sum =0;
+  let sum =0;
     value.goods.map((el)=>{
        sum +=(el[1].slice(1)*el[4]) 
        
     })
-   
+   value.setTotalSum(sum)
     return (
        <> <div className={styles['total-counting']}>
        <div className={styles['subtitle-container']}>
@@ -31,7 +31,7 @@ function TotalPrice() {
        </div>
        <div className={styles.total}>
        <div className={styles['title-card']}>Total</div>
-       <div className={styles['price-total']}>${sum + 16}</div>
+       <div className={styles['price-total']}>${value.totalSum + 16}</div>
        </div></>
     );
 }

@@ -30,6 +30,7 @@ const [currentPage,setCurrentPage] = useState(1)
  const [chooseTitleSize,setChooseTitleSize] = useState('')
  const[isShowSidebar,setIsShowSidebar] = useState(false)
  const [querystring,setQueryString] = useState('uj')
+ const [totalSum,setTotalSum] = useState(0)
  const [card,setCard] = useState(()=>{
   let card = null;
   try{
@@ -90,7 +91,8 @@ querystring,setQueryString,
 card,setCard,
 count,setCount,
 isShowSidebar,setIsShowSidebar,
-goods,setGoods
+goods,setGoods,
+totalSum,setTotalSum
 
 
  }

@@ -5,8 +5,8 @@
     flex-direction: column;
     align-items: center;
     padding: 8px;
-    width: 400px;
-    height: 500px;
+    width: 580px;
+    height: 650px;
     position: absolute;
     z-index: 100;
     top: 60%;
@@ -27,7 +27,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(189, 182, 182, 0.75);
     
     ;
 }
@@ -142,4 +142,46 @@ align-self: flex-end;
     height: 30%;
     width: 100%;
     background-color: rgba(70, 163, 88, 0.06);
+  display: block;
+  text-align: center;
 }
+
+.top>.close{
+    text-align: end;
+}
+.top>.name{
+margin: 16px 0px;
+color: rgba(114, 114, 114, 1);
+font-size: 16px;
+line-height: 16px;
+font-weight: 400;
+
+}
+.tables{
+display: flex;
+flex-direction: row;
+border-top:1px solid  rgba(70, 163, 88, 0.2);
+border-bottom:1px solid  rgba(70, 163, 88, 0.2);
+height: 65px;
+width: 100%;
+align-items: center;
+justify-content: center;
+padding: 15px 0px;
+
+}
+.table{
+padding: 0px 10px;
+border-right:1px solid  rgba(70, 163, 88, 0.2)
+}
+.table>.title{
+margin-bottom: 5px;
+color:rgba(114, 114, 114, 1);
+font-style: 14px;
+font-weight: 400;
+}
+.table>.info{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+}
+  

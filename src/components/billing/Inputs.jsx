@@ -8,65 +8,65 @@ const Inputs = () => {
         <div className={styles['inputs-block']}>
         <div className={styles['input-title']}>
                    <h4 className={styles.subtitle}>First Name<span>*</span></h4>
-                   <input />
+                   <input defaultValue={''} />
                </div>
                <div className={styles['input-title']}>
                         <h4 className={styles.subtitle}>Last Name<span>*</span></h4>
-                        <input />
+                        <input defaultValue={''}/>
                     </div>
                     </div>
                     <div className={styles['inputs-block']}>
                <div className={styles['input-title']}>
                    <h4 className={styles.subtitle}>Country / Region<span>*</span></h4>
-                   <input placeholder='Select a country / region' />
+                   <input defaultValue={''} placeholder='Select a country / region' />
                </div>
                <div className={styles['input-title']}>
                         <h4 className={styles.subtitle}>Town / City<span>*</span></h4>
-                        <input />
+                        <input defaultValue={''}/>
                         </div>
                          </div>
                          <div className={styles['inputs-block']}>
                <div className={styles['input-title']}>
                    <h4 className={styles.subtitle}>Street Address<span>*</span></h4>
-                   <input placeholder='House number and street name' />
+                   <input defaultValue={''} placeholder='House number and street name' />
                </div>
                <div className={styles['input-title']}>
-                        <input placeholder='Appartment, suite, unit, etc. (optional)'/>
+                        <input defaultValue={''} placeholder='Appartment, suite, unit, etc. (optional)'/>
                     </div>
                     </div>
                <div className={styles['inputs-block']}>
                <div className={styles['input-title']}>
                    <h4 className={styles.subtitle}>State<span>*</span></h4>
-                   <input placeholder='Select a state'/>
+                   <input defaultValue={''} placeholder='Select a state'/>
                </div>
                <div className={styles['input-title']}>
                         <h4 className={styles.subtitle}>Zip<span>*</span></h4>
-                        <input />
+                        <input defaultValue={''}/>
                     </div> 
                       </div>
               
                <div className={styles['inputs-block']}> 
                <div className={styles['input-title']}>
                    <h4 className={styles.subtitle}>Email address<span>*</span></h4>
-                   <input />
+                   <input defaultValue={''}/>
                </div>
                <div className={styles['input-title']}>
                         <h4 className={styles.subtitle}>Phone Number<span>*</span></h4>
                         <span className={styles.number}>
-                        <input value={'+966'}/>
+                        <input readOnly={'+966'}/>
                         <MdKeyboardArrowDown />
-                        <input type='number'/>
+                        <input type='number' defaultValue={''}/>
                         </span>
                     </div>
                     </div>
                <div className={styles['inputs-block']}>
                <div className={styles['input-title'] + ' '+ 'check'}>
                <h4 className={styles.subtitle}>Ship to a different address?</h4>
-                   <input type='checkbox'/>
+                   <input type='checkbox' />
                </div>
                <div className={styles['input-title']}>
                    <h4 className={styles.subtitle}>Order notes (optional)</h4>
-                   <textarea />
+                   <textarea defaultValue={''} />
                </div>
                </div>
                
