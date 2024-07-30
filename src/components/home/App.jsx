@@ -8,7 +8,7 @@ import Footer from '../footer/Footer';
 import ModalWindow from '../modal/ModalWindow';
 import AppRoutes from '../AppRoutes';
 import MobileMenu from '../shop/MobileMenu';
-import { setItem } from 'localforage';
+import Thanks from '../modal/Thanks';
 
 
 
@@ -31,6 +31,8 @@ const [currentPage,setCurrentPage] = useState(1)
  const[isShowSidebar,setIsShowSidebar] = useState(false)
  const [querystring,setQueryString] = useState('uj')
  const [totalSum,setTotalSum] = useState(0)
+ const [thanks,setTanks]=  useState(false)
+ const [done,setDone]= useState(false)
  const [card,setCard] = useState(()=>{
   let card = null;
   try{
@@ -76,6 +78,8 @@ const [currentPage,setCurrentPage] = useState(1)
     function openModal() {
       setIsOpen(true);
     }
+
+   
  const value = {
   width,
   isScreenMd,
@@ -92,8 +96,9 @@ card,setCard,
 count,setCount,
 isShowSidebar,setIsShowSidebar,
 goods,setGoods,
-totalSum,setTotalSum
-
+totalSum,setTotalSum,
+thanks,setTanks,
+done,setDone
 
  }
 
@@ -107,6 +112,7 @@ totalSum,setTotalSum
       />
       <main >
      {modalIsOpen && <ModalWindow modalIsOpen={modalIsOpen} setIsOpen={setIsOpen}/>}
+     {thanks && <Thanks/>}
      <AppRoutes/>
      {width < 431 && 
 <MobileMenu />}

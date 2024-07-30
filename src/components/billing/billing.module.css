@@ -217,3 +217,14 @@ margin-bottom: 15px;
     }
     
 }
+
+.order-button{
+    background: var(--green-color);
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+       width: 162px;
+       height: 45px;
+   }

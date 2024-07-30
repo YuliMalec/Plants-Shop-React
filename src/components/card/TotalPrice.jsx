@@ -1,11 +1,11 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 import styles from './card.module.css'
 import Context from "../../hooks/Context";
 import { useContext } from "react";
 
 
 
-function TotalPrice({setTotalSum}) {
+function TotalPrice() {
   const value = useContext(Context)
   let sum =0;
     value.goods.map((el)=>{

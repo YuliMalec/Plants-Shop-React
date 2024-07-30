@@ -23,9 +23,9 @@ const value = useContext(Context)
           <Link className='mobile-icon-link'to={"/card"}>{value.card.length >=1 &&
         <span className="count-span">{value.card.length}</span>}
         <BsCartFill className='icon' size={20}/></Link>
-        <Link><BsHeartFill className='icon' size={20}/></Link> 
+      
        <Link to={"/"}> <BsFillHouseDoorFill className='icon' size={20}/></Link>
-        <Link><BsPersonFill className='icon' size={20}/></Link>
+        
         </div>
         <div className='menu-container'>
   <Sidebar />

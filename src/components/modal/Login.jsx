@@ -9,10 +9,12 @@ function Login(props) {
   function handleModal(){
     props.setIsRegister(!props.isRegister)
     props.setIsLogin(!props.isLogin)
+   
+   
   }
   
     return (
-      <div className={style.container}>
+      <div className={style['container-modal']}>
         <article className={style.modal}>
             <button onClick={props.closeModal}><IoMdClose size={18} fill='rgba(70, 163, 88, 1)'/></button>
         <div className={style.titles}>

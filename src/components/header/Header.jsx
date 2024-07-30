@@ -10,6 +10,7 @@ import find from './../img/find.svg'
 import Context from "../../hooks/Context";
 import { useContext,useState } from "react";
 import { useResize } from '../../hooks/use-resize';
+import { Navigate } from "react-router-dom";
 
 
 function Header(props){
@@ -21,9 +22,14 @@ const value = useContext(Context)
   function handleInput(){
     setIsHome(!isHome)
     setIsSearch(!isSearch)
+   
    }
-
+   const getQueryItem = (e)=>{
+    props.setQueryString(e.target.value)
+     value.setDone(true)
+   }
     return <header className="header">
+       {value.done && <Navigate to="/" replace={true}/>}
       <Link className="logo" to={'/'}>
         <div className="img">
        <img  src={logo}/></div>
@@ -41,7 +47,7 @@ const value = useContext(Context)
         {(isHome || width <= 765 ) && <input className="searchInput"  
         placeholder='Find your plants' 
         querystring={props.querystring}
-        onChange={(e)=>props.setQueryString(e.target.value)}
+        onChange={(e)=>getQueryItem(e)}
         />}
         <div className="search" onClick={()=>handleInput()}>
         {(isSearch && width >= 768 ) && <img src={search}/>} 

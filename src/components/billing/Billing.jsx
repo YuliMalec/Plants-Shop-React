@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './billing.module.css';
+import { Navigate } from "react-router-dom";
 
 import TotalPrice from '../card/TotalPrice';
 import Context from '../../hooks/Context';
@@ -15,7 +16,10 @@ const check = ['<img src={image}/>','Dorect bank transfer','Cash on delivery']
 
 function Billing(props) {
     const [isChecked,setIsChecked ]= useState(check[0])
-    const [isOrder,setIsOrder] = useState(false)
+    const [isOrder,setIsOrder] = useState(false);
+
+
+  
     
 const value = useContext(Context)
 
@@ -29,7 +33,15 @@ function closeOrderModal(){
 setIsOrder(false)
     
 }
-    
+function takeOrder(){
+    value.setCard([]);
+    setIsOrder(false) 
+     value.setTanks(true)
+    setTimeout(() => {
+      value.setTanks(false)  
+    }, 3000)
+   value.setDone(true)
+   }
     return(
         <section className={styles.container}>
             <article className={styles.adress}>
@@ -37,9 +49,10 @@ setIsOrder(false)
                 
                  <Inputs/>
                  
-               
+               {value.done && <Navigate to="/" replace={true}/>}
             </article>
             {isOrder && <OrderModal 
+            takeOrder={takeOrder}
             isChecked={isChecked}
             goods={value.goods} 
             closeOrderModal={closeOrderModal}
@@ -87,7 +100,7 @@ setIsOrder(false)
               
                   
                 </div>
-                <Link className={styles.button + ' '+ 'main-button'} onClick={()=>setIsOrder(!isOrder)}>Place Order</Link>
+                <Link className={styles['order-button']} onClick={()=>setIsOrder(!isOrder)}>Place Order</Link>
                 </div>
             </article>
         </section>

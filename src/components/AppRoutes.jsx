@@ -1,5 +1,6 @@
 import { BrowserRouter, Route,Routes as ReactRoutes  } from "react-router-dom";
 import { Routes } from "react-router-dom";
+
 import App from "./home/App";
 import Card from "./card/Card";
 import SingleProduct from "./single-product/SingleProduct";

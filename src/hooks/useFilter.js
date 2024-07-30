@@ -53,12 +53,12 @@ const sortList =(value)=>useMemo(()=>{
            }
           
 
-       export const getQueryPlant =(string)=>{
+       export const getQueryPlant =(value)=>{
   
        
         const queryPlant = plants.plants.filter((item)=>{
 
- return  item.name.toLowerCase().includes(string.toLowerCase())})
-          
+ return  item.name.toLowerCase().includes(value.querystring.toLowerCase())})
+       
         return queryPlant;
        }   

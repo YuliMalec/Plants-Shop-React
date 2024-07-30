@@ -31,7 +31,7 @@ function Shop(props){
 
  let listProd2 =chooseTitle(value,minValue,maxValue)
  
-let finalList =value.querystring!==''? getQueryPlant(value.querystring) :listProd2.slice(firstIndex,lastIndex)
+let finalList =value.querystring!==''? getQueryPlant(value) :listProd2.slice(firstIndex,lastIndex)
  let totalPage =  listProd2.length  
     const paginate = pageNumber=>value.setCurrentPage(pageNumber)
 
